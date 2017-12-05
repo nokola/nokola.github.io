@@ -62,8 +62,8 @@
   <body class="ma0 avenir bg-near-white">
 
     
-   
-  
+
+
 
   <header>
     <div class="bg-black">
@@ -94,40 +94,61 @@
 
     <main class="pb7" role="main">
       
-  <div class="flex-l mt2 mw8 center">
-    <article class="center cf pv5 ph3 ph4-ns mw7">
-      <p class="f6 b helvetica tracked">
-        
-        POST
-      </p>
-      <h1 class="f1 athelas">
-        First Post
-      </h1>
-        
-        
-      <time class="f6 mv4 dib tracked" datetime="2017-12-01T16:23:38-08:00">
-        December 1, 2017
-      </time>
-      <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray">
-        <p>This is a post! Hi there!</p>
+<div class="flex-l mt2 mw8 center">
+ <article class="center cf pv5 ph3 ph4-ns mw7">
+   <p class="f6 b helvetica tracked">
+     
+     POST
+   </p>
+   <h1 class="f1 athelas">
+     First Post
+   </h1>
+     
+     
+   <time class="f6 mv4 dib tracked" datetime="2017-12-01T16:23:38-08:00">
+     December 1, 2017
+   </time>
+   <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray">
+     <p>This is a post! Hi there!</p>
 
-      </section>
-      
-
-
-    </article>
-    <div class="ph3 mt2 mt6-ns">
-      
+   </section>
+   
 
 
+ </article>
+ <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "nokolablog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+ 
+ <div class="ph3 mt2 mt6-ns">
+   
 
 
 
 
 
 
-    </div>
-  </div>
+
+
+ </div>
+</div>
 
     </main>
     <footer class="bg-near-black bottom-0 w-100 pa3" role="contentinfo">
