@@ -3,8 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://nokola.github.io/post/first-post/</loc>
-    <lastmod>2017-12-01T16:23:38-08:00</lastmod>
+    <loc>https://nokola.github.io/post/special-effects-living-noise/</loc>
+    <lastmod>2009-11-01T16:20:39-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nokola.github.io/post/the-cool-windows-7-selection-in-xaml/</loc>
+    <lastmod>2009-08-26T16:23:38-08:00</lastmod>
   </url>
   
   <url>
@@ -13,19 +18,19 @@
   </url>
   
   <url>
-    <loc>https://nokola.github.io/</loc>
-    <lastmod>2017-12-01T16:23:38-08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://nokola.github.io/post/</loc>
-    <lastmod>2017-12-01T16:23:38-08:00</lastmod>
+    <lastmod>2009-11-01T16:20:39-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://nokola.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nokola.github.io/</loc>
+    <lastmod>2009-11-01T16:20:39-08:00</lastmod>
     <priority>0</priority>
   </url>
   

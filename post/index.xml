@@ -1,23 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My New Hugo Site</title>
+    <title>Posts on You Had Me At &#39;Hello World&#39;</title>
     <link>https://nokola.github.io/post/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <description>Recent content in Posts on You Had Me At &#39;Hello World&#39;</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Dec 2017 16:23:38 -0800</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2009 16:20:39 -0800</lastBuildDate>
     
 	<atom:link href="https://nokola.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>First Post</title>
-      <link>https://nokola.github.io/post/first-post/</link>
-      <pubDate>Fri, 01 Dec 2017 16:23:38 -0800</pubDate>
+      <title>Special Effects: Living Noise</title>
+      <link>https://nokola.github.io/post/special-effects-living-noise/</link>
+      <pubDate>Sun, 01 Nov 2009 16:20:39 -0800</pubDate>
       
-      <guid>https://nokola.github.io/post/first-post/</guid>
-      <description>This is a post! Hi there!</description>
+      <guid>https://nokola.github.io/post/special-effects-living-noise/</guid>
+      <description>&lt;p&gt;The Living Noise is an animated “flow” of particles. The particle trajectory is changed by using Perlin Noise (long live Ken Perlin!) I’m so excited. Perlin noise is used pretty much in all special effects – explosions, texture generation, water, clouds, mountains, terrain generation, twinkling stars, halo/weapon effects, etc..&lt;/p&gt;
+
+&lt;p&gt;Click below to see the Living Noise sample, which is just one way to use Noise:
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Cool Windows 7 Selection in XAML</title>
+      <link>https://nokola.github.io/post/the-cool-windows-7-selection-in-xaml/</link>
+      <pubDate>Wed, 26 Aug 2009 16:23:38 -0800</pubDate>
+      
+      <guid>https://nokola.github.io/post/the-cool-windows-7-selection-in-xaml/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s the XAML to make a selection rectangle similar to the one in Win7:
+&lt;/p&gt;</description>
     </item>
     
   </channel>
