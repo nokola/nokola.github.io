@@ -32,7 +32,7 @@
 
 
 
-<meta property="og:updated_time" content="2009-11-01T16:20:39-08:00"/>
+<meta property="og:updated_time" content="2012-11-28T02:25:55&#43;00:00"/>
 
 
 
@@ -57,7 +57,7 @@
 
   
   
-  <header class="cover bg-top bg-left shadow-bottom" style="background-image: url('https://nokola.github.io/tree1.jpg');">
+  <header class="cover bg-top bg-left shadow-bottom" style="background-image: url('https://nokola.github.io/header/tree1.jpg');">
     <div>
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
@@ -97,19 +97,20 @@
             <div class="mb3 pa4 mid-gray overflow-hidden">
     
       <div class="f6">
-        November 1, 2009
+        November 28, 2012
       </div>
     
     <h1 class="f3 near-black">
-      <a href="/post/special-effects-living-noise/" class="link black dim">
-        Special Effects: Living Noise
+      <a href="/post/windows-8-apps-performance-helper-speed-at-a-glance/" class="link black dim">
+        Windows 8 apps performance helper: Speed at a glance
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      <p>The Living Noise is an animated “flow” of particles. The particle trajectory is changed by using Perlin Noise (long live Ken Perlin!) I’m so excited. Perlin noise is used pretty much in all special effects – explosions, texture generation, water, clouds, mountains, terrain generation, twinkling stars, halo/weapon effects, etc..</p>
-
-<p>Click below to see the Living Noise sample, which is just one way to use Noise:
-</p>
+      Windows 8 Apps have this nice awesome property that you can set in order to show framerate counters:
+Application.Current.DebugSettings.EnableFrameRateCounter = true; 
+Just call it in your MainPage() constructor after the InitializeComponent() call.
+To make it easier to figure out which number is which, put this grid somewhere in your root grid on MainPage:
+&lt;Grid HorizontalAlignment=&quot;Left&quot; VerticalAlignment=&quot;Top&quot;&#160; IsHitTestVisible=&quot;False&quot;&gt; &#160;&#160;&#160; &lt;Rectangle Fill=&quot;#88F4F4F5&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;91&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;40&quot; Opacity=&quot;0.5&quot;/&gt; &#160;&#160;&#160; &lt;Rectangle Fill=&quot;#3F5B71FF&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;68&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;43&quot; Margin=&quot;45,0,0,0&quot;/&gt; &#160;&#160;&#160; &lt;Rectangle Fill=&quot;#88F4F4F5&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;35&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;79&quot; Opacity=&quot;0.
     </div>
   </div>
 
@@ -119,17 +120,196 @@
             <div class="mb3 pa4 mid-gray overflow-hidden">
     
       <div class="f6">
-        August 26, 2009
+        February 1, 2012
       </div>
     
     <h1 class="f3 near-black">
-      <a href="/post/the-cool-windows-7-selection-in-xaml/" class="link black dim">
-        The Cool Windows 7 Selection in XAML
+      <a href="/post/apprating-updated-for-mango/" class="link black dim">
+        AppRating Updated For Mango
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      <p>Here&rsquo;s the XAML to make a selection rectangle similar to the one in Win7:
-</p>
+      Download source code here: http://nokola.com/sources/apprating.zip
+Under MS-RL License: http://www.opensource.org/licenses/ms-rl
+The app is available at the marketplace too!
+Many thanks to Erwin Seinen for updating it and sending me back the source code! Check out his apps (as of this writing, Latitude and Hand Warmer, maybe more) here: Nenies Apps
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        October 1, 2011
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/the-fastest-way-to-switch-between-freepaid-app-build-in-visual-studio/" class="link black dim">
+        The Fastest Way to Switch Free/Paid and NoDo/Mango App Build in Visual Studio
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Edit: Added NoDo/Mango switching as well. Simplified changes to .csproj files
+How would you like to be able to switch from Free/Paid and NoDo/Mango&#160; for your Windows Phone 7 projects in VS?
+&#160;&#160; 
+Yes! This will switch my Fantasia Painter app from Paid to Free, and it’s just a build configuration change.
+I’ve been using it for the past 6 months or so. Here’s how to do it:
+ Open Configuration Manager and add a “Free – Release” and “Free – Debug”.
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        October 1, 2011
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/moving-to-blogenginenet-25-and-disqus-to-stop-comments-spam/" class="link black dim">
+        Moving to BlogEngine.Net 2.5&#43;Disqus to Stop Spam
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Deleted 100K+ comments (again!)
+Noticed that BlogEngine.NET 2.5 supports Disqus. After upgrading I used this tool (http://ithoughthecamewithyou.com/post/Convert-BlogML-comments-to-XWR-for-Disqus.aspx) to move my comments over!
+And also had to apply this BlogEngine Disqus Comment Count Fix
+The last part I had to do was update scripts/blog.js to put the div.appendChild(p) below the (ul) in order for the rating text to appear as expected
+showRating: function (container, id, raters, rating) { &#160;&#160;&#160; var div = document.
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        October 1, 2011
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/detecting-if-zune-is-connected-from-your-nodomango-app/" class="link black dim">
+        Detecting if Zune is Connected From Your NoDo/Mango App
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Edit 2001/10/10: I noticed that I actually get InvalidOperationException on Mango (seems like all the time now, but I’m not 100% sure). Updated code in CaptureTask_Completed to check for this.
+Rene had a great blog post about How to detect the Zune software about an year ago. Unfortunately, the method he describes no longer works in Mango.
+Moreover, when you get the Cancel event from the PhotoChooserTask in Mango, neither OnNavigatingFrom nor OnNavigatedTo is called for your page.
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        May 23, 2011
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/how-i-deleted-100000-comments/" class="link black dim">
+        How I Deleted 100000 Comments!
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Finally, no spam! My blog was slowly becoming dysfunctional, after getting more than 2000 spam comments per day!
+I moved to the new version 2.0 of http://dotnetblogengine.net last night, and it has super easy built in reCAPTCHA which stops spam and helps read books. Pretty cool! The reCAPTCHA settings are accessed by hovering over Tools and selecting Edit in .NET Blog Engine 2.0 – it was very hard and non-intuitive to find the setting, but once I did it worked like a charm!
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        March 31, 2011
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/app-rating-for-windows-phone-7-source-code-released/" class="link black dim">
+        App Rating for Windows Phone 7 Source Code Released
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I’m releasing the App Rating app source code today, under MS-RL license (http://www.opensource.org/licenses/ms-rl). In summary, you can use the App Rating's source for commercial (even directly competitive) projects and are required to provide updates to the source code back to me and the community.
+The nice part that you can get from AppRating’s code is the WebApi.cs class, which is optimized for network REST requests, dynamically changing priority of requests, cancelling, etc, and is very lightweight.
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        March 25, 2011
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/new-fantasia-painter-windows-phone-7-source-code-pack-1-new-license/" class="link black dim">
+        New Fantasia Painter, Windows Phone 7 Source Code Pack 1, New License
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I’m back from the fields of Fantasia's [software development]!
+This post contains:
+ New Fantasia Painter available, with 20 effects, an &quot;alive&quot; Fairy Lights brush, Text, symbols and photo functionality  Source code for Fantasia’s high-usability controls tuned for WP7: color pickers, improved slider and easing progress bar.  My new license (NNCL), which promotes fair commercial and personal use while protecting IP and ensures giving back to the community   New Fantasia Painter The new app has just been released to the marketplace.
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        December 22, 2010
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/app-ratings-updated-with-search-and-6-10x-times-faster/" class="link black dim">
+        App Ratings Updated with search and 6-10x times faster
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      I updated App Rating to have search for apps, show rating since last update, and be much faster. Unlike other similar rating apps on the marketplace, App Rating shows a single-screen per-market score so you can compare your app in different markets easily. To use, search the marketplace for “App Rating” or click here to get the app
+
+Video of the new functionality:
+
+Unless I get strong feedback for new features, I’m not planning to invest more in App Ratings.
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        December 11, 2010
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/games-for-windows-phone-7-resources-reducing-load-times-rpg-kit3b-other/" class="link black dim">
+        Games for Windows Phone 7 Resources: Reducing Load Times, RPG Kit; Other
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Microsoft released the new games education pack including a multi-platform tutorial, RPG starter kit ported to Windows Phone 7.
+I really like the comparisons of the isostore reads in MB/sec in the “reducing load times paper”, and the game samples that’s why blogging it.
+Here’s the pack:
+http://create.msdn.com/en-US/home/news/new_education_dec_2010
+&#160;
+Kind of off topic: I got few asks “how do you make the mouse cursor in your videos?”
+I created my own mouse cursor (just a circle .
     </div>
   </div>
 
@@ -137,6 +317,97 @@
       
     </section>
     
+
+<ul class="pagination">
+    
+    <li>
+        <a href="/post/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li
+    class="disabled">
+    <a href="" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li
+    class="active"><a href="/post/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li
+    ><a href="/post/page/2/">2</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li
+    ><a href="/post/page/3/">3</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="disabled"><span aria-hidden="true">&hellip;</span></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li
+    ><a href="/post/page/6/">6</a></li>
+    
+    
+    <li
+    >
+    <a href="/post/page/2/" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li>
+        <a href="/post/page/6/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
 
   </article>
 
