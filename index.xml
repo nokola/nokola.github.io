@@ -17,11 +17,7 @@
       <pubDate>Wed, 28 Nov 2012 02:25:55 +0000</pubDate>
       
       <guid>https://nokola.github.io/post/windows-8-apps-performance-helper-speed-at-a-glance/</guid>
-      <description>Windows 8 Apps have this nice awesome property that you can set in order to show framerate counters:
-Application.Current.DebugSettings.EnableFrameRateCounter = true; 
-Just call it in your MainPage() constructor after the InitializeComponent() call.
-To make it easier to figure out which number is which, put this grid somewhere in your root grid on MainPage:
-&amp;lt;Grid HorizontalAlignment=&amp;quot;Left&amp;quot; VerticalAlignment=&amp;quot;Top&amp;quot;&amp;#160; IsHitTestVisible=&amp;quot;False&amp;quot;&amp;gt; &amp;#160;&amp;#160;&amp;#160; &amp;lt;Rectangle Fill=&amp;quot;#88F4F4F5&amp;quot; HorizontalAlignment=&amp;quot;Left&amp;quot; Height=&amp;quot;91&amp;quot; VerticalAlignment=&amp;quot;Top&amp;quot; Width=&amp;quot;40&amp;quot; Opacity=&amp;quot;0.5&amp;quot;/&amp;gt; &amp;#160;&amp;#160;&amp;#160; &amp;lt;Rectangle Fill=&amp;quot;#3F5B71FF&amp;quot; HorizontalAlignment=&amp;quot;Left&amp;quot; Height=&amp;quot;68&amp;quot; VerticalAlignment=&amp;quot;Top&amp;quot; Width=&amp;quot;43&amp;quot; Margin=&amp;quot;45,0,0,0&amp;quot;/&amp;gt; &amp;#160;&amp;#160;&amp;#160; &amp;lt;Rectangle Fill=&amp;quot;#88F4F4F5&amp;quot; HorizontalAlignment=&amp;quot;Left&amp;quot; Height=&amp;quot;35&amp;quot; VerticalAlignment=&amp;quot;Top&amp;quot; Width=&amp;quot;79&amp;quot; Opacity=&amp;quot;0.</description>
+      <description>&lt;p&gt;Windows 8 Apps have this nice awesome property that you can set in order to show framerate counters:&lt;/p&gt;  &lt;p&gt;&lt;strong&gt;Application.Current.DebugSettings.EnableFrameRateCounter = true; &lt;/strong&gt;&lt;/p&gt;  &lt;p&gt;Just call it in your MainPage() constructor after the InitializeComponent() call.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -30,10 +26,7 @@ To make it easier to figure out which number is which, put this grid somewhere i
       <pubDate>Wed, 01 Feb 2012 08:56:03 +0000</pubDate>
       
       <guid>https://nokola.github.io/post/apprating-updated-for-mango/</guid>
-      <description>Download source code here: http://nokola.com/sources/apprating.zip
-Under MS-RL License: http://www.opensource.org/licenses/ms-rl
-The app is available at the marketplace too!
-Many thanks to Erwin Seinen for updating it and sending me back the source code! Check out his apps (as of this writing, Latitude and Hand Warmer, maybe more) here: Nenies Apps</description>
+      <description>&lt;p&gt;&lt;strong&gt;Download source code here: &lt;/strong&gt;&lt;a href=&#34;http://nokola.com/sources/apprating.zip&#34;&gt;&lt;strong&gt;http://nokola.com/sources/apprating.zip&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;  &lt;p&gt;Under MS-RL License: &lt;a href=&#34;http://www.opensource.org/licenses/ms-rl&#34;&gt;http://www.opensource.org/licenses/ms-rl&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -42,12 +35,7 @@ Many thanks to Erwin Seinen for updating it and sending me back the source code!
       <pubDate>Sat, 01 Oct 2011 19:31:43 +0000</pubDate>
       
       <guid>https://nokola.github.io/post/the-fastest-way-to-switch-between-freepaid-app-build-in-visual-studio/</guid>
-      <description>Edit: Added NoDo/Mango switching as well. Simplified changes to .csproj files
-How would you like to be able to switch from Free/Paid and NoDo/Mango&amp;#160; for your Windows Phone 7 projects in VS?
-&amp;#160;&amp;#160; 
-Yes! This will switch my Fantasia Painter app from Paid to Free, and it’s just a build configuration change.
-I’ve been using it for the past 6 months or so. Here’s how to do it:
- Open Configuration Manager and add a “Free – Release” and “Free – Debug”.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Edit: &lt;/strong&gt;Added NoDo/Mango switching as well. Simplified changes to .csproj files&lt;/p&gt;</description>
     </item>
     
     <item>
