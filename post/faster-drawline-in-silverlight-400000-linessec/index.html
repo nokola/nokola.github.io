@@ -112,6 +112,9 @@ Note: in my perf tests I did a single-threaded version, so if you have multiple 
       a:hover h1, a.linkunder:hover {
         text-decoration: underline;
       }
+      .word-wrap {
+        word-wrap: break-word;
+      }
     </style>
     
 
@@ -154,18 +157,19 @@ Note: in my perf tests I did a single-threaded version, so if you have multiple 
     <main class="pb7" role="main">
       
 <div class="flex-l mt2 mw8 center">
- <article class="center cf pt4 pb1  ph3 ph4-ns mw10">
-     <h1 class="f4 mt0 athelas">
-     Fast DrawLine() in Silverlight
-     </h1>
-     <time class="f6  pb1 dib mid-gray normal" datetime="2009-11-06T22:39:00Z">
-      Nov 6, 2009
-     </time>
+  <div class="mw10 ph3 ph0-ns">
+    <article class="center cf pt4 pb1 mw7 word-wrap">
+        <h1 class="f4 mt0 athelas">
+        Fast DrawLine() in Silverlight
+        </h1>
+        <time class="f6  pb1 dib mid-gray normal" datetime="2009-11-06T22:39:00Z">
+          Nov 6, 2009
+        </time>
 
-     
-     
-   <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
-     <p>How fast can you make it go?</p>
+        
+        
+      <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
+        <p>How fast can you make it go?</p>
 <p>How about this loop that draws the line:[code:c#]<br />int inc = incy1 * w + incx;<br />for (int i = 0; i &lt; lenY; i++) {<br />&nbsp;&nbsp;&nbsp; pixels[index &gt;&gt; PRECISION_SHIFT] = color;<br />&nbsp;&nbsp;&nbsp;&nbsp;index += inc;<br />}[/code]</p>
 <p>40FPS * 10000 lines = 400,000 lines/sec</p>
 <p>Note: in my perf tests I did a single-threaded version, so if you have multiple cores (2-4), you might be able to get to more than 0.4mln lines/sec :)</p>
@@ -200,12 +204,12 @@ Note: in my perf tests I did a single-threaded version, so if you have multiple 
 <p>Hope you like it! Please comment! Also, if you can make it faster, please do!</p>
 <p>&nbsp;</p>
 
-   </section>
-   
+      </section>
+      
 
 
-   <div class="mt5"></div>
-   
+      <div class="mt5"></div>
+      
 <div id="graphcomment"></div>
 <script type="text/javascript">
   window.graphcomment_id = 'nokola-blog';
@@ -216,8 +220,8 @@ Note: in my perf tests I did a single-threaded version, so if you have multiple 
   })();
 </script>
 
-  </article>
- 
+      </article>
+  </div>
 </div>
 
     </main>

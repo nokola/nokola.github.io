@@ -100,6 +100,9 @@ I&#39;m not 100% sure if this is the fastest way, but it&#39;s definitely worth 
       a:hover h1, a.linkunder:hover {
         text-decoration: underline;
       }
+      .word-wrap {
+        word-wrap: break-word;
+      }
     </style>
     
 
@@ -142,18 +145,19 @@ I&#39;m not 100% sure if this is the fastest way, but it&#39;s definitely worth 
     <main class="pb7" role="main">
       
 <div class="flex-l mt2 mw8 center">
- <article class="center cf pt4 pb1  ph3 ph4-ns mw10">
-     <h1 class="f4 mt0 athelas">
-     Fast Tile Brush in Silverlight, And Easiest Way to Shader Effects
-     </h1>
-     <time class="f6  pb1 dib mid-gray normal" datetime="2009-12-22T00:36:00Z">
-      Dec 22, 2009
-     </time>
+  <div class="mw10 ph3 ph0-ns">
+    <article class="center cf pt4 pb1 mw7 word-wrap">
+        <h1 class="f4 mt0 athelas">
+        Fast Tile Brush in Silverlight, And Easiest Way to Shader Effects
+        </h1>
+        <time class="f6  pb1 dib mid-gray normal" datetime="2009-12-22T00:36:00Z">
+          Dec 22, 2009
+        </time>
 
-     
-     
-   <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
-     <p>Here is one monster, tiled as 6&nbsp;monsters down here:</p>
+        
+        
+      <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
+        <p>Here is one monster, tiled as 6&nbsp;monsters down here:</p>
 <iframe src="/sample.aspx?xap=TileShaderEffect" width="400px" height="300px"></iframe>
 <p>This is actually 1 monster, tiled twice horizontally and 3 times vertically using a Silverlght Tile brush shader effect.</p>
 <p><a href="http://nokola.com/sources/TileShaderEffect.zip">Download source code</a></p>
@@ -179,12 +183,12 @@ I&#39;m not 100% sure if this is the fastest way, but it&#39;s definitely worth 
 <h2><span style="font-size: small;">What can you use it for?</span></h2>
 <p><span style="font-size: small;">In a side-scroller or many other types of games, tiling textures is crucial - e.g. brick wall, metal, and other things.</span></p>
 
-   </section>
-   
+      </section>
+      
 
 
-   <div class="mt5"></div>
-   
+      <div class="mt5"></div>
+      
 <div id="graphcomment"></div>
 <script type="text/javascript">
   window.graphcomment_id = 'nokola-blog';
@@ -195,8 +199,8 @@ I&#39;m not 100% sure if this is the fastest way, but it&#39;s definitely worth 
   })();
 </script>
 
-  </article>
- 
+      </article>
+  </div>
 </div>
 
     </main>

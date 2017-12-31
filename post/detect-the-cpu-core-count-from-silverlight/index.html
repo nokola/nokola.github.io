@@ -94,6 +94,9 @@ The answer is easy: run as many threads as the CPU cores. For example, on Dual C
       a:hover h1, a.linkunder:hover {
         text-decoration: underline;
       }
+      .word-wrap {
+        word-wrap: break-word;
+      }
     </style>
     
 
@@ -136,18 +139,19 @@ The answer is easy: run as many threads as the CPU cores. For example, on Dual C
     <main class="pb7" role="main">
       
 <div class="flex-l mt2 mw8 center">
- <article class="center cf pt4 pb1  ph3 ph4-ns mw10">
-     <h1 class="f4 mt0 athelas">
-     Detect the CPU Core Count From Silverlight
-     </h1>
-     <time class="f6  pb1 dib mid-gray normal" datetime="2009-11-12T02:06:00Z">
-      Nov 12, 2009
-     </time>
+  <div class="mw10 ph3 ph0-ns">
+    <article class="center cf pt4 pb1 mw7 word-wrap">
+        <h1 class="f4 mt0 athelas">
+        Detect the CPU Core Count From Silverlight
+        </h1>
+        <time class="f6  pb1 dib mid-gray normal" datetime="2009-11-12T02:06:00Z">
+          Nov 12, 2009
+        </time>
 
-     
-     
-   <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
-     <p>If you're are writing an application that is heavy on multi-threaded computations (e.g. full screen blur, game, or scientific data processing), you will want to know how many threads to run optimally.</p>
+        
+        
+      <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
+        <p>If you're are writing an application that is heavy on multi-threaded computations (e.g. full screen blur, game, or scientific data processing), you will want to know how many threads to run optimally.</p>
 <p><strong>Edit: just fixed a bug reported where the initial assesment woult be 0 msec, thanks Morten for reporting it!</strong></p>
 <p>The answer is easy: run as many threads as the CPU cores. For example, on Dual Core, you should run 2 threads and on Quad Core 4 threads.</p>
 <p><a href="http://www.nokola.com/sources/DetectCPUCoreCount.zip">Download Source Code</a></p>
@@ -177,12 +181,12 @@ The answer is easy: run as many threads as the CPU cores. For example, on Dual C
 </ul>
 <p>Please comment! I would be interesting to know how well the algorithm works and if it detected your cores as you expected!</p>
 
-   </section>
-   
+      </section>
+      
 
 
-   <div class="mt5"></div>
-   
+      <div class="mt5"></div>
+      
 <div id="graphcomment"></div>
 <script type="text/javascript">
   window.graphcomment_id = 'nokola-blog';
@@ -193,8 +197,8 @@ The answer is easy: run as many threads as the CPU cores. For example, on Dual C
   })();
 </script>
 
-  </article>
- 
+      </article>
+  </div>
 </div>
 
     </main>

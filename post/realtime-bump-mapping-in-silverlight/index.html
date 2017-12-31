@@ -94,6 +94,9 @@ I&#39;ve seen the effect used in games in the main menu as well, where the light
       a:hover h1, a.linkunder:hover {
         text-decoration: underline;
       }
+      .word-wrap {
+        word-wrap: break-word;
+      }
     </style>
     
 
@@ -136,18 +139,19 @@ I&#39;ve seen the effect used in games in the main menu as well, where the light
     <main class="pb7" role="main">
       
 <div class="flex-l mt2 mw8 center">
- <article class="center cf pt4 pb1  ph3 ph4-ns mw10">
-     <h1 class="f4 mt0 athelas">
-     Realtime Bump Mapping in Silverlight
-     </h1>
-     <time class="f6  pb1 dib mid-gray normal" datetime="2009-12-06T04:07:00Z">
-      Dec 6, 2009
-     </time>
+  <div class="mw10 ph3 ph0-ns">
+    <article class="center cf pt4 pb1 mw7 word-wrap">
+        <h1 class="f4 mt0 athelas">
+        Realtime Bump Mapping in Silverlight
+        </h1>
+        <time class="f6  pb1 dib mid-gray normal" datetime="2009-12-06T04:07:00Z">
+          Dec 6, 2009
+        </time>
 
-     
-     
-   <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
-     <p>Ah yes! Bump mapping is an effect that makes "plain" textures - such as stone wall, appear bumpy under a light.</p>
+        
+        
+      <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
+        <p>Ah yes! Bump mapping is an effect that makes "plain" textures - such as stone wall, appear bumpy under a light.</p>
 <p>Even for a 2D game, bump mapping has a lot of uses. For example, if you're building a space shooter, it would be 10000 times cooler if lights from explosions illuminate the ship, showing it's ridged surfaces.</p>
 <p>I've seen the effect used in games in the main menu as well, where the light of the cursor illuminated a rough surface. This is what we're doing today:</p>
 <iframe src="/sample.aspx?xap=BumpMapping" width="1024px" height="768px"></iframe>
@@ -161,12 +165,12 @@ I&#39;ve seen the effect used in games in the main menu as well, where the light
 <p><b>Edit: </b>One possible optimization is to pre-calculate the normals for each x,y - this doubles the memory size for the bitmap but saves a lot of computations!</p>
 <p>Hope you like it! Please comment!</p>
 
-   </section>
-   
+      </section>
+      
 
 
-   <div class="mt5"></div>
-   
+      <div class="mt5"></div>
+      
 <div id="graphcomment"></div>
 <script type="text/javascript">
   window.graphcomment_id = 'nokola-blog';
@@ -177,8 +181,8 @@ I&#39;ve seen the effect used in games in the main menu as well, where the light
   })();
 </script>
 
-  </article>
- 
+      </article>
+  </div>
 </div>
 
     </main>

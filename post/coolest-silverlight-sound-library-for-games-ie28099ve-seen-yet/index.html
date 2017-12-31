@@ -94,6 +94,9 @@ I believe it should solve the “short sound” and “looping music” issues w
       a:hover h1, a.linkunder:hover {
         text-decoration: underline;
       }
+      .word-wrap {
+        word-wrap: break-word;
+      }
     </style>
     
 
@@ -136,25 +139,26 @@ I believe it should solve the “short sound” and “looping music” issues w
     <main class="pb7" role="main">
       
 <div class="flex-l mt2 mw8 center">
- <article class="center cf pt4 pb1  ph3 ph4-ns mw10">
-     <h1 class="f4 mt0 athelas">
-     Coolest Silverlight Sound Library for Games I’ve Seen Yet
-     </h1>
-     <time class="f6  pb1 dib mid-gray normal" datetime="2010-06-10T19:42:19Z">
-      Jun 10, 2010
-     </time>
+  <div class="mw10 ph3 ph0-ns">
+    <article class="center cf pt4 pb1 mw7 word-wrap">
+        <h1 class="f4 mt0 athelas">
+        Coolest Silverlight Sound Library for Games I’ve Seen Yet
+        </h1>
+        <time class="f6  pb1 dib mid-gray normal" datetime="2010-06-10T19:42:19Z">
+          Jun 10, 2010
+        </time>
 
-     
-     
-   <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
-     <p>Quite amazing demo: <a title="http://prefix.teddywino.com/post/SilverlightMediaKitLiveDemo.aspx" href="http://prefix.teddywino.com/post/SilverlightMediaKitLiveDemo.aspx">http://prefix.teddywino.com/post/SilverlightMediaKitLiveDemo.aspx</a>&#160;</p>  <p>The library has a lot of potential for Silverlight games. It does MP3 decoding in managed code and exposes some cool controls like Pitch, Echo. Duet is my favorite. I’m also a Transformers fan and like how Duet makes explosion and swoosh sounds sound “Transformerish”.</p>  <p>I believe it should solve the “short sound” and “looping music” issues with Silverlight without any problem :). The biggest coolness though is that you can now simulate doppler effects and have more “rich” sound in smaller package (for example, by keeping only one explosion.mp3 and varying the pitch slightly).</p>  <p>The CPU usage on my quad core q6600 is ~1-2% of one core for most of the effects. 11% for the Pitch and 8% for the duet.</p>  <p>You can download the source code here: <a title="http://salusemediakit.codeplex.com/" href="http://salusemediakit.codeplex.com/">http://salusemediakit.codeplex.com/</a> (MIT License)</p>  <p><strong>Edit: </strong>another library, just released under CDDL License: <a title="http://vorbisplayer.codeplex.com/" href="http://vorbisplayer.codeplex.com/">http://vorbisplayer.codeplex.com/</a></p>
+        
+        
+      <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
+        <p>Quite amazing demo: <a title="http://prefix.teddywino.com/post/SilverlightMediaKitLiveDemo.aspx" href="http://prefix.teddywino.com/post/SilverlightMediaKitLiveDemo.aspx">http://prefix.teddywino.com/post/SilverlightMediaKitLiveDemo.aspx</a>&#160;</p>  <p>The library has a lot of potential for Silverlight games. It does MP3 decoding in managed code and exposes some cool controls like Pitch, Echo. Duet is my favorite. I’m also a Transformers fan and like how Duet makes explosion and swoosh sounds sound “Transformerish”.</p>  <p>I believe it should solve the “short sound” and “looping music” issues with Silverlight without any problem :). The biggest coolness though is that you can now simulate doppler effects and have more “rich” sound in smaller package (for example, by keeping only one explosion.mp3 and varying the pitch slightly).</p>  <p>The CPU usage on my quad core q6600 is ~1-2% of one core for most of the effects. 11% for the Pitch and 8% for the duet.</p>  <p>You can download the source code here: <a title="http://salusemediakit.codeplex.com/" href="http://salusemediakit.codeplex.com/">http://salusemediakit.codeplex.com/</a> (MIT License)</p>  <p><strong>Edit: </strong>another library, just released under CDDL License: <a title="http://vorbisplayer.codeplex.com/" href="http://vorbisplayer.codeplex.com/">http://vorbisplayer.codeplex.com/</a></p>
 
-   </section>
-   
+      </section>
+      
 
 
-   <div class="mt5"></div>
-   
+      <div class="mt5"></div>
+      
 <div id="graphcomment"></div>
 <script type="text/javascript">
   window.graphcomment_id = 'nokola-blog';
@@ -165,8 +169,8 @@ I believe it should solve the “short sound” and “looping music” issues w
   })();
 </script>
 
-  </article>
- 
+      </article>
+  </div>
 </div>
 
     </main>

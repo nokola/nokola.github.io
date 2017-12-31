@@ -109,6 +109,9 @@ The adorner currently has the following features:
       a:hover h1, a.linkunder:hover {
         text-decoration: underline;
       }
+      .word-wrap {
+        word-wrap: break-word;
+      }
     </style>
     
 
@@ -151,18 +154,19 @@ The adorner currently has the following features:
     <main class="pb7" role="main">
       
 <div class="flex-l mt2 mw8 center">
- <article class="center cf pt4 pb1  ph3 ph4-ns mw10">
-     <h1 class="f4 mt0 athelas">
-     Adorners in Silverlight - Move, Size, Rotate, Custom Mouse Cursor
-     </h1>
-     <time class="f6  pb1 dib mid-gray normal" datetime="2009-12-13T10:58:00Z">
-      Dec 13, 2009
-     </time>
+  <div class="mw10 ph3 ph0-ns">
+    <article class="center cf pt4 pb1 mw7 word-wrap">
+        <h1 class="f4 mt0 athelas">
+        Adorners in Silverlight - Move, Size, Rotate, Custom Mouse Cursor
+        </h1>
+        <time class="f6  pb1 dib mid-gray normal" datetime="2009-12-13T10:58:00Z">
+          Dec 13, 2009
+        </time>
 
-     
-     
-   <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
-     <p>This adorner took me few days to get right!</p>
+        
+        
+      <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
+        <p>This adorner took me few days to get right!</p>
 <p><strong>Edit Dec, 15: </strong><a href="http://tozon.info/blog/">Andrej Tozon</a> created an updated source supporting Behaviours (and drag-drop without code in Blend). Here's a link to <a href="http://cid-d34608bce9688fba.skydrive.live.com/self.aspx/Public/Development/Samples/AdornerTest2.zip">his version</a>. Thanks Andrej!</p>
 <p>This&nbsp;is work in progress,&nbsp;but the base functionality is there and stable!</p>
 <p><a href="http://nokola.com/sources/adorners.zip">Download source code</a></p>
@@ -190,12 +194,12 @@ The adorner currently has the following features:
 <p>To avoid hassles with Thumbs moving around, the core of the move/size/rotate code is in thumb_MouseMove() - giving it nice absolute mouse coordinates!</p>
 <p>What do you think this adorner?</p>
 
-   </section>
-   
+      </section>
+      
 
 
-   <div class="mt5"></div>
-   
+      <div class="mt5"></div>
+      
 <div id="graphcomment"></div>
 <script type="text/javascript">
   window.graphcomment_id = 'nokola-blog';
@@ -206,8 +210,8 @@ The adorner currently has the following features:
   })();
 </script>
 
-  </article>
- 
+      </article>
+  </div>
 </div>
 
     </main>

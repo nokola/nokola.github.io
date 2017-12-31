@@ -97,6 +97,9 @@ The interop is easy and I tried it in IE, Firefox, Chrome, Opera. Define an HTML
       a:hover h1, a.linkunder:hover {
         text-decoration: underline;
       }
+      .word-wrap {
+        word-wrap: break-word;
+      }
     </style>
     
 
@@ -139,18 +142,19 @@ The interop is easy and I tried it in IE, Firefox, Chrome, Opera. Define an HTML
     <main class="pb7" role="main">
       
 <div class="flex-l mt2 mw8 center">
- <article class="center cf pt4 pb1  ph3 ph4-ns mw10">
-     <h1 class="f4 mt0 athelas">
-     Simple Functions for HTML Interop
-     </h1>
-     <time class="f6  pb1 dib mid-gray normal" datetime="2010-04-03T02:45:00Z">
-      Apr 3, 2010
-     </time>
+  <div class="mw10 ph3 ph0-ns">
+    <article class="center cf pt4 pb1 mw7 word-wrap">
+        <h1 class="f4 mt0 athelas">
+        Simple Functions for HTML Interop
+        </h1>
+        <time class="f6  pb1 dib mid-gray normal" datetime="2010-04-03T02:45:00Z">
+          Apr 3, 2010
+        </time>
 
-     
-     
-   <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
-     <p>I used the below functions on several occasions to transfer data between a server and Silverilght application.</p>
+        
+        
+      <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
+        <p>I used the below functions on several occasions to transfer data between a server and Silverilght application.</p>
 <p>The blog integration between .NET Blog Engine and my Silverlight navigation on top of this site is done using this method.</p>
 <p>You can see the blog title &ldquo;You Had Me At Hello World&rdquo; in the Silverlighg navigation window on top.</p>
 <p>The interop is easy and I tried it in IE, Firefox, Chrome, Opera. Define an HTML like this:</p>
@@ -172,12 +176,12 @@ The interop is easy and I tried it in IE, Firefox, Chrome, Opera. Define an HTML
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public static string GetTextFromHtmlPage(this HtmlDocument doc, string elementId, string defaultValue) <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string textFromHtmlPage = doc.GetTextFromHtmlPage(elementId); <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (string.IsNullOrEmpty(textFromHtmlPage)) <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return defaultValue; <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return textFromHtmlPage; <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } <br />&nbsp;&nbsp;&nbsp; }</p>
 <p>}[/code]</p>
 
-   </section>
-   
+      </section>
+      
 
 
-   <div class="mt5"></div>
-   
+      <div class="mt5"></div>
+      
 <div id="graphcomment"></div>
 <script type="text/javascript">
   window.graphcomment_id = 'nokola-blog';
@@ -188,8 +192,8 @@ The interop is easy and I tried it in IE, Firefox, Chrome, Opera. Define an HTML
   })();
 </script>
 
-  </article>
- 
+      </article>
+  </div>
 </div>
 
     </main>

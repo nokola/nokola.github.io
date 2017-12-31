@@ -115,6 +115,9 @@ result.Invalidate(); // render the pixel shader"/>
       a:hover h1, a.linkunder:hover {
         text-decoration: underline;
       }
+      .word-wrap {
+        word-wrap: break-word;
+      }
     </style>
     
 
@@ -157,18 +160,19 @@ result.Invalidate(); // render the pixel shader"/>
     <main class="pb7" role="main">
       
 <div class="flex-l mt2 mw8 center">
- <article class="center cf pt4 pb1  ph3 ph4-ns mw10">
-     <h1 class="f4 mt0 athelas">
-     Calculating Shader Effects in WriteableBitmap (Fast Float Computations And More)
-     </h1>
-     <time class="f6  pb1 dib mid-gray normal" datetime="2010-01-11T09:27:00Z">
-      Jan 11, 2010
-     </time>
+  <div class="mw10 ph3 ph0-ns">
+    <article class="center cf pt4 pb1 mw7 word-wrap">
+        <h1 class="f4 mt0 athelas">
+        Calculating Shader Effects in WriteableBitmap (Fast Float Computations And More)
+        </h1>
+        <time class="f6  pb1 dib mid-gray normal" datetime="2010-01-11T09:27:00Z">
+          Jan 11, 2010
+        </time>
 
-     
-     
-   <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
-     <p>Here's a small code snippet that allows you to calculate any pixel shader and get the output into a WriteableBitmap!</p>
+        
+        
+      <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
+        <p>Here's a small code snippet that allows you to calculate any pixel shader and get the output into a WriteableBitmap!</p>
 <p>[code:c#]</p>
 <p>Stream stream = Application.GetResourceStream(new Uri("SilverlightApplication1;component/Images/test.jpg", UriKind.Relative)).Stream;<br />WriteableBitmap result = new WriteableBitmap(1, 1); // avoid creating intermediate BitmapImage<br />result.SetSource(stream);</p>
 <p>Image image = new Image();<br />image.Effect = new BlurEffect(); // any pixel shader effect<br />image.Source = result; // set the image to the original<br />result.Render(image, null);<br />result.Invalidate(); // render the pixel shader<br />image.Source = null; // release the bitmap reference<br />image.Effect = null;<br />GC.Collect(); // remove all obsolete bitmaps from memory [optional]<br />// result contains the image with shader effect applied! assign it to any Image.Source!<br />myImage.Source = result;<br />[/code]</p>
@@ -180,12 +184,12 @@ result.Invalidate(); // render the pixel shader"/>
 <p>There is also one other reason why is it so good: but I'll mention it in a later post (working on secret project now...) :)</p>
 <p>&nbsp;</p>
 
-   </section>
-   
+      </section>
+      
 
 
-   <div class="mt5"></div>
-   
+      <div class="mt5"></div>
+      
 <div id="graphcomment"></div>
 <script type="text/javascript">
   window.graphcomment_id = 'nokola-blog';
@@ -196,8 +200,8 @@ result.Invalidate(); // render the pixel shader"/>
   })();
 </script>
 
-  </article>
- 
+      </article>
+  </div>
 </div>
 
     </main>

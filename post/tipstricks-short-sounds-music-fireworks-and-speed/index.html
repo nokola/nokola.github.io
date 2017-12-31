@@ -97,6 +97,9 @@ If you happen to play too many sounds/sec, the above workaround can cause your m
       a:hover h1, a.linkunder:hover {
         text-decoration: underline;
       }
+      .word-wrap {
+        word-wrap: break-word;
+      }
     </style>
     
 
@@ -139,18 +142,19 @@ If you happen to play too many sounds/sec, the above workaround can cause your m
     <main class="pb7" role="main">
       
 <div class="flex-l mt2 mw8 center">
- <article class="center cf pt4 pb1  ph3 ph4-ns mw10">
-     <h1 class="f4 mt0 athelas">
-     Tips/Tricks: Short Sounds, Fireworks and BitmapCache Speed
-     </h1>
-     <time class="f6  pb1 dib mid-gray normal" datetime="2010-01-04T10:17:00Z">
-      Jan 4, 2010
-     </time>
+  <div class="mw10 ph3 ph0-ns">
+    <article class="center cf pt4 pb1 mw7 word-wrap">
+        <h1 class="f4 mt0 athelas">
+        Tips/Tricks: Short Sounds, Fireworks and BitmapCache Speed
+        </h1>
+        <time class="f6  pb1 dib mid-gray normal" datetime="2010-01-04T10:17:00Z">
+          Jan 4, 2010
+        </time>
 
-     
-     
-   <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
-     <p>This blog post is a follow-up of the <a href="http://nokola.com/blog/post/2009/12/25/Shock-Game-got-new-character-Old-Man-(the-one-with-the-raindeer).aspx">previous one</a> dedicated to the <a href="http://nokola.com/shock">Shock</a> improvements.</p>
+        
+        
+      <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
+        <p>This blog post is a follow-up of the <a href="http://nokola.com/blog/post/2009/12/25/Shock-Game-got-new-character-Old-Man-(the-one-with-the-raindeer).aspx">previous one</a> dedicated to the <a href="http://nokola.com/shock">Shock</a> improvements.</p>
 <p>I'll just list all tips or other interesting findings/updates in no particular order:</p>
 <h2>Playing Short Sounds in Silverlight (Improved)</h2>
 <p>You probably know by now that Silverlight (2,3) has an annoying issue with short sounds - sometimes the sound is not played correctly. The simple <a href="http://kindohm.com/archive/2009/01/21/workaround-for-quotshort-soundquot-silverlight-bug.aspx">workaround is here</a>.&nbsp;</p>
@@ -179,12 +183,12 @@ If you happen to play too many sounds/sec, the above workaround can cause your m
 <p>I observed no noticeable speed change when a UserControl (the highscore) had Opacity=0 vs Visibility=Invisible. Note, however that Opacity=0 means you get hit testing, so there is some speed difference - don't just blindly overuse Opacity=0 instead of Visibility=Invisible.</p>
 <p>&nbsp;</p>
 
-   </section>
-   
+      </section>
+      
 
 
-   <div class="mt5"></div>
-   
+      <div class="mt5"></div>
+      
 <div id="graphcomment"></div>
 <script type="text/javascript">
   window.graphcomment_id = 'nokola-blog';
@@ -195,8 +199,8 @@ If you happen to play too many sounds/sec, the above workaround can cause your m
   })();
 </script>
 
-  </article>
- 
+      </article>
+  </div>
 </div>
 
     </main>

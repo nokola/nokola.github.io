@@ -97,6 +97,9 @@ Download source code
       a:hover h1, a.linkunder:hover {
         text-decoration: underline;
       }
+      .word-wrap {
+        word-wrap: break-word;
+      }
     </style>
     
 
@@ -139,18 +142,19 @@ Download source code
     <main class="pb7" role="main">
       
 <div class="flex-l mt2 mw8 center">
- <article class="center cf pt4 pb1  ph3 ph4-ns mw10">
-     <h1 class="f4 mt0 athelas">
-     Someone Said it Was Impossible: Hue Shift in Pixel Shader 2.0 (EasyPainter, Silverlight)
-     </h1>
-     <time class="f6  pb1 dib mid-gray normal" datetime="2010-02-09T20:30:00Z">
-      Feb 9, 2010
-     </time>
+  <div class="mw10 ph3 ph0-ns">
+    <article class="center cf pt4 pb1 mw7 word-wrap">
+        <h1 class="f4 mt0 athelas">
+        Someone Said it Was Impossible: Hue Shift in Pixel Shader 2.0 (EasyPainter, Silverlight)
+        </h1>
+        <time class="f6  pb1 dib mid-gray normal" datetime="2010-02-09T20:30:00Z">
+          Feb 9, 2010
+        </time>
 
-     
-     
-   <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
-     <p>I read somewhere online that Hue changes can't be done in pixel shader 2.0, due to limitation of 64 instructions per slot.</p>
+        
+        
+      <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
+        <p>I read somewhere online that Hue changes can't be done in pixel shader 2.0, due to limitation of 64 instructions per slot.</p>
 <p>Here's the sample that proves otherwise:</p>
 <p><a href="http://nokola.com/sources/HueShift.zip">Download source code</a></p>
 <iframe src="/sample.aspx?xap=HueShift" width="640px" height="400px" style="border: 0px solid" frameborder="0"></iframe>
@@ -175,12 +179,12 @@ Download source code
 <pre>btw, <a href="http://weblogs.asp.net/scottgu/archive/2010/02/08/vs-2010-net-4-release-candidate.aspx">Visual Studio 2010 RC</a> is out for MSDN subsribers (public tomorrow) and I'm going to publish all samples in VS 2010 from now on :)</pre>
 <p>Hope you like it!</p>
 
-   </section>
-   
+      </section>
+      
 
 
-   <div class="mt5"></div>
-   
+      <div class="mt5"></div>
+      
 <div id="graphcomment"></div>
 <script type="text/javascript">
   window.graphcomment_id = 'nokola-blog';
@@ -191,8 +195,8 @@ Download source code
   })();
 </script>
 
-  </article>
- 
+      </article>
+  </div>
 </div>
 
     </main>

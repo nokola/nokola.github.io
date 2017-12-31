@@ -94,6 +94,9 @@ I tried to make a “clean” source code (read: slow, not optimized at all) for
       a:hover h1, a.linkunder:hover {
         text-decoration: underline;
       }
+      .word-wrap {
+        word-wrap: break-word;
+      }
     </style>
     
 
@@ -136,25 +139,26 @@ I tried to make a “clean” source code (read: slow, not optimized at all) for
     <main class="pb7" role="main">
       
 <div class="flex-l mt2 mw8 center">
- <article class="center cf pt4 pb1  ph3 ph4-ns mw10">
-     <h1 class="f4 mt0 athelas">
-     Worm Hole and White Hole Space Effects in Silverlight
-     </h1>
-     <time class="f6  pb1 dib mid-gray normal" datetime="2010-11-07T09:07:42Z">
-      Nov 7, 2010
-     </time>
+  <div class="mw10 ph3 ph0-ns">
+    <article class="center cf pt4 pb1 mw7 word-wrap">
+        <h1 class="f4 mt0 athelas">
+        Worm Hole and White Hole Space Effects in Silverlight
+        </h1>
+        <time class="f6  pb1 dib mid-gray normal" datetime="2010-11-07T09:07:42Z">
+          Nov 7, 2010
+        </time>
 
-     
-     
-   <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
-     <p>A good starry background is so much better with a nice wormhole in it. Do you agree?:</p> <iframe style="border-bottom: 0px solid; border-left: 0px solid; border-top: 0px solid; border-right: 0px solid" height="480" src="/sample.aspx?xap=WormHole" frameborder="0" width="800"></iframe>  <p><a href="http://nokola.com/sources/wormhole.zip">Download source code</a> (note: I added the free purple “star spiral thingie”.png – see steps 5-6 below - used for the above effect to the source code download)</p>  <p>I tried to make a “clean” source code (read: slow, not optimized at all) for the sake of the tutorial and because I didn’t have time to speed it up yet. The code is very good candidate for pre-computations – once optimized it should run fine without any performance issues, including for multiple objects on Windows Phone 7.</p>  <p>Here is a step-by-step explanation of how I made the wormhole demo:</p>  <p><strong>Preparing the images:</strong></p>  <ol>   <li>Open <a href="http://fantasia.nokola.com">http://fantasia.nokola.com</a>&#160; </li>    <li>Create a nebula background without stars (from Creations). Edit Tint to make it blue-greenish </li>    <li>Add stars (Creations | Stars) </li>    <li>Go to <a title="http://www.spiralgraphics.biz/" href="http://www.spiralgraphics.biz/">http://www.spiralgraphics.biz/</a> and get one of their extremely nice planets. I’m using Arid World, but the rest work amazing too. By the time of this writing, their planets are free for commercial use! (note all license info on site) </li>    <li><strong>Note: </strong>you can skip steps 5-6 and just do the effect on top of plain background, it still looks nice. In Fantasia, paint a greenish 100x100 star-shape thingie (the base image for the wormhole) using the Sketch brush </li>    <li>Apply Drain Flush effect (light) to make the star curved a bit, so it looks more like a spiral </li>    <li>Open the starry spiral in GIMP (<a title="http://www.gimp.org/" href="http://www.gimp.org/">http://www.gimp.org/</a>) and remove the background (Colors | Color to Alpha) </li>    <li>Open Paint.NET (<a title="http://www.getpaint.net/" href="http://www.getpaint.net/">http://www.getpaint.net/</a>) and combine the background with the planet and the spiral thingie to make the final picture! </li> </ol>  <p><strong>Writing the source code:</strong></p>  <p>I spent some time deciding on what I’d like to achieve with the effect. From movies, we all know that galaxies look like spiral and worm holes “suck in” matter from nearby stars.</p>  <p>Thus, I decided that the “drain flush” fantasia effect would look as if matter is “sucked in” to the worm hole. This was my first implementation. Once I saw that I decided to also use the ripple effect, which adds a lot to the “sucking matter in” realism (you can experiment by turning those on or off in the source code. Final wormhole is a combination of ripple + drain flush effects. </p>  <p>The white hole came for free <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/wlEmoticon-smile_2.png" /> After finishing the wormhole, I noticed that doing a reverse ripple (without drain flush), produces nice radiance that seems to shine outwards, which looks like a white hole (supposedly..if you see one in real life let me know!)</p>  <p>Ok, I did one fundamental performance optimization – since the wormhole is 100x100 and the background is much bigger, it makes sense to create a smaller Image element and put the 100x100 wormhole there. This way you can have a nice wormhole without redrawing the whole background on every frame (significant speed improvement, especially if hardware acceleration is enabled for the background image).</p>  <ol>   <li>Get the Ripple and Swirl (drain flush) effects from <a title="http://wpffx.codeplex.com/" href="http://wpffx.codeplex.com/">http://wpffx.codeplex.com/</a> </li>    <li>Redo them in C# (SwirlHelper.cs) for 2 reasons:      <ol>       <li>Windows Phone 7 currently does not support custom pixel shaders </li>        <li>I wanted to have few extra parameters (center and radius) and make the effects apply an alpha*2 linear opacity mask so they blend nicely with the background. I chose alpha *= 2 because I wanted a nice visible center and linear mask fadeoff.</li>     </ol>   </li>    <li>Hook up CompositionTarget.Rendering, load the images, cut out the 100x100 wormhole source image </li>    <li>On every frame, Ripple then Swirl (wormhole) or inverse Ripple (white hole) </li> </ol>  <p>Some further ways to improve this, would be to spin the worm hole faster or slower depending on various conditions (e.g. if the wormhole is about to appear, animate the opacity and slowly spin it into existence.)</p>  <p>Hope you like it! Please comment!</p>
+        
+        
+      <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
+        <p>A good starry background is so much better with a nice wormhole in it. Do you agree?:</p> <iframe style="border-bottom: 0px solid; border-left: 0px solid; border-top: 0px solid; border-right: 0px solid" height="480" src="/sample.aspx?xap=WormHole" frameborder="0" width="800"></iframe>  <p><a href="http://nokola.com/sources/wormhole.zip">Download source code</a> (note: I added the free purple “star spiral thingie”.png – see steps 5-6 below - used for the above effect to the source code download)</p>  <p>I tried to make a “clean” source code (read: slow, not optimized at all) for the sake of the tutorial and because I didn’t have time to speed it up yet. The code is very good candidate for pre-computations – once optimized it should run fine without any performance issues, including for multiple objects on Windows Phone 7.</p>  <p>Here is a step-by-step explanation of how I made the wormhole demo:</p>  <p><strong>Preparing the images:</strong></p>  <ol>   <li>Open <a href="http://fantasia.nokola.com">http://fantasia.nokola.com</a>&#160; </li>    <li>Create a nebula background without stars (from Creations). Edit Tint to make it blue-greenish </li>    <li>Add stars (Creations | Stars) </li>    <li>Go to <a title="http://www.spiralgraphics.biz/" href="http://www.spiralgraphics.biz/">http://www.spiralgraphics.biz/</a> and get one of their extremely nice planets. I’m using Arid World, but the rest work amazing too. By the time of this writing, their planets are free for commercial use! (note all license info on site) </li>    <li><strong>Note: </strong>you can skip steps 5-6 and just do the effect on top of plain background, it still looks nice. In Fantasia, paint a greenish 100x100 star-shape thingie (the base image for the wormhole) using the Sketch brush </li>    <li>Apply Drain Flush effect (light) to make the star curved a bit, so it looks more like a spiral </li>    <li>Open the starry spiral in GIMP (<a title="http://www.gimp.org/" href="http://www.gimp.org/">http://www.gimp.org/</a>) and remove the background (Colors | Color to Alpha) </li>    <li>Open Paint.NET (<a title="http://www.getpaint.net/" href="http://www.getpaint.net/">http://www.getpaint.net/</a>) and combine the background with the planet and the spiral thingie to make the final picture! </li> </ol>  <p><strong>Writing the source code:</strong></p>  <p>I spent some time deciding on what I’d like to achieve with the effect. From movies, we all know that galaxies look like spiral and worm holes “suck in” matter from nearby stars.</p>  <p>Thus, I decided that the “drain flush” fantasia effect would look as if matter is “sucked in” to the worm hole. This was my first implementation. Once I saw that I decided to also use the ripple effect, which adds a lot to the “sucking matter in” realism (you can experiment by turning those on or off in the source code. Final wormhole is a combination of ripple + drain flush effects. </p>  <p>The white hole came for free <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/wlEmoticon-smile_2.png" /> After finishing the wormhole, I noticed that doing a reverse ripple (without drain flush), produces nice radiance that seems to shine outwards, which looks like a white hole (supposedly..if you see one in real life let me know!)</p>  <p>Ok, I did one fundamental performance optimization – since the wormhole is 100x100 and the background is much bigger, it makes sense to create a smaller Image element and put the 100x100 wormhole there. This way you can have a nice wormhole without redrawing the whole background on every frame (significant speed improvement, especially if hardware acceleration is enabled for the background image).</p>  <ol>   <li>Get the Ripple and Swirl (drain flush) effects from <a title="http://wpffx.codeplex.com/" href="http://wpffx.codeplex.com/">http://wpffx.codeplex.com/</a> </li>    <li>Redo them in C# (SwirlHelper.cs) for 2 reasons:      <ol>       <li>Windows Phone 7 currently does not support custom pixel shaders </li>        <li>I wanted to have few extra parameters (center and radius) and make the effects apply an alpha*2 linear opacity mask so they blend nicely with the background. I chose alpha *= 2 because I wanted a nice visible center and linear mask fadeoff.</li>     </ol>   </li>    <li>Hook up CompositionTarget.Rendering, load the images, cut out the 100x100 wormhole source image </li>    <li>On every frame, Ripple then Swirl (wormhole) or inverse Ripple (white hole) </li> </ol>  <p>Some further ways to improve this, would be to spin the worm hole faster or slower depending on various conditions (e.g. if the wormhole is about to appear, animate the opacity and slowly spin it into existence.)</p>  <p>Hope you like it! Please comment!</p>
 
-   </section>
-   
+      </section>
+      
 
 
-   <div class="mt5"></div>
-   
+      <div class="mt5"></div>
+      
 <div id="graphcomment"></div>
 <script type="text/javascript">
   window.graphcomment_id = 'nokola-blog';
@@ -165,8 +169,8 @@ I tried to make a “clean” source code (read: slow, not optimized at all) for
   })();
 </script>
 
-  </article>
- 
+      </article>
+  </div>
 </div>
 
     </main>

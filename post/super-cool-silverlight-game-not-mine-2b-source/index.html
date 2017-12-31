@@ -106,6 +106,9 @@ Some notable things (other than the graphics, implementation and overall coolnes
       a:hover h1, a.linkunder:hover {
         text-decoration: underline;
       }
+      .word-wrap {
+        word-wrap: break-word;
+      }
     </style>
     
 
@@ -148,18 +151,19 @@ Some notable things (other than the graphics, implementation and overall coolnes
     <main class="pb7" role="main">
       
 <div class="flex-l mt2 mw8 center">
- <article class="center cf pt4 pb1  ph3 ph4-ns mw10">
-     <h1 class="f4 mt0 athelas">
-     Super Cool Silverlight Game (Not Mine) &#43; Source
-     </h1>
-     <time class="f6  pb1 dib mid-gray normal" datetime="2009-12-10T03:37:00Z">
-      Dec 10, 2009
-     </time>
+  <div class="mw10 ph3 ph0-ns">
+    <article class="center cf pt4 pb1 mw7 word-wrap">
+        <h1 class="f4 mt0 athelas">
+        Super Cool Silverlight Game (Not Mine) &#43; Source
+        </h1>
+        <time class="f6  pb1 dib mid-gray normal" datetime="2009-12-10T03:37:00Z">
+          Dec 10, 2009
+        </time>
 
-     
-     
-   <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
-     <p>This is <strong>mind blowing</strong>!!</p>
+        
+        
+      <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
+        <p>This is <strong>mind blowing</strong>!!</p>
 <p>A desktop-like RPG Chinese game in Silverlight: <a href="http://silverfuture.cn/">http://silverfuture.cn/</a>&nbsp;</p>
 <p>It's 10.7 MB but worth the wait! It's in Chinese.</p>
 <p>I'm sure in future versions it can be much less (e.g. Shock is 17 MB, but 680KB in order to play with the rest being downloaded as you play)</p>
@@ -170,12 +174,12 @@ Some notable things (other than the graphics, implementation and overall coolnes
 <p>Edit: last but not least, this game is moderately light on the CPU. Even better, from the source code it doesn't seem to be using BitmapCache!!! Which is great news - it can probably be even lighter!</p>
 <p>Overall pretty cool!!!</p>
 
-   </section>
-   
+      </section>
+      
 
 
-   <div class="mt5"></div>
-   
+      <div class="mt5"></div>
+      
 <div id="graphcomment"></div>
 <script type="text/javascript">
   window.graphcomment_id = 'nokola-blog';
@@ -186,8 +190,8 @@ Some notable things (other than the graphics, implementation and overall coolnes
   })();
 </script>
 
-  </article>
- 
+      </article>
+  </div>
 </div>
 
     </main>
