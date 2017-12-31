@@ -86,7 +86,7 @@ result.Invalidate(); // render the pixel shader"/>
 
   </head>
 
-  <body class="ma0 baskerville  bg-near-white">
+  <body class="ma0 body-font bg-white">
     <style>
       .shadow-bottom {
         -webkit-box-shadow: 0px 0px 15px 0px rgba(175, 175, 175, 1);
@@ -119,6 +119,15 @@ result.Invalidate(); // render the pixel shader"/>
       }
       .word-wrap {
         word-wrap: break-word;
+      }
+      .lh-copy {
+        line-height: 1.42857143;
+      }
+      .title-font {
+        font-weight: 400;
+      }
+      .body-font {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
     </style>
     
@@ -164,16 +173,16 @@ result.Invalidate(); // render the pixel shader"/>
 <div class="flex-l mt2 mw7 center">
   <div>
     <article class="center cf pt2 pb1 mw7 word-wrap">
-        <h1 class="f4 mt0 athelas">
+        <h1 class="f4 mt0 title-font">
         Calculating Shader Effects in WriteableBitmap (Fast Float Computations And More)
         </h1>
-        <time class="f6  pb1 dib mid-gray normal" datetime="2010-01-11T09:27:00Z">
-          Jan 11, 2010
+        <time class="f7 pb1 dib mid-gray normal" datetime="2010-01-11T09:27:00Z">
+          2010, Jan 11
         </time>
 
         
         
-      <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
+      <section class="nested-copy-line-height lh-copy f6 nested-links nested-img dark-gray">
         <p>Here's a small code snippet that allows you to calculate any pixel shader and get the output into a WriteableBitmap!</p>
 <p>[code:c#]</p>
 <p>Stream stream = Application.GetResourceStream(new Uri("SilverlightApplication1;component/Images/test.jpg", UriKind.Relative)).Stream;<br />WriteableBitmap result = new WriteableBitmap(1, 1); // avoid creating intermediate BitmapImage<br />result.SetSource(stream);</p>

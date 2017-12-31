@@ -83,7 +83,7 @@ Note: in my perf tests I did a single-threaded version, so if you have multiple 
 
   </head>
 
-  <body class="ma0 baskerville  bg-near-white">
+  <body class="ma0 body-font bg-white">
     <style>
       .shadow-bottom {
         -webkit-box-shadow: 0px 0px 15px 0px rgba(175, 175, 175, 1);
@@ -116,6 +116,15 @@ Note: in my perf tests I did a single-threaded version, so if you have multiple 
       }
       .word-wrap {
         word-wrap: break-word;
+      }
+      .lh-copy {
+        line-height: 1.42857143;
+      }
+      .title-font {
+        font-weight: 400;
+      }
+      .body-font {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
     </style>
     
@@ -161,16 +170,16 @@ Note: in my perf tests I did a single-threaded version, so if you have multiple 
 <div class="flex-l mt2 mw7 center">
   <div>
     <article class="center cf pt2 pb1 mw7 word-wrap">
-        <h1 class="f4 mt0 athelas">
+        <h1 class="f4 mt0 title-font">
         Fast DrawLine() in Silverlight
         </h1>
-        <time class="f6  pb1 dib mid-gray normal" datetime="2009-11-06T22:39:00Z">
-          Nov 6, 2009
+        <time class="f7 pb1 dib mid-gray normal" datetime="2009-11-06T22:39:00Z">
+          2009, Nov 6
         </time>
 
         
         
-      <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
+      <section class="nested-copy-line-height lh-copy f6 nested-links nested-img dark-gray">
         <p>How fast can you make it go?</p>
 <p>How about this loop that draws the line:[code:c#]<br />int inc = incy1 * w + incx;<br />for (int i = 0; i &lt; lenY; i++) {<br />&nbsp;&nbsp;&nbsp; pixels[index &gt;&gt; PRECISION_SHIFT] = color;<br />&nbsp;&nbsp;&nbsp;&nbsp;index += inc;<br />}[/code]</p>
 <p>40FPS * 10000 lines = 400,000 lines/sec</p>

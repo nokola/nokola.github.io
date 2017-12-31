@@ -59,7 +59,7 @@
 
   </head>
 
-  <body class="ma0 baskerville  bg-near-white">
+  <body class="ma0 body-font bg-white">
     <style>
       .shadow-bottom {
         -webkit-box-shadow: 0px 0px 15px 0px rgba(175, 175, 175, 1);
@@ -92,6 +92,15 @@
       }
       .word-wrap {
         word-wrap: break-word;
+      }
+      .lh-copy {
+        line-height: 1.42857143;
+      }
+      .title-font {
+        font-weight: 400;
+      }
+      .body-font {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
     </style>
     
@@ -137,16 +146,16 @@
 <div class="flex-l mt2 mw7 center">
   <div>
     <article class="center cf pt2 pb1 mw7 word-wrap">
-        <h1 class="f4 mt0 athelas">
+        <h1 class="f4 mt0 title-font">
         The Fastest Way to Switch Free/Paid and NoDo/Mango App Build in Visual Studio
         </h1>
-        <time class="f6  pb1 dib mid-gray normal" datetime="2011-10-01T19:31:43Z">
-          Oct 1, 2011
+        <time class="f7 pb1 dib mid-gray normal" datetime="2011-10-01T19:31:43Z">
+          2011, Oct 1
         </time>
 
         
         
-      <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
+      <section class="nested-copy-line-height lh-copy f6 nested-links nested-img dark-gray">
         <p><strong>Edit: </strong>Added NoDo/Mango switching as well. Simplified changes to .csproj files</p>  <p>How would you like to be able to switch from Free/Paid and NoDo/Mango&#160; for your Windows Phone 7 projects in VS?</p>  <p><a href="/image_37.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/image_thumb_36.png" width="244" height="150" /></a>&#160;&#160; <a href="/image_40.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/image_thumb_39.png" width="244" height="194" /></a></p>  <p>Yes! This will switch my Fantasia Painter app from Paid to Free, and it’s just a build configuration change.</p>  <p>I’ve been using it for the past 6 months or so. Here’s how to do it:</p>  <ol>   <li>Open Configuration Manager and add a “Free – Release” and “Free – Debug”. Add the Mango configurations above if needed.</li>    <li>Create a Manifest/Free and Manifest/Paid folders in your project. If needed, duplicate these for Mango/NoDo to get 4 total!</li>    <li>Copy the WMAppManifest.xml from Properties to the two folders you just created. The build action for the new files is None and Copy is Don’t Copy (from the item properties window) </li> </ol>  <p><a href="/image_41.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/image_thumb_40.png" width="310" height="408" /></a></p>  <p>4. Edit the free WMAppManifest to contain the GUID (Product ID) of your free version. Also change the Title and other fields in the XML as needed</p>  <p>5. Create a Pre-build event command line (from project properties) to copy the manifests based on the build configuration name:</p>  <p><font face="Courier New">if &quot;$(ConfigurationName)&quot; == &quot;Free - Release&quot; copy &quot;$(ProjectDir)\Manifest\NoDo\Free\WMAppManifest.xml&quot; &quot;$(ProjectDir)\Properties\WMAppManifest.xml&quot;     <br />if &quot;$(ConfigurationName)&quot; == &quot;Free - Debug&quot; copy &quot;$(ProjectDir)\Manifest\NoDo\Free\WMAppManifest.xml&quot; &quot;$(ProjectDir)\Properties\WMAppManifest.xml&quot;      <br />if &quot;$(ConfigurationName)&quot; == &quot;Release&quot; copy &quot;$(ProjectDir)\Manifest\NoDo\Paid\WMAppManifest.xml&quot; &quot;$(ProjectDir)\Properties\WMAppManifest.xml&quot;      <br />if &quot;$(ConfigurationName)&quot; == &quot;Debug&quot; copy &quot;$(ProjectDir)\Manifest\NoDo\Paid\WMAppManifest.xml&quot; &quot;$(ProjectDir)\Properties\WMAppManifest.xml&quot;      <br />if &quot;$(ConfigurationName)&quot; == &quot;Mango Free - Release&quot; copy &quot;$(ProjectDir)\Manifest\Free\WMAppManifest.xml&quot; &quot;$(ProjectDir)\Properties\WMAppManifest.xml&quot;      <br />if &quot;$(ConfigurationName)&quot; == &quot;Mango Free - Debug&quot; copy &quot;$(ProjectDir)\Manifest\Free\WMAppManifest.xml&quot; &quot;$(ProjectDir)\Properties\WMAppManifest.xml&quot;      <br />if &quot;$(ConfigurationName)&quot; == &quot;Mango Release&quot; copy &quot;$(ProjectDir)\Manifest\Paid\WMAppManifest.xml&quot; &quot;$(ProjectDir)\Properties\WMAppManifest.xml&quot;      <br />if &quot;$(ConfigurationName)&quot; == &quot;Mango Debug&quot; copy &quot;$(ProjectDir)\Manifest\Paid\WMAppManifest.xml&quot; &quot;$(ProjectDir)\Properties\WMAppManifest.xml&quot;</font></p>  <p><a href="/image_39.png"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/image_thumb_38.png" width="652" height="460" /></a></p>  <p>6. If you’re using the AdControl or other DLLs that are different between Free and Paid, edit the .csproj file to conditionally include them like so:</p>  <p>&lt;ItemGroup Condition=&quot; $(Configuration.Contains('Free'))&quot;&gt;   <br />&#160; &lt;Reference Include=&quot;Microsoft.Advertising.Mobile.UI&quot;&gt;    <br />&#160;&#160;&#160; &lt;HintPath&gt;C:\Program Files\Microsoft SDKs\Advertising for Phone\Microsoft.Advertising.Mobile.UI.dll&lt;/HintPath&gt;    <br />&#160; &lt;/Reference&gt;    <br />&lt;/ItemGroup&gt;</p>  <p>7. You can also define a conditional variable in project properties FREE_WITH_ADS and then use it from the source file using #if FREE_WITH_ADS. Similarly, define a MANGO variable for Mango so you can do #if MANGO <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/wlEmoticon-smile_9.png" /></p>  <p>&#160;</p>  <p>This concept naturally extends to NoDo/Mango switching. Just make sure to have 4 manifest files and have the word “Mango” in each of the solution/project configurations. Then change the .csproj like so:</p>  <p>&lt;TargetFrameworkProfile Condition=&quot; $(Configuration.Contains('Mango')) &quot;&gt;WindowsPhone71&lt;/TargetFrameworkProfile&gt;   <br />&lt;TargetFrameworkProfile Condition=&quot; !$(Configuration.Contains('Mango')) &quot;&gt;WindowsPhone&lt;/TargetFrameworkProfile&gt;</p>  <p>Make sure to keep NoDo users happy by providing them with NoDo updates! A lot of people rarely update their phone (just search about the % of iPhone users that updated to the latest version online.) It’s very important to keep your app NoDo-ish <strong>and</strong> Mango-ish in my opinion.</p>  <p>Hope that helps! Please comment!</p>
       </section>
       

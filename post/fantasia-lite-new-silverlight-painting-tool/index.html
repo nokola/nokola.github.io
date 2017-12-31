@@ -74,7 +74,7 @@ Note that it took me about 2 minutes to “build the rabbit”. I’m sure someo
 
   </head>
 
-  <body class="ma0 baskerville  bg-near-white">
+  <body class="ma0 body-font bg-white">
     <style>
       .shadow-bottom {
         -webkit-box-shadow: 0px 0px 15px 0px rgba(175, 175, 175, 1);
@@ -107,6 +107,15 @@ Note that it took me about 2 minutes to “build the rabbit”. I’m sure someo
       }
       .word-wrap {
         word-wrap: break-word;
+      }
+      .lh-copy {
+        line-height: 1.42857143;
+      }
+      .title-font {
+        font-weight: 400;
+      }
+      .body-font {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
     </style>
     
@@ -152,16 +161,16 @@ Note that it took me about 2 minutes to “build the rabbit”. I’m sure someo
 <div class="flex-l mt2 mw7 center">
   <div>
     <article class="center cf pt2 pb1 mw7 word-wrap">
-        <h1 class="f4 mt0 athelas">
+        <h1 class="f4 mt0 title-font">
         Fantasia Lite: New Silverlight Painting Tool
         </h1>
-        <time class="f6  pb1 dib mid-gray normal" datetime="2010-07-22T13:41:06Z">
-          Jul 22, 2010
+        <time class="f7 pb1 dib mid-gray normal" datetime="2010-07-22T13:41:06Z">
+          2010, Jul 22
         </time>
 
         
         
-      <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
+      <section class="nested-copy-line-height lh-copy f6 nested-links nested-img dark-gray">
         <p><strong>Edit</strong>: Fantasia Painter (full version), is now available here: <a href="http://fantasia.nokola.com">http://fantasia.nokola.com</a></p>  <p><strong>Edit 2</strong>: The Fantasia Lite version below, has been updated to include the new Rainbow brush (source code included too).</p>  <p>Here’s what I built tonight – a drawing tool that utilizes procedural brushes to enable almost everyone to create fluffy rabbits like this:</p>  <p><a href="/rabbit.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="rabbit" border="0" alt="rabbit" src="/rabbit_thumb.png" width="540" height="253" /></a> </p>  <p></p>  <p></p>  <p>Note that it took me about 2 minutes to “build the rabbit”. I’m sure someone else can do better. Supposedly, it lives in the hole on the right.</p>  <p>Here’s the live app:</p> <iframe style="border-bottom: 0px solid; border-left: 0px solid; border-top: 0px solid; border-right: 0px solid" height="640" src="/sample.aspx?xap=ProceduralBrush" frameborder="0" width="900"></iframe>  <p>As usual: <a href="http://nokola.com/sources/ProceduralBrush.zip">Download source code</a></p>  <p>Note that this whole thing is inspired by <a title="http://mrdoob.com/120/Harmony" href="http://mrdoob.com/120/Harmony">http://mrdoob.com/120/Harmony</a> (HTML5 – doesn’t work in IE8 as I write this) which was originally inspired by <a title="http://www.zefrank.com/scribbler/gallery/index_ran.html" href="http://www.zefrank.com/scribbler/gallery/index_ran.html">http://www.zefrank.com/scribbler/gallery/index_ran.html</a>. By the way, make sure to check the funny videos “How To Dance Properly” on Ze’s page: <a title="http://www.zefrank.com/invite/swfs/index2.html" href="http://www.zefrank.com/invite/swfs/index2.html">http://www.zefrank.com/invite/swfs/index2.html</a></p>  <p>I talked way back (March or something) with Mr. Doob and he released his Harmony code under the MIT license. His latest source code is now released under GPL though. I didn’t look at it since I wanted my sources to be MS-PL license-able.</p>  <h2>What Is A Procedural Brush?</h2>  <p>A typical “brush” will just draw whatever it is supposed to draw (e.g. connect dots with lines). It just needs the current and previous mouse position.</p>  <p>A procedural brush is “smarter”, since it takes more variables into account. </p>  <p>Fantasia’s brushes make use of the following data to modify the drawing output:</p>  <ul>   <li>mouse position </li>    <li>velocity (how fast the mouse moved) </li>    <li>time between 2 consecutive dots </li>    <li>distance between dots </li>    <li>slope (angle) of the line between the last and current dot </li>    <li>the last N previous dots (N varies between 2 and 100000) </li> </ul>  <p>The Fantasia brushes modify these outputs:</p>  <ul>   <li>Color (e.g. color can be changed based on angle which can produce cool output – I haven’t published this brush yet) </li>    <li>Opacity (the faster you move, the less visible the trace is, such as in the OldPen sample </li>    <li>Stroke width (again can be controlled by speed, or maybe by slope (angle), which produces a nice caligraphy effect) </li>    <li>Drawing other random lines </li> </ul>  <p>Here is the source code of few of the brushes:</p>  <p>The Line Brush – same as a “regular” brush, just connects dots with straight lines:</p>  <p>public override void Stroke(double x, double y, double dx, double dy, double timeMsec, double distance)    <br />{     <br />&#160;&#160;&#160; _surface.Render(new Line() { X1 = _prevX, Y1 = _prevY, X2 = x, Y2 = y, Stroke = _brush }, null);     <br />} </p>  <p>The Old Pen brush, uses velocity = distance / time, to modify the color intensity:</p>  <p>public override void Stroke(double x, double y, double dx, double dy, double timeMsec, double distance)    <br />{     <br />&#160;&#160;&#160; _surface.Render(new Line()     <br />&#160;&#160;&#160; {     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; X1 = _prevX,     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; Y1 = _prevY,     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; X2 = x,     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; Y2 = y,     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; Stroke = new SolidColorBrush(     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; new Color()     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; A = (byte)(255 - distance / timeMsec * 100),     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; R = (byte) (_color.R * (distance / timeMsec * 100)),     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; G = (byte) (_color.G * (distance / timeMsec * 100)),     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; B = (byte) (_color.B * (distance / timeMsec * 100)),     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; })     <br />&#160;&#160;&#160; }, null);     <br />} </p>  <p>The History brush, most complex so far and used for the sketch and Furs:</p>  <p>public override void Stroke(double x, double y, double dx, double dy, double timeMsec, double distance)    <br />{     <br />&#160;&#160;&#160; _points.Add(new Point(x, y));     <br />&#160;&#160;&#160; if ((Memory &gt; 0) &amp;&amp; (_points.Count &gt; Memory)) _points.RemoveAt(0); </p>  <p>&#160;&#160;&#160; _surface.Render(new Line() { X1 = _prevX, Y1 = _prevY, X2 = x, Y2 = y, Stroke = _solidBrush }, null); </p>  <p>&#160;&#160;&#160; foreach (Point p in _points)    <br />&#160;&#160;&#160; {     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; double cdx = p.X - x;     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; double cdy = p.Y - y; </p>  <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160; double dist2 = cdx * cdx + cdy * cdy; </p>  <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160; if ((dist2 &lt; _activationDistance2) &amp;&amp; (_random.NextDouble() &gt; (dist2 / (_activationDistance2 * ActivationChance))))    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; _surface.Render(new Line() { X1 = x + cdx * ReachSource, Y1 = y + cdy * ReachSource, X2 = p.X - cdx * ReachDest, Y2 = p.Y - cdy * ReachDest, Stroke = _stroke }, null);     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; }     <br />&#160;&#160;&#160; }     <br />} </p>  <p>The history brush can also do internal highlights if the _stroke is set to a LinearGradientBrush.</p>  <p>There is also a prototyping Test brush: I’m trying to “smoothen” the line as it is getting drawn. It’s using binaries by Charlez Petzold: <a title="http://www.charlespetzold.com/blog/2009/01/Canonical-Splines-in-WPF-and-Silverlight.html" href="http://www.charlespetzold.com/blog/2009/01/Canonical-Splines-in-WPF-and-Silverlight.html">http://www.charlespetzold.com/blog/2009/01/Canonical-Splines-in-WPF-and-Silverlight.html</a></p>  <p>Hope you like it! Please comment!</p>
 
       </section>

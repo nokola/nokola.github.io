@@ -71,7 +71,7 @@ Here is a short comparison of&nbsp;few methods to clear a 512x512 bitmap:
 
   </head>
 
-  <body class="ma0 baskerville  bg-near-white">
+  <body class="ma0 body-font bg-white">
     <style>
       .shadow-bottom {
         -webkit-box-shadow: 0px 0px 15px 0px rgba(175, 175, 175, 1);
@@ -104,6 +104,15 @@ Here is a short comparison of&nbsp;few methods to clear a 512x512 bitmap:
       }
       .word-wrap {
         word-wrap: break-word;
+      }
+      .lh-copy {
+        line-height: 1.42857143;
+      }
+      .title-font {
+        font-weight: 400;
+      }
+      .body-font {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
     </style>
     
@@ -149,16 +158,16 @@ Here is a short comparison of&nbsp;few methods to clear a 512x512 bitmap:
 <div class="flex-l mt2 mw7 center">
   <div>
     <article class="center cf pt2 pb1 mw7 word-wrap">
-        <h1 class="f4 mt0 athelas">
+        <h1 class="f4 mt0 title-font">
         Best Way To Clear WriteableBitmap?
         </h1>
-        <time class="f6  pb1 dib mid-gray normal" datetime="2009-11-11T02:28:00Z">
-          Nov 11, 2009
+        <time class="f7 pb1 dib mid-gray normal" datetime="2009-11-11T02:28:00Z">
+          2009, Nov 11
         </time>
 
         
         
-      <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
+      <section class="nested-copy-line-height lh-copy f6 nested-links nested-img dark-gray">
         <p>If you're doing a lot of custom drawing using WriteableBitmap (e.g. full screen game), it will be extremely important to be able to clear the WriteableBitmap or "screen" quickly.</p>
 <p>Lets assume you want to clear the screen to specific color.</p>
 <p>What is the best way to do it?</p>

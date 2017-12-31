@@ -71,7 +71,7 @@ I&#39;m not 100% sure if this is the fastest way, but it&#39;s definitely worth 
 
   </head>
 
-  <body class="ma0 baskerville  bg-near-white">
+  <body class="ma0 body-font bg-white">
     <style>
       .shadow-bottom {
         -webkit-box-shadow: 0px 0px 15px 0px rgba(175, 175, 175, 1);
@@ -104,6 +104,15 @@ I&#39;m not 100% sure if this is the fastest way, but it&#39;s definitely worth 
       }
       .word-wrap {
         word-wrap: break-word;
+      }
+      .lh-copy {
+        line-height: 1.42857143;
+      }
+      .title-font {
+        font-weight: 400;
+      }
+      .body-font {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
     </style>
     
@@ -149,16 +158,16 @@ I&#39;m not 100% sure if this is the fastest way, but it&#39;s definitely worth 
 <div class="flex-l mt2 mw7 center">
   <div>
     <article class="center cf pt2 pb1 mw7 word-wrap">
-        <h1 class="f4 mt0 athelas">
+        <h1 class="f4 mt0 title-font">
         Fast Tile Brush in Silverlight, And Easiest Way to Shader Effects
         </h1>
-        <time class="f6  pb1 dib mid-gray normal" datetime="2009-12-22T00:36:00Z">
-          Dec 22, 2009
+        <time class="f7 pb1 dib mid-gray normal" datetime="2009-12-22T00:36:00Z">
+          2009, Dec 22
         </time>
 
         
         
-      <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
+      <section class="nested-copy-line-height lh-copy f6 nested-links nested-img dark-gray">
         <p>Here is one monster, tiled as 6&nbsp;monsters down here:</p>
 <iframe src="/sample.aspx?xap=TileShaderEffect" width="400px" height="300px"></iframe>
 <p>This is actually 1 monster, tiled twice horizontally and 3 times vertically using a Silverlght Tile brush shader effect.</p>
