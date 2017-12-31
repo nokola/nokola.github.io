@@ -85,6 +85,12 @@ I moved to the new version 2.0 of http://dotnetblogengine.net last night, and it
         overflow: auto;
         background-color: #e1e1e1;
       }
+      a.linkunder {
+        text-decoration: none;
+      }
+      a:hover h1, a.linkunder:hover {
+        text-decoration: underline;
+      }
     </style>
     
 
@@ -97,14 +103,15 @@ I moved to the new version 2.0 of http://dotnetblogengine.net last night, and it
     <div>
       
       <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l justify-between items-center center">
-    <a href="https://nokola.github.io/" class="f5 fw2 hover-white no-underline white-90 dib">
-      You Had Me At &#39;Hello World&#39;
-      <div class="f7 white-70 pad-2 sub-space">Design, Coding, and Special Effects</div>
-    </a>
-    <div class="flex-l items-center">
-      
-      
+  <div class="flex-l justify-center items-center center">
+    <section class="w-100 mw8">
+      <a href="https://nokola.github.io/" class="f5 fw2 hover-white no-underline white-90 dib">
+        You Had Me At &#39;Hello World&#39;
+        <div class="f7 white-70 pad-2 sub-space">Design, Coding, and Special Effects</div>
+      </a>
+      <div class="flex-l items-center">
+        
+        
 
 
 
@@ -113,7 +120,8 @@ I moved to the new version 2.0 of http://dotnetblogengine.net last night, and it
 
 
 
-    </div>
+      </div>
+    </section>
   </div>
 </nav>
 
@@ -126,7 +134,7 @@ I moved to the new version 2.0 of http://dotnetblogengine.net last night, and it
       
 <div class="flex-l mt2 mw8 center">
  <article class="center cf pt4 pb1  ph3 ph4-ns mw10">
-     <h1 class="f2 mt0 athelas">
+     <h1 class="f4 mt0 athelas">
      How I Deleted 100000 Comments!
      </h1>
      <time class="f6  pb1 dib mid-gray normal" datetime="2011-05-23T17:44:00Z">
@@ -135,7 +143,7 @@ I moved to the new version 2.0 of http://dotnetblogengine.net last night, and it
 
      
      
-   <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray">
+   <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
      <p>Finally, no spam! My blog was slowly becoming dysfunctional, after getting more than 2000 spam comments per day!</p>  <p>I moved to the new version 2.0 of <a href="http://dotnetblogengine.net">http://dotnetblogengine.net</a> last night, and it has super easy built in <a href="http://recaptcha.org">reCAPTCHA</a> which stops spam and helps read books. Pretty cool! The reCAPTCHA settings are accessed by hovering over Tools and selecting Edit in .NET Blog Engine 2.0 – it was very hard and non-intuitive to find the setting, but once I did it worked like a charm!</p>  <p>There was one &quot;small glitch&quot; though – about a hundred thousand spam comments left to &quot;moderate&quot;, which I did.</p>  <p>&#160;</p>  <p>   <table border="0" cellspacing="0" cellpadding="2" width="796"><tbody>       <tr>         <td valign="top" width="406"><a href="/peace.jpg"><img style="background-image: none; border-right-width: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px; padding-top: 0px" title="peace" border="0" alt="peace" src="/peace_thumb.jpg" width="400" height="400" /></a></td>          <td valign="top" width="388">Now I feel at peace like the picture on the left</td>       </tr>     </tbody></table> </p>  <p>I made a small program, which anyone can use to mass-delete blog engine’s comments after specific date. Hopefully this will help anyone unspam themselves.</p>  <p>[code:c#]</p>  <p>private void button1_Click(object sender, RoutedEventArgs e)    <br />{     <br />&#160;&#160;&#160; string[] files = Directory.GetFiles(@&quot;D:\TEMP\blog\App_Data\posts&quot;, &quot;*.xml&quot;);     <br />&#160;&#160;&#160; foreach (string file in files)     <br />&#160;&#160;&#160; {     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; FixPost(file);     <br />&#160;&#160;&#160; }     <br />}</p>  <p>private void FixPost(string fileName)    <br />{     <br />&#160;&#160;&#160; XDocument doc;     <br />&#160;&#160;&#160; using (FileStream stream = File.OpenRead(fileName))     <br />&#160;&#160;&#160; {     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; doc = XDocument.Load(stream);     <br />&#160;&#160;&#160; }</p>  <p>&#160;&#160;&#160; var list = from XElement el in doc.Descendants(XName.Get(&quot;comment&quot;, String.Empty))&#160; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; select el;     <br /></p>  <p>&#160;&#160;&#160; // convert the list to an array so that we're not modifying the collection that we're iterating over&#160;&#160;&#160;&#160; <br />&#160;&#160;&#160; XName date = XName.Get(&quot;date&quot;);     <br />&#160;&#160;&#160; foreach (XElement el in list.ToArray())     <br />&#160;&#160;&#160; {     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; string data = ((XElement)el.FirstNode).Value;</p>  <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160; if (data.StartsWith(&quot;2011&quot;) || data.StartsWith(&quot;2010-12&quot;) || data.StartsWith(&quot;2010-11&quot;) || data.StartsWith(&quot;2010-10&quot;))    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; el.Remove();     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; }     <br />&#160;&#160;&#160; }</p>  <p>&#160;&#160;&#160; using (XmlWriter writer = XmlWriter.Create(fileName))    <br />&#160;&#160;&#160; {     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; doc.WriteTo(writer);     <br />&#160;&#160;&#160; }     <br />}</p>  <p>[/code]</p>  <p>That code deleted all comments from Oct 2010 onward (sorry, I had to do it), but yay! No spam! I can finally blog normally. <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/wlEmoticon-smile_7.png" /></p>  <p>Hope you like it! Please comment in a nice and clean environment! <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/wlEmoticon-smile_7.png" /></p>
 
    </section>

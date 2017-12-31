@@ -85,6 +85,12 @@ Since you are full screen, it is a good idea to detect the resolution (that woul
         overflow: auto;
         background-color: #e1e1e1;
       }
+      a.linkunder {
+        text-decoration: none;
+      }
+      a:hover h1, a.linkunder:hover {
+        text-decoration: underline;
+      }
     </style>
     
 
@@ -97,14 +103,15 @@ Since you are full screen, it is a good idea to detect the resolution (that woul
     <div>
       
       <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l justify-between items-center center">
-    <a href="https://nokola.github.io/" class="f5 fw2 hover-white no-underline white-90 dib">
-      You Had Me At &#39;Hello World&#39;
-      <div class="f7 white-70 pad-2 sub-space">Design, Coding, and Special Effects</div>
-    </a>
-    <div class="flex-l items-center">
-      
-      
+  <div class="flex-l justify-center items-center center">
+    <section class="w-100 mw8">
+      <a href="https://nokola.github.io/" class="f5 fw2 hover-white no-underline white-90 dib">
+        You Had Me At &#39;Hello World&#39;
+        <div class="f7 white-70 pad-2 sub-space">Design, Coding, and Special Effects</div>
+      </a>
+      <div class="flex-l items-center">
+        
+        
 
 
 
@@ -113,7 +120,8 @@ Since you are full screen, it is a good idea to detect the resolution (that woul
 
 
 
-    </div>
+      </div>
+    </section>
   </div>
 </nav>
 
@@ -126,7 +134,7 @@ Since you are full screen, it is a good idea to detect the resolution (that woul
       
 <div class="flex-l mt2 mw8 center">
  <article class="center cf pt4 pb1  ph3 ph4-ns mw10">
-     <h1 class="f2 mt0 athelas">
+     <h1 class="f4 mt0 athelas">
      Improving Download Time (2-3x) for Full Screen Background Images
      </h1>
      <time class="f6  pb1 dib mid-gray normal" datetime="2010-01-04T10:57:00Z">
@@ -135,7 +143,7 @@ Since you are full screen, it is a good idea to detect the resolution (that woul
 
      
      
-   <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray">
+   <section class="nested-copy-line-height lh-copy serif f6 nested-links nested-img mid-gray">
      <p>Getting your backgrounds quickly is very important for games, especially at startup time when you're downloading a lot of stuff anyway (like menu buttons, simple effects, such as explosions and other things that didn't make it into the "core" xap to reduce initial load time).</p>
 <p>Since you are full screen, it is a good idea to detect the resolution (that would be the ActualWidth and ActualHeight properties of your root control) and programatically return a suitable sized background.</p>
 <p>For example, a 1920x1080 JPG image is about 200K while the same image 800x600 is about 50K.</p>
