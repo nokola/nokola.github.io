@@ -158,22 +158,22 @@ showRating: function (container, id, raters, rating) { &#160;&#160;&#160; var di
 <div class="flex-l mt2 mw7 center">
   <div>
     <article class="center cf pt2 pb1 mw7 word-wrap">
-        <h1 class="f4 mt0 title-font">
+        <h1 class="f2 mt0 title-font">
         Moving to BlogEngine.Net 2.5&#43;Disqus to Stop Spam
         </h1>
-        <time class="f7 pb1 dib mid-gray normal" datetime="2011-10-01T09:45:25Z">
-          2011, Oct 1
-        </time>
 
         
         
-      <section class="nested-copy-line-height lh-copy f6 nested-links nested-img dark-gray">
+      <section class="nested-copy-line-height lh-copy f5 nested-links nested-img dark-gray">
         <p>Deleted 100K+ comments (again!)</p>  <p>Noticed that BlogEngine.NET 2.5 supports Disqus. </p>  <p>After upgrading I used this tool (<a title="http://ithoughthecamewithyou.com/post/Convert-BlogML-comments-to-XWR-for-Disqus.aspx" href="http://ithoughthecamewithyou.com/post/Convert-BlogML-comments-to-XWR-for-Disqus.aspx">http://ithoughthecamewithyou.com/post/Convert-BlogML-comments-to-XWR-for-Disqus.aspx</a>) to move my comments over!</p>  <p>And also had to apply this <a href="http://surinder.computing-studio.com/post/2011/07/27/BlogEngine-Disqus-Comment-Count-Fix.aspx">BlogEngine Disqus Comment Count Fix</a></p>  <p>The last part I had to do was update scripts/blog.js to put the div.appendChild(p) below the (ul) in order for the rating text to appear as expected</p>  <p>showRating: function (container, id, raters, rating) {   <br />&#160;&#160;&#160; var div = document.createElement('div');    <br />&#160;&#160;&#160; div.className = 'rating';</p>  <p>&#160;&#160;&#160; var p = document.createElement('p');   <br />&#160;&#160;&#160; if (raters == 0) {    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; p.innerHTML = BlogEngine.i18n.beTheFirstToRate;    <br />&#160;&#160;&#160; }    <br />&#160;&#160;&#160; else {    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; p.innerHTML = BlogEngine.i18n.currentlyRated.replace('{0}', new Number(rating).toFixed(1)).replace('{1}', raters);    <br />&#160;&#160;&#160; }</p>  <p>&#160;&#160;&#160; var ul = document.createElement('ul');   <br />&#160;&#160;&#160; ul.className = 'star-rating small-star';    <br />&#160;&#160;&#160; div.appendChild(ul);    <br />&#160;&#160;&#160; div.appendChild(p);    <br /></p>  <p>Let’s see how spam will (hopefully) not be present anymore!</p>  <p>Please comment! (to double check that the system works)</p>  <p>I’ll be able to blog nicely and regularly again! Yay! <img style="border-bottom-style: none; border-left-style: none; border-top-style: none; border-right-style: none" class="wlEmoticon wlEmoticon-smile" alt="Smile" src="/wlEmoticon-smile_8.png" /></p>
 
       </section>
       
 
 
+      <time class="f7 pb1 dib mid-gray normal" datetime="2011-10-01T09:45:25Z">
+        Oct 1, 2011
+      </time>
       <div class="mt5"></div>
       
 <div id="graphcomment"></div>
@@ -194,7 +194,7 @@ showRating: function (container, id, raters, rating) { &#160;&#160;&#160; var di
     <footer class="bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f7 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://nokola.github.io/" >
-    &copy; 2017 You Had Me At &#39;Hello World&#39;
+    &copy; 2018 You Had Me At &#39;Hello World&#39;
   </a>
   
 
