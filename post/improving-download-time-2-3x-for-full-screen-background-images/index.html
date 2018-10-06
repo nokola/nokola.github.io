@@ -62,7 +62,7 @@ Since you are full screen, it is a good idea to detect the resolution (that woul
 
   </head>
 
-  <body class="ma0 body-font bg-white">
+  <body class="ma0 body-font">
     <style>
       .shadow-bottom {
         -webkit-box-shadow: 0px 0px 15px 0px rgba(175, 175, 175, 1);
@@ -110,6 +110,13 @@ Since you are full screen, it is a good idea to detect the resolution (that woul
       .mt3and5 {
         margin-top: 1.5rem;
       }
+      article {
+        box-shadow: 0 1px 3px rgba(0,0,0,.1);
+        background: white;
+      }
+      body {
+        background: #ecf0f5;
+      }
     </style>
     
 
@@ -153,9 +160,12 @@ Since you are full screen, it is a good idea to detect the resolution (that woul
       
 <div class="flex-l mt2 mw8 center"> 
   <div>
-    <article class="center cf pt2 pb1 mw8 word-wrap">
-        <a href="javascript:history.go(-1)">← back</a>
-        <h1 class="f2 mt4 mb4 title-font">
+      <a href="javascript:history.go(-1)">← back</a>
+      <article class="center cf pa4 mt3 pb1 mw8 word-wrap">
+        <time class="f7 pb1 dib mid-gray normal" datetime="2010-01-04T10:57:00Z">
+            Jan 4, 2010
+        </time>
+        <h1 class="f2 mb4 mt1 title-font">
         Improving Download Time (2-3x) for Full Screen Background Images
         </h1>
 
@@ -181,9 +191,6 @@ Since you are full screen, it is a good idea to detect the resolution (that woul
       
 
 
-      <time class="f7 pb1 dib mid-gray normal" datetime="2010-01-04T10:57:00Z">
-          Jan 4, 2010
-      </time>
       <div class="mt5"></div>
       
 <div id="graphcomment"></div>
