@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>SYSTEM FAILURE  | Old Photo, Pastel, and Pencil Sketch Pixel Shaders For Silverlight</title>
+    <title>System Failure  | Old Photo, Pastel, and Pencil Sketch Pixel Shaders For Silverlight</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -135,7 +135,10 @@ The .zip file contains the old photo shader, and 2 variations of the sketch shad
         line-height: 1.42857143;
       }
       .title-font {
-        font-weight: 400;
+        font-weight: 700;
+        color: #333;
+        border-bottom: 1px solid #333;
+         
       }
       .body-font {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -147,11 +150,21 @@ The .zip file contains the old photo shader, and 2 variations of the sketch shad
         margin-top: 1.5rem;
       }
       article {
-        box-shadow: 0 1px 3px rgba(0,0,0,.1);
         background: white;
+        border-radius: 3px;
       }
       body {
         background: #ecf0f5;
+      }
+      .main-link {
+        display: block;
+        color: inherit;
+
+         
+      }
+      .main-link:hover {
+        text-decoration: none;
+        box-shadow: 0 0 10px 3px rgba(0,0,0,.12);
       }
     </style>
     
@@ -168,8 +181,8 @@ The .zip file contains the old photo shader, and 2 variations of the sketch shad
   <div class="flex-l  items-center center">
     <section class="w-100 mw8 center">
       <a href="https://systemfailure.io/" class="f5 fw4 hover-white no-underline white-90 dib">
-        SYSTEM FAILURE
-        <div class="f7 white-70 pad-2 sub-space">Working with humans. Product care. Coding.</div>
+        System Failure
+        <div class="f7 white-70 pad-2 sub-space">Software for humans</div>
       </a>
       <div class="flex-l items-center">
         
@@ -194,21 +207,22 @@ The .zip file contains the old photo shader, and 2 variations of the sketch shad
 
     <main class="pb7 ph3 pt2 ph4-ns" role="main">
       
-<div class="flex-l mt2 mw8 center"> 
+<div class="flex-l mt2 mw8 center">
   <div>
-      <a href="javascript:history.go(-1)">← back</a>
-      <article class="center cf pa4 mt3 pb1 mw8 word-wrap">
-        <time class="f7 pb1 dib mid-gray normal" datetime="2010-02-18T21:10:00Z">
-            Feb 18, 2010
-        </time>
-        <h1 class="f2 mb4 mt1 title-font">
+    <a href="javascript:history.go(-1)">← back</a>
+    <article class="center cf word-wrap mt3">
+      <h1 class="f3 title-font pl4 pt4 pb3 mt2">
         Old Photo, Pastel, and Pencil Sketch Pixel Shaders For Silverlight
-        </h1>
+      </h1>
 
+      <div class="pa4 mw8 pt2">
+        <time class="f7 dib mid-gray normal" datetime="2010-02-18T21:10:00Z">
+          Feb 18, 2010
+        </time>
         
         
-      <section class="nested-copy-line-height lh-copy f5 nested-links nested-img dark-gray">
-        <p>EasyPainter has new filters! Source code below! Try them out <a href="http://nokola.com/easypainter">here</a></p>
+        <section class="nested-copy-line-height lh-copy f5 nested-links nested-img dark-gray">
+          <p>EasyPainter has new filters! Source code below! Try them out <a href="http://nokola.com/easypainter">here</a></p>
 <p><strong>Edit: </strong>I'd actually like to improve the pastel shader further - real-life pastel is usually on white background, and the shaders are on black...</p>
 <h2>Samples</h2>
 <p>Original (<a title="http://www.flickr.com/photos/-arpi/4280428638/" href="http://www.flickr.com/photos/-arpi/4280428638/">http://www.flickr.com/photos/-arpi/4280428638/</a>):</p>
@@ -238,12 +252,12 @@ The .zip file contains the old photo shader, and 2 variations of the sketch shad
 <p>Last but not least, I made a small modification to Shazzam to support sampler2D and sampler1D parameters. You can add a texture from inside the tool and experiment. I sent the code to Walt (the creator of Shazzam), so hopefully we'll see it out soon! Here's a screenshot:</p>
 <p><a href="/Untitled.png"><img style="border-right-width: 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="Untitled" src="/Untitled_thumb.png" border="0" alt="Untitled" width="644" height="476" /></a></p>
 
-      </section>
-      
+        </section>
+        
 
 
-      <div class="mt5"></div>
-      
+        <div class="mt5"></div>
+        
 <div id="graphcomment"></div>
 <script type="text/javascript">
   window.graphcomment_id = 'nokola-blog';
@@ -254,7 +268,8 @@ The .zip file contains the old photo shader, and 2 variations of the sketch shad
   })();
 </script>
 
-      </article>
+      </div>
+    </article>
   </div>
 </div>
 
@@ -262,7 +277,7 @@ The .zip file contains the old photo shader, and 2 variations of the sketch shad
     <footer class="bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f7 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://systemfailure.io/" >
-    &copy; 2018 SYSTEM FAILURE
+    &copy; 2019 System Failure
   </a>
   
 

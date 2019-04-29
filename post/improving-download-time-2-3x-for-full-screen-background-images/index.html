@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>SYSTEM FAILURE  | Improving Download Time (2-3x) for Full Screen Background Images</title>
+    <title>System Failure  | Improving Download Time (2-3x) for Full Screen Background Images</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -99,7 +99,10 @@ Since you are full screen, it is a good idea to detect the resolution (that woul
         line-height: 1.42857143;
       }
       .title-font {
-        font-weight: 400;
+        font-weight: 700;
+        color: #333;
+        border-bottom: 1px solid #333;
+         
       }
       .body-font {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -111,11 +114,21 @@ Since you are full screen, it is a good idea to detect the resolution (that woul
         margin-top: 1.5rem;
       }
       article {
-        box-shadow: 0 1px 3px rgba(0,0,0,.1);
         background: white;
+        border-radius: 3px;
       }
       body {
         background: #ecf0f5;
+      }
+      .main-link {
+        display: block;
+        color: inherit;
+
+         
+      }
+      .main-link:hover {
+        text-decoration: none;
+        box-shadow: 0 0 10px 3px rgba(0,0,0,.12);
       }
     </style>
     
@@ -132,8 +145,8 @@ Since you are full screen, it is a good idea to detect the resolution (that woul
   <div class="flex-l  items-center center">
     <section class="w-100 mw8 center">
       <a href="https://systemfailure.io/" class="f5 fw4 hover-white no-underline white-90 dib">
-        SYSTEM FAILURE
-        <div class="f7 white-70 pad-2 sub-space">Working with humans. Product care. Coding.</div>
+        System Failure
+        <div class="f7 white-70 pad-2 sub-space">Software for humans</div>
       </a>
       <div class="flex-l items-center">
         
@@ -158,21 +171,22 @@ Since you are full screen, it is a good idea to detect the resolution (that woul
 
     <main class="pb7 ph3 pt2 ph4-ns" role="main">
       
-<div class="flex-l mt2 mw8 center"> 
+<div class="flex-l mt2 mw8 center">
   <div>
-      <a href="javascript:history.go(-1)">← back</a>
-      <article class="center cf pa4 mt3 pb1 mw8 word-wrap">
-        <time class="f7 pb1 dib mid-gray normal" datetime="2010-01-04T10:57:00Z">
-            Jan 4, 2010
-        </time>
-        <h1 class="f2 mb4 mt1 title-font">
+    <a href="javascript:history.go(-1)">← back</a>
+    <article class="center cf word-wrap mt3">
+      <h1 class="f3 title-font pl4 pt4 pb3 mt2">
         Improving Download Time (2-3x) for Full Screen Background Images
-        </h1>
+      </h1>
 
+      <div class="pa4 mw8 pt2">
+        <time class="f7 dib mid-gray normal" datetime="2010-01-04T10:57:00Z">
+          Jan 4, 2010
+        </time>
         
         
-      <section class="nested-copy-line-height lh-copy f5 nested-links nested-img dark-gray">
-        <p>Getting your backgrounds quickly is very important for games, especially at startup time when you're downloading a lot of stuff anyway (like menu buttons, simple effects, such as explosions and other things that didn't make it into the "core" xap to reduce initial load time).</p>
+        <section class="nested-copy-line-height lh-copy f5 nested-links nested-img dark-gray">
+          <p>Getting your backgrounds quickly is very important for games, especially at startup time when you're downloading a lot of stuff anyway (like menu buttons, simple effects, such as explosions and other things that didn't make it into the "core" xap to reduce initial load time).</p>
 <p>Since you are full screen, it is a good idea to detect the resolution (that would be the ActualWidth and ActualHeight properties of your root control) and programatically return a suitable sized background.</p>
 <p>For example, a 1920x1080 JPG image is about 200K while the same image 800x600 is about 50K.</p>
 <p>The source code is simple, but I post it in case someone needs it and doesn't have to write it from scratch:</p>
@@ -187,12 +201,12 @@ Since you are full screen, it is a good idea to detect the resolution (that woul
 <p>Last but not least, you can use a low-quality background image when the game goes full screen for the first time, and then replace it with the high-quality image once available. I made a special control just for that: SmoothImage in the <a id="ctl00_ContentPlaceHolder1_HyperLink9" href="MoreControls.zip">Controls Pack</a>&nbsp;on Nokola.com. The SmoothImage control will preserve its previous image, whenever you change it's Source and will display the new image once it's available. You can see the SmoothImage sample by launching <a href="http://nokola.com/shock">http://nokola.com/shock</a>&nbsp;and switching between the classes - note how the backroung changes "smoothly" and you don't see a period of transparent/missing image background while the new background gets downloaded.</p>
 <p>&nbsp;</p>
 
-      </section>
-      
+        </section>
+        
 
 
-      <div class="mt5"></div>
-      
+        <div class="mt5"></div>
+        
 <div id="graphcomment"></div>
 <script type="text/javascript">
   window.graphcomment_id = 'nokola-blog';
@@ -203,7 +217,8 @@ Since you are full screen, it is a good idea to detect the resolution (that woul
   })();
 </script>
 
-      </article>
+      </div>
+    </article>
   </div>
 </div>
 
@@ -211,7 +226,7 @@ Since you are full screen, it is a good idea to detect the resolution (that woul
     <footer class="bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f7 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://systemfailure.io/" >
-    &copy; 2018 SYSTEM FAILURE
+    &copy; 2019 System Failure
   </a>
   
 

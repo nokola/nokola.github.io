@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>SYSTEM FAILURE  | Adorners in Silverlight - Move, Size, Rotate, Custom Mouse Cursor</title>
+    <title>System Failure  | Adorners in Silverlight - Move, Size, Rotate, Custom Mouse Cursor</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -117,7 +117,10 @@ The adorner currently has the following features:
         line-height: 1.42857143;
       }
       .title-font {
-        font-weight: 400;
+        font-weight: 700;
+        color: #333;
+        border-bottom: 1px solid #333;
+         
       }
       .body-font {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -129,11 +132,21 @@ The adorner currently has the following features:
         margin-top: 1.5rem;
       }
       article {
-        box-shadow: 0 1px 3px rgba(0,0,0,.1);
         background: white;
+        border-radius: 3px;
       }
       body {
         background: #ecf0f5;
+      }
+      .main-link {
+        display: block;
+        color: inherit;
+
+         
+      }
+      .main-link:hover {
+        text-decoration: none;
+        box-shadow: 0 0 10px 3px rgba(0,0,0,.12);
       }
     </style>
     
@@ -150,8 +163,8 @@ The adorner currently has the following features:
   <div class="flex-l  items-center center">
     <section class="w-100 mw8 center">
       <a href="https://systemfailure.io/" class="f5 fw4 hover-white no-underline white-90 dib">
-        SYSTEM FAILURE
-        <div class="f7 white-70 pad-2 sub-space">Working with humans. Product care. Coding.</div>
+        System Failure
+        <div class="f7 white-70 pad-2 sub-space">Software for humans</div>
       </a>
       <div class="flex-l items-center">
         
@@ -176,21 +189,22 @@ The adorner currently has the following features:
 
     <main class="pb7 ph3 pt2 ph4-ns" role="main">
       
-<div class="flex-l mt2 mw8 center"> 
+<div class="flex-l mt2 mw8 center">
   <div>
-      <a href="javascript:history.go(-1)">← back</a>
-      <article class="center cf pa4 mt3 pb1 mw8 word-wrap">
-        <time class="f7 pb1 dib mid-gray normal" datetime="2009-12-13T10:58:00Z">
-            Dec 13, 2009
-        </time>
-        <h1 class="f2 mb4 mt1 title-font">
+    <a href="javascript:history.go(-1)">← back</a>
+    <article class="center cf word-wrap mt3">
+      <h1 class="f3 title-font pl4 pt4 pb3 mt2">
         Adorners in Silverlight - Move, Size, Rotate, Custom Mouse Cursor
-        </h1>
+      </h1>
 
+      <div class="pa4 mw8 pt2">
+        <time class="f7 dib mid-gray normal" datetime="2009-12-13T10:58:00Z">
+          Dec 13, 2009
+        </time>
         
         
-      <section class="nested-copy-line-height lh-copy f5 nested-links nested-img dark-gray">
-        <p>This adorner took me few days to get right!</p>
+        <section class="nested-copy-line-height lh-copy f5 nested-links nested-img dark-gray">
+          <p>This adorner took me few days to get right!</p>
 <p><strong>Edit Dec, 15: </strong><a href="http://tozon.info/blog/">Andrej Tozon</a> created an updated source supporting Behaviours (and drag-drop without code in Blend). Here's a link to <a href="http://cid-d34608bce9688fba.skydrive.live.com/self.aspx/Public/Development/Samples/AdornerTest2.zip">his version</a>. Thanks Andrej!</p>
 <p>This&nbsp;is work in progress,&nbsp;but the base functionality is there and stable!</p>
 <p><a href="http://nokola.com/sources/adorners.zip">Download source code</a></p>
@@ -218,12 +232,12 @@ The adorner currently has the following features:
 <p>To avoid hassles with Thumbs moving around, the core of the move/size/rotate code is in thumb_MouseMove() - giving it nice absolute mouse coordinates!</p>
 <p>What do you think this adorner?</p>
 
-      </section>
-      
+        </section>
+        
 
 
-      <div class="mt5"></div>
-      
+        <div class="mt5"></div>
+        
 <div id="graphcomment"></div>
 <script type="text/javascript">
   window.graphcomment_id = 'nokola-blog';
@@ -234,7 +248,8 @@ The adorner currently has the following features:
   })();
 </script>
 
-      </article>
+      </div>
+    </article>
   </div>
 </div>
 
@@ -242,7 +257,7 @@ The adorner currently has the following features:
     <footer class="bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f7 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://systemfailure.io/" >
-    &copy; 2018 SYSTEM FAILURE
+    &copy; 2019 System Failure
   </a>
   
 

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>SYSTEM FAILURE  | EasyPainter: Watercolor, Blood and Gloom Pixel Shaders</title>
+    <title>System Failure  | EasyPainter: Watercolor, Blood and Gloom Pixel Shaders</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -105,7 +105,10 @@ The new Blood shader works only on skin colors. To use it, you have to use the s
         line-height: 1.42857143;
       }
       .title-font {
-        font-weight: 400;
+        font-weight: 700;
+        color: #333;
+        border-bottom: 1px solid #333;
+         
       }
       .body-font {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -117,11 +120,21 @@ The new Blood shader works only on skin colors. To use it, you have to use the s
         margin-top: 1.5rem;
       }
       article {
-        box-shadow: 0 1px 3px rgba(0,0,0,.1);
         background: white;
+        border-radius: 3px;
       }
       body {
         background: #ecf0f5;
+      }
+      .main-link {
+        display: block;
+        color: inherit;
+
+         
+      }
+      .main-link:hover {
+        text-decoration: none;
+        box-shadow: 0 0 10px 3px rgba(0,0,0,.12);
       }
     </style>
     
@@ -138,8 +151,8 @@ The new Blood shader works only on skin colors. To use it, you have to use the s
   <div class="flex-l  items-center center">
     <section class="w-100 mw8 center">
       <a href="https://systemfailure.io/" class="f5 fw4 hover-white no-underline white-90 dib">
-        SYSTEM FAILURE
-        <div class="f7 white-70 pad-2 sub-space">Working with humans. Product care. Coding.</div>
+        System Failure
+        <div class="f7 white-70 pad-2 sub-space">Software for humans</div>
       </a>
       <div class="flex-l items-center">
         
@@ -164,28 +177,29 @@ The new Blood shader works only on skin colors. To use it, you have to use the s
 
     <main class="pb7 ph3 pt2 ph4-ns" role="main">
       
-<div class="flex-l mt2 mw8 center"> 
+<div class="flex-l mt2 mw8 center">
   <div>
-      <a href="javascript:history.go(-1)">← back</a>
-      <article class="center cf pa4 mt3 pb1 mw8 word-wrap">
-        <time class="f7 pb1 dib mid-gray normal" datetime="2010-02-20T04:37:03Z">
-            Feb 20, 2010
-        </time>
-        <h1 class="f2 mb4 mt1 title-font">
+    <a href="javascript:history.go(-1)">← back</a>
+    <article class="center cf word-wrap mt3">
+      <h1 class="f3 title-font pl4 pt4 pb3 mt2">
         EasyPainter: Watercolor, Blood and Gloom Pixel Shaders
-        </h1>
+      </h1>
 
+      <div class="pa4 mw8 pt2">
+        <time class="f7 dib mid-gray normal" datetime="2010-02-20T04:37:03Z">
+          Feb 20, 2010
+        </time>
         
         
-      <section class="nested-copy-line-height lh-copy f5 nested-links nested-img dark-gray">
-        <p><a href="http://nokola.com/easypainter">Click here to try the new effects in EasyPainter</a>. </p>  <p><a href="http://nokola.com/sources/BloodWatercolorShaders.zip">Download source code</a>.</p>  <p>Original vs Zombie – can you figure out which one is which? :)</p>  <p><a href="/nikolami.jpg"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="nikolami" border="0" alt="nikolami" src="/nikolami_thumb.jpg" width="85" height="104" /></a>&#160;<a href="/zombie.png"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="zombie" border="0" alt="zombie" src="/zombie_thumb.png" width="85" height="104" /></a> </p>  <p></p>  <p>The new Blood shader works only on skin colors. To use it, you have to use the selection brush to select skin tones from the image. </p>  <p>Here is the Watercolor shader. It's very subtle, but I think it looks nice nevertheless. If anyone has suggestions for improvements, including a proper name for this shader, since it is really subtle - please let me know!</p>  <p><a href="/image.jpg"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/image_thumb.jpg" width="354" height="299" /></a> <a href="/watercolor.jpg"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="watercolor" border="0" alt="watercolor" src="/watercolor_thumb.jpg" width="354" height="299" /></a> </p>  <p>I also added a Gloom effect, the one from <a href="http://wpffx.codeplex.com">http://wpffx.codeplex.com</a></p>  <h3>Little Tech Stuff</h3>  <p>The &quot;blood&quot; is in fact the pastel texture from the Pastel effect, blended with Burn.</p>  <p>The watercolor is based on real tutorials on doing water color effects: it is a combination of [cheap horizontal] blur and sobel edge detection. Unfortunately, the blur has to be 2-pass to look good, and span larger area. I might improve it in the future. Anyway, the effect looks pleasing to me for now :)</p>
+        <section class="nested-copy-line-height lh-copy f5 nested-links nested-img dark-gray">
+          <p><a href="http://nokola.com/easypainter">Click here to try the new effects in EasyPainter</a>. </p>  <p><a href="http://nokola.com/sources/BloodWatercolorShaders.zip">Download source code</a>.</p>  <p>Original vs Zombie – can you figure out which one is which? :)</p>  <p><a href="/nikolami.jpg"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="nikolami" border="0" alt="nikolami" src="/nikolami_thumb.jpg" width="85" height="104" /></a>&#160;<a href="/zombie.png"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="zombie" border="0" alt="zombie" src="/zombie_thumb.png" width="85" height="104" /></a> </p>  <p></p>  <p>The new Blood shader works only on skin colors. To use it, you have to use the selection brush to select skin tones from the image. </p>  <p>Here is the Watercolor shader. It's very subtle, but I think it looks nice nevertheless. If anyone has suggestions for improvements, including a proper name for this shader, since it is really subtle - please let me know!</p>  <p><a href="/image.jpg"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="/image_thumb.jpg" width="354" height="299" /></a> <a href="/watercolor.jpg"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="watercolor" border="0" alt="watercolor" src="/watercolor_thumb.jpg" width="354" height="299" /></a> </p>  <p>I also added a Gloom effect, the one from <a href="http://wpffx.codeplex.com">http://wpffx.codeplex.com</a></p>  <h3>Little Tech Stuff</h3>  <p>The &quot;blood&quot; is in fact the pastel texture from the Pastel effect, blended with Burn.</p>  <p>The watercolor is based on real tutorials on doing water color effects: it is a combination of [cheap horizontal] blur and sobel edge detection. Unfortunately, the blur has to be 2-pass to look good, and span larger area. I might improve it in the future. Anyway, the effect looks pleasing to me for now :)</p>
 
-      </section>
-      
+        </section>
+        
 
 
-      <div class="mt5"></div>
-      
+        <div class="mt5"></div>
+        
 <div id="graphcomment"></div>
 <script type="text/javascript">
   window.graphcomment_id = 'nokola-blog';
@@ -196,7 +210,8 @@ The new Blood shader works only on skin colors. To use it, you have to use the s
   })();
 </script>
 
-      </article>
+      </div>
+    </article>
   </div>
 </div>
 
@@ -204,7 +219,7 @@ The new Blood shader works only on skin colors. To use it, you have to use the s
     <footer class="bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f7 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://systemfailure.io/" >
-    &copy; 2018 SYSTEM FAILURE
+    &copy; 2019 System Failure
   </a>
   
 

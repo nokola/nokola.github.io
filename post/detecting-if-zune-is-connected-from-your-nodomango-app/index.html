@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>SYSTEM FAILURE  | Detecting if Zune is Connected From Your NoDo/Mango App</title>
+    <title>System Failure  | Detecting if Zune is Connected From Your NoDo/Mango App</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -102,7 +102,10 @@ Moreover, when you get the Cancel event from the PhotoChooserTask in Mango, neit
         line-height: 1.42857143;
       }
       .title-font {
-        font-weight: 400;
+        font-weight: 700;
+        color: #333;
+        border-bottom: 1px solid #333;
+         
       }
       .body-font {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -114,11 +117,21 @@ Moreover, when you get the Cancel event from the PhotoChooserTask in Mango, neit
         margin-top: 1.5rem;
       }
       article {
-        box-shadow: 0 1px 3px rgba(0,0,0,.1);
         background: white;
+        border-radius: 3px;
       }
       body {
         background: #ecf0f5;
+      }
+      .main-link {
+        display: block;
+        color: inherit;
+
+         
+      }
+      .main-link:hover {
+        text-decoration: none;
+        box-shadow: 0 0 10px 3px rgba(0,0,0,.12);
       }
     </style>
     
@@ -135,8 +148,8 @@ Moreover, when you get the Cancel event from the PhotoChooserTask in Mango, neit
   <div class="flex-l  items-center center">
     <section class="w-100 mw8 center">
       <a href="https://systemfailure.io/" class="f5 fw4 hover-white no-underline white-90 dib">
-        SYSTEM FAILURE
-        <div class="f7 white-70 pad-2 sub-space">Working with humans. Product care. Coding.</div>
+        System Failure
+        <div class="f7 white-70 pad-2 sub-space">Software for humans</div>
       </a>
       <div class="flex-l items-center">
         
@@ -161,28 +174,29 @@ Moreover, when you get the Cancel event from the PhotoChooserTask in Mango, neit
 
     <main class="pb7 ph3 pt2 ph4-ns" role="main">
       
-<div class="flex-l mt2 mw8 center"> 
+<div class="flex-l mt2 mw8 center">
   <div>
-      <a href="javascript:history.go(-1)">← back</a>
-      <article class="center cf pa4 mt3 pb1 mw8 word-wrap">
-        <time class="f7 pb1 dib mid-gray normal" datetime="2011-10-01T08:08:39Z">
-            Oct 1, 2011
-        </time>
-        <h1 class="f2 mb4 mt1 title-font">
+    <a href="javascript:history.go(-1)">← back</a>
+    <article class="center cf word-wrap mt3">
+      <h1 class="f3 title-font pl4 pt4 pb3 mt2">
         Detecting if Zune is Connected From Your NoDo/Mango App
-        </h1>
+      </h1>
 
+      <div class="pa4 mw8 pt2">
+        <time class="f7 dib mid-gray normal" datetime="2011-10-01T08:08:39Z">
+          Oct 1, 2011
+        </time>
         
         
-      <section class="nested-copy-line-height lh-copy f5 nested-links nested-img dark-gray">
-        <p><strong>Edit 2001/10/10: </strong>I noticed that I actually get InvalidOperationException on Mango (seems like all the time now, but I’m not 100% sure). Updated code in CaptureTask_Completed to check for this.</p>  <p>Rene had a great blog post about <a href="http://kodierer.blogspot.com/2010/12/windows-phone-unplugged-how-to-detect.html">How to detect the Zune software</a> about an year ago. Unfortunately, the method he describes no longer works in Mango.</p>  <p>Moreover, when you get the Cancel event from the PhotoChooserTask in Mango, neither OnNavigatingFrom nor OnNavigatedTo is called for your page.</p>  <p>This can cause crashes, grief and unhappy customers who think “I can’t open a picture from this app”.</p>  <p>Here is my current solution that works for NoDo and Mango. It’s very simple, I just check if the request to open the picture happened less than 1 second after the Cancel event occurred.</p>  <p>In real life testing (you should have seen me frantically hitting the back button!), one second seems to work great.</p>  <p>&#160;</p>  <p>Here’s some code to illustrate this:</p>  <p>[code:c#]</p>  <p>private void btnOpenFromPhone_Click(object sender, RoutedEventArgs e)    <br />{     <br />&#160;&#160;&#160; if (Globals.PhotoChooserTask == null)     <br />&#160;&#160;&#160; {     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; Globals.PhotoChooserTask = new PhotoChooserTask();     <br />&#160;&#160;&#160; }</p>  <p>&#160;&#160;&#160; Globals.PhotoChooserTask.Completed += CaptureTask_Completed;    <br />&#160;&#160;&#160; Globals.PhotoChooserTask.ShowCamera = true;     <br />&#160;&#160;&#160; try     <br />&#160;&#160;&#160; {     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; Globals.PhotoChooserStarted = DateTime.Now;     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; Globals.PhotoChooserTask.Show();     <br />&#160;&#160;&#160; }     <br />&#160;&#160;&#160; catch (InvalidOperationException) // will be thrown in case we double-tap and other navigation is in progress     <br />&#160;&#160;&#160; {     <br />&#160;&#160;&#160; }     <br />}</p>  <p>void CaptureTask_Completed(object sender, PhotoResult e)    <br />{     <br /></p>  <blockquote>   <p>if (e.Error != null)     <br />{      <br />&#160;&#160;&#160; if (e.Error is InvalidOperationException)      <br />&#160;&#160;&#160; {      <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; MessageBox.Show(&quot;The Zune software is running and prevents opening pictures. Please close Zune or disconnect the phone from your computer and try again.&quot;, &quot;Information&quot;, MessageBoxButton.OK);      <br />&#160;&#160;&#160; }      <br />&#160;&#160;&#160; return;      <br />}</p> </blockquote>  <p>&#160;&#160;&#160; if (e.TaskResult == TaskResult.OK)    <br />&#160;&#160;&#160; {</p>  <blockquote>   <p>// yay we’re done!</p> </blockquote>  <p>   <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; return;     <br />&#160;&#160;&#160; }</p>  <p>&#160;&#160;&#160; if (e.Error is InvalidOperationException)    <br />&#160;&#160;&#160; {     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; throw e.Error;     <br />&#160;&#160;&#160; }</p>  <p>&#160;&#160;&#160; if (e.TaskResult == TaskResult.Cancel)    <br />&#160;&#160;&#160; {     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; AvailableTools.Brush.SetImage(Globals.MainImage); // set the image back to the brush again, because in case of Zune connected to PC OnNavigatingFrom and OnNavigatedTo will not be called!</p>  <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160; if ((DateTime.Now - Globals.PhotoChooserStarted) &lt; TimeSpan.FromSeconds(1)) // returned too fast, assume Zune is causing problems    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; MessageBox.Show(&quot;The Zune software is running and prevents opening pictures. Please close Zune or disconnect the phone from your computer and try again.&quot;, &quot;Information&quot;, MessageBoxButton.OK);     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; }     <br />&#160;&#160;&#160; }     <br />}</p>  <p>[/code]</p>  <p>If anyone knows a better solution, please let me know!</p>
+        <section class="nested-copy-line-height lh-copy f5 nested-links nested-img dark-gray">
+          <p><strong>Edit 2001/10/10: </strong>I noticed that I actually get InvalidOperationException on Mango (seems like all the time now, but I’m not 100% sure). Updated code in CaptureTask_Completed to check for this.</p>  <p>Rene had a great blog post about <a href="http://kodierer.blogspot.com/2010/12/windows-phone-unplugged-how-to-detect.html">How to detect the Zune software</a> about an year ago. Unfortunately, the method he describes no longer works in Mango.</p>  <p>Moreover, when you get the Cancel event from the PhotoChooserTask in Mango, neither OnNavigatingFrom nor OnNavigatedTo is called for your page.</p>  <p>This can cause crashes, grief and unhappy customers who think “I can’t open a picture from this app”.</p>  <p>Here is my current solution that works for NoDo and Mango. It’s very simple, I just check if the request to open the picture happened less than 1 second after the Cancel event occurred.</p>  <p>In real life testing (you should have seen me frantically hitting the back button!), one second seems to work great.</p>  <p>&#160;</p>  <p>Here’s some code to illustrate this:</p>  <p>[code:c#]</p>  <p>private void btnOpenFromPhone_Click(object sender, RoutedEventArgs e)    <br />{     <br />&#160;&#160;&#160; if (Globals.PhotoChooserTask == null)     <br />&#160;&#160;&#160; {     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; Globals.PhotoChooserTask = new PhotoChooserTask();     <br />&#160;&#160;&#160; }</p>  <p>&#160;&#160;&#160; Globals.PhotoChooserTask.Completed += CaptureTask_Completed;    <br />&#160;&#160;&#160; Globals.PhotoChooserTask.ShowCamera = true;     <br />&#160;&#160;&#160; try     <br />&#160;&#160;&#160; {     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; Globals.PhotoChooserStarted = DateTime.Now;     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; Globals.PhotoChooserTask.Show();     <br />&#160;&#160;&#160; }     <br />&#160;&#160;&#160; catch (InvalidOperationException) // will be thrown in case we double-tap and other navigation is in progress     <br />&#160;&#160;&#160; {     <br />&#160;&#160;&#160; }     <br />}</p>  <p>void CaptureTask_Completed(object sender, PhotoResult e)    <br />{     <br /></p>  <blockquote>   <p>if (e.Error != null)     <br />{      <br />&#160;&#160;&#160; if (e.Error is InvalidOperationException)      <br />&#160;&#160;&#160; {      <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; MessageBox.Show(&quot;The Zune software is running and prevents opening pictures. Please close Zune or disconnect the phone from your computer and try again.&quot;, &quot;Information&quot;, MessageBoxButton.OK);      <br />&#160;&#160;&#160; }      <br />&#160;&#160;&#160; return;      <br />}</p> </blockquote>  <p>&#160;&#160;&#160; if (e.TaskResult == TaskResult.OK)    <br />&#160;&#160;&#160; {</p>  <blockquote>   <p>// yay we’re done!</p> </blockquote>  <p>   <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; return;     <br />&#160;&#160;&#160; }</p>  <p>&#160;&#160;&#160; if (e.Error is InvalidOperationException)    <br />&#160;&#160;&#160; {     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; throw e.Error;     <br />&#160;&#160;&#160; }</p>  <p>&#160;&#160;&#160; if (e.TaskResult == TaskResult.Cancel)    <br />&#160;&#160;&#160; {     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; AvailableTools.Brush.SetImage(Globals.MainImage); // set the image back to the brush again, because in case of Zune connected to PC OnNavigatingFrom and OnNavigatedTo will not be called!</p>  <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160; if ((DateTime.Now - Globals.PhotoChooserStarted) &lt; TimeSpan.FromSeconds(1)) // returned too fast, assume Zune is causing problems    <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; {     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; MessageBox.Show(&quot;The Zune software is running and prevents opening pictures. Please close Zune or disconnect the phone from your computer and try again.&quot;, &quot;Information&quot;, MessageBoxButton.OK);     <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; }     <br />&#160;&#160;&#160; }     <br />}</p>  <p>[/code]</p>  <p>If anyone knows a better solution, please let me know!</p>
 
-      </section>
-      
+        </section>
+        
 
 
-      <div class="mt5"></div>
-      
+        <div class="mt5"></div>
+        
 <div id="graphcomment"></div>
 <script type="text/javascript">
   window.graphcomment_id = 'nokola-blog';
@@ -193,7 +207,8 @@ Moreover, when you get the Cancel event from the PhotoChooserTask in Mango, neit
   })();
 </script>
 
-      </article>
+      </div>
+    </article>
   </div>
 </div>
 
@@ -201,7 +216,7 @@ Moreover, when you get the Cancel event from the PhotoChooserTask in Mango, neit
     <footer class="bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f7 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://systemfailure.io/" >
-    &copy; 2018 SYSTEM FAILURE
+    &copy; 2019 System Failure
   </a>
   
 

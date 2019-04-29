@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>SYSTEM FAILURE  | Windows 8 apps performance helper: Speed at a glance</title>
+    <title>System Failure  | Windows 8 apps performance helper: Speed at a glance</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -96,7 +96,10 @@
         line-height: 1.42857143;
       }
       .title-font {
-        font-weight: 400;
+        font-weight: 700;
+        color: #333;
+        border-bottom: 1px solid #333;
+         
       }
       .body-font {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -108,11 +111,21 @@
         margin-top: 1.5rem;
       }
       article {
-        box-shadow: 0 1px 3px rgba(0,0,0,.1);
         background: white;
+        border-radius: 3px;
       }
       body {
         background: #ecf0f5;
+      }
+      .main-link {
+        display: block;
+        color: inherit;
+
+         
+      }
+      .main-link:hover {
+        text-decoration: none;
+        box-shadow: 0 0 10px 3px rgba(0,0,0,.12);
       }
     </style>
     
@@ -129,8 +142,8 @@
   <div class="flex-l  items-center center">
     <section class="w-100 mw8 center">
       <a href="https://systemfailure.io/" class="f5 fw4 hover-white no-underline white-90 dib">
-        SYSTEM FAILURE
-        <div class="f7 white-70 pad-2 sub-space">Working with humans. Product care. Coding.</div>
+        System Failure
+        <div class="f7 white-70 pad-2 sub-space">Software for humans</div>
       </a>
       <div class="flex-l items-center">
         
@@ -155,27 +168,28 @@
 
     <main class="pb7 ph3 pt2 ph4-ns" role="main">
       
-<div class="flex-l mt2 mw8 center"> 
+<div class="flex-l mt2 mw8 center">
   <div>
-      <a href="javascript:history.go(-1)">← back</a>
-      <article class="center cf pa4 mt3 pb1 mw8 word-wrap">
-        <time class="f7 pb1 dib mid-gray normal" datetime="2012-11-28T02:25:55Z">
-            Nov 28, 2012
-        </time>
-        <h1 class="f2 mb4 mt1 title-font">
+    <a href="javascript:history.go(-1)">← back</a>
+    <article class="center cf word-wrap mt3">
+      <h1 class="f3 title-font pl4 pt4 pb3 mt2">
         Windows 8 apps performance helper: Speed at a glance
-        </h1>
+      </h1>
 
+      <div class="pa4 mw8 pt2">
+        <time class="f7 dib mid-gray normal" datetime="2012-11-28T02:25:55Z">
+          Nov 28, 2012
+        </time>
         
         
-      <section class="nested-copy-line-height lh-copy f5 nested-links nested-img dark-gray">
-        <p>Windows 8 Apps have this nice awesome property that you can set in order to show framerate counters:</p>  <p><strong>Application.Current.DebugSettings.EnableFrameRateCounter = true; </strong></p>  <p>Just call it in your MainPage() constructor after the InitializeComponent() call.</p>  <p><strong>To make it easier to figure out which number is which, put this grid somewhere in your root grid on MainPage:</strong></p>  <p>&lt;Grid HorizontalAlignment=&quot;Left&quot; VerticalAlignment=&quot;Top&quot;&#160; IsHitTestVisible=&quot;False&quot;&gt;   <br />&#160;&#160;&#160; &lt;Rectangle Fill=&quot;#88F4F4F5&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;91&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;40&quot; Opacity=&quot;0.5&quot;/&gt;    <br />&#160;&#160;&#160; &lt;Rectangle Fill=&quot;#3F5B71FF&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;68&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;43&quot; Margin=&quot;45,0,0,0&quot;/&gt;    <br />&#160;&#160;&#160; &lt;Rectangle Fill=&quot;#88F4F4F5&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;35&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;79&quot; Opacity=&quot;0.5&quot; Margin=&quot;93,0,0,0&quot;/&gt;    <br />&#160;&#160;&#160; &lt;Rectangle Fill=&quot;#88F4F4F5&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;47&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;43&quot; Opacity=&quot;0.5&quot; Margin=&quot;177,-2,0,0&quot;/&gt;    <br />&#160;&#160;&#160; &lt;Rectangle Fill=&quot;#88F4F4F5&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;56&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;43&quot; Opacity=&quot;0.5&quot; Margin=&quot;225,0,0,0&quot;/&gt;    <br />&#160;&#160;&#160; &lt;Rectangle Fill=&quot;#3F0E9DFF&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;35&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;43&quot; Margin=&quot;273,0,0,0&quot;/&gt;    <br />&#160;&#160;&#160; &lt;Rectangle Fill=&quot;#3F0E9DFF&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;18&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;126&quot; Margin=&quot;316,17,0,0&quot;/&gt;    <br />&#160;&#160;&#160; &lt;TextBlock HorizontalAlignment=&quot;Left&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;UI CPU Time (ms), must be &amp;lt;=15 &quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;278,20,0,0&quot;/&gt;    <br />&#160;&#160;&#160; &lt;Rectangle Fill=&quot;#44F4F4F5&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;18&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;102&quot; Margin=&quot;268,38,0,0&quot;/&gt;    <br />&#160;&#160;&#160; &lt;TextBlock HorizontalAlignment=&quot;Left&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;Composition CPU Time (ms)&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;230,41,0,0&quot; Width=&quot;140&quot;/&gt;    <br />&#160;&#160;&#160; &lt;TextBlock HorizontalAlignment=&quot;Left&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;Batch Count&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;179,17,0,0&quot; Width=&quot;41&quot; Height=&quot;28&quot;/&gt;    <br />&#160;&#160;&#160; &lt;Rectangle Fill=&quot;#3F5B71FF&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;28&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;70&quot; Margin=&quot;88,40,0,0&quot;/&gt;    <br />&#160;&#160;&#160; &lt;TextBlock HorizontalAlignment=&quot;Left&quot; TextWrapping=&quot;Wrap&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;48,42,0,0&quot; Width=&quot;110&quot; Text=&quot;UI Thread FPS&amp;#13;must be 60+ if update&quot; /&gt;    <br />&#160;&#160;&#160; &lt;Rectangle Fill=&quot;#44F4F4F5&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;18&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;86&quot; Margin=&quot;40,73,0,0&quot;/&gt;    <br />&#160;&#160;&#160; &lt;TextBlock HorizontalAlignment=&quot;Left&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;Composition Thread FPS&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;4,75,0,0&quot; Width=&quot;122&quot;/&gt;    <br />&#160;&#160;&#160; &lt;TextBlock HorizontalAlignment=&quot;Left&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;Mem Usage&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;98,17,0,0&quot; Width=&quot;69&quot; Height=&quot;16&quot;/&gt;    <br />&lt;/Grid&gt;</p>  <p>You will end up with something like this at runtime (default Grid app template):</p>  <p><a href="/image_42.png"><img title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="image" src="/image_thumb_41.png" width="552" height="236" /></a></p>  <p>Performance should be considered since the start of app development.</p>  <p>Hope that helps!</p>
-      </section>
-      
+        <section class="nested-copy-line-height lh-copy f5 nested-links nested-img dark-gray">
+          <p>Windows 8 Apps have this nice awesome property that you can set in order to show framerate counters:</p>  <p><strong>Application.Current.DebugSettings.EnableFrameRateCounter = true; </strong></p>  <p>Just call it in your MainPage() constructor after the InitializeComponent() call.</p>  <p><strong>To make it easier to figure out which number is which, put this grid somewhere in your root grid on MainPage:</strong></p>  <p>&lt;Grid HorizontalAlignment=&quot;Left&quot; VerticalAlignment=&quot;Top&quot;&#160; IsHitTestVisible=&quot;False&quot;&gt;   <br />&#160;&#160;&#160; &lt;Rectangle Fill=&quot;#88F4F4F5&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;91&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;40&quot; Opacity=&quot;0.5&quot;/&gt;    <br />&#160;&#160;&#160; &lt;Rectangle Fill=&quot;#3F5B71FF&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;68&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;43&quot; Margin=&quot;45,0,0,0&quot;/&gt;    <br />&#160;&#160;&#160; &lt;Rectangle Fill=&quot;#88F4F4F5&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;35&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;79&quot; Opacity=&quot;0.5&quot; Margin=&quot;93,0,0,0&quot;/&gt;    <br />&#160;&#160;&#160; &lt;Rectangle Fill=&quot;#88F4F4F5&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;47&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;43&quot; Opacity=&quot;0.5&quot; Margin=&quot;177,-2,0,0&quot;/&gt;    <br />&#160;&#160;&#160; &lt;Rectangle Fill=&quot;#88F4F4F5&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;56&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;43&quot; Opacity=&quot;0.5&quot; Margin=&quot;225,0,0,0&quot;/&gt;    <br />&#160;&#160;&#160; &lt;Rectangle Fill=&quot;#3F0E9DFF&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;35&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;43&quot; Margin=&quot;273,0,0,0&quot;/&gt;    <br />&#160;&#160;&#160; &lt;Rectangle Fill=&quot;#3F0E9DFF&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;18&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;126&quot; Margin=&quot;316,17,0,0&quot;/&gt;    <br />&#160;&#160;&#160; &lt;TextBlock HorizontalAlignment=&quot;Left&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;UI CPU Time (ms), must be &amp;lt;=15 &quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;278,20,0,0&quot;/&gt;    <br />&#160;&#160;&#160; &lt;Rectangle Fill=&quot;#44F4F4F5&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;18&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;102&quot; Margin=&quot;268,38,0,0&quot;/&gt;    <br />&#160;&#160;&#160; &lt;TextBlock HorizontalAlignment=&quot;Left&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;Composition CPU Time (ms)&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;230,41,0,0&quot; Width=&quot;140&quot;/&gt;    <br />&#160;&#160;&#160; &lt;TextBlock HorizontalAlignment=&quot;Left&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;Batch Count&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;179,17,0,0&quot; Width=&quot;41&quot; Height=&quot;28&quot;/&gt;    <br />&#160;&#160;&#160; &lt;Rectangle Fill=&quot;#3F5B71FF&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;28&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;70&quot; Margin=&quot;88,40,0,0&quot;/&gt;    <br />&#160;&#160;&#160; &lt;TextBlock HorizontalAlignment=&quot;Left&quot; TextWrapping=&quot;Wrap&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;48,42,0,0&quot; Width=&quot;110&quot; Text=&quot;UI Thread FPS&amp;#13;must be 60+ if update&quot; /&gt;    <br />&#160;&#160;&#160; &lt;Rectangle Fill=&quot;#44F4F4F5&quot; HorizontalAlignment=&quot;Left&quot; Height=&quot;18&quot; VerticalAlignment=&quot;Top&quot; Width=&quot;86&quot; Margin=&quot;40,73,0,0&quot;/&gt;    <br />&#160;&#160;&#160; &lt;TextBlock HorizontalAlignment=&quot;Left&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;Composition Thread FPS&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;4,75,0,0&quot; Width=&quot;122&quot;/&gt;    <br />&#160;&#160;&#160; &lt;TextBlock HorizontalAlignment=&quot;Left&quot; TextWrapping=&quot;Wrap&quot; Text=&quot;Mem Usage&quot; VerticalAlignment=&quot;Top&quot; Margin=&quot;98,17,0,0&quot; Width=&quot;69&quot; Height=&quot;16&quot;/&gt;    <br />&lt;/Grid&gt;</p>  <p>You will end up with something like this at runtime (default Grid app template):</p>  <p><a href="/image_42.png"><img title="image" style="border-top: 0px; border-right: 0px; background-image: none; border-bottom: 0px; padding-top: 0px; padding-left: 0px; border-left: 0px; display: inline; padding-right: 0px" border="0" alt="image" src="/image_thumb_41.png" width="552" height="236" /></a></p>  <p>Performance should be considered since the start of app development.</p>  <p>Hope that helps!</p>
+        </section>
+        
 
 
-      <div class="mt5"></div>
-      
+        <div class="mt5"></div>
+        
 <div id="graphcomment"></div>
 <script type="text/javascript">
   window.graphcomment_id = 'nokola-blog';
@@ -186,7 +200,8 @@
   })();
 </script>
 
-      </article>
+      </div>
+    </article>
   </div>
 </div>
 
@@ -194,7 +209,7 @@
     <footer class="bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f7 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://systemfailure.io/" >
-    &copy; 2018 SYSTEM FAILURE
+    &copy; 2019 System Failure
   </a>
   
 

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>SYSTEM FAILURE  | EasyPainter Source Pack 3: Adorners, Mouse Cursors and Frames</title>
+    <title>System Failure  | EasyPainter Source Pack 3: Adorners, Mouse Cursors and Frames</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -102,7 +102,10 @@ I use the same adorner implementation in EasyPainter."/>
         line-height: 1.42857143;
       }
       .title-font {
-        font-weight: 400;
+        font-weight: 700;
+        color: #333;
+        border-bottom: 1px solid #333;
+         
       }
       .body-font {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -114,11 +117,21 @@ I use the same adorner implementation in EasyPainter."/>
         margin-top: 1.5rem;
       }
       article {
-        box-shadow: 0 1px 3px rgba(0,0,0,.1);
         background: white;
+        border-radius: 3px;
       }
       body {
         background: #ecf0f5;
+      }
+      .main-link {
+        display: block;
+        color: inherit;
+
+         
+      }
+      .main-link:hover {
+        text-decoration: none;
+        box-shadow: 0 0 10px 3px rgba(0,0,0,.12);
       }
     </style>
     
@@ -135,8 +148,8 @@ I use the same adorner implementation in EasyPainter."/>
   <div class="flex-l  items-center center">
     <section class="w-100 mw8 center">
       <a href="https://systemfailure.io/" class="f5 fw4 hover-white no-underline white-90 dib">
-        SYSTEM FAILURE
-        <div class="f7 white-70 pad-2 sub-space">Working with humans. Product care. Coding.</div>
+        System Failure
+        <div class="f7 white-70 pad-2 sub-space">Software for humans</div>
       </a>
       <div class="flex-l items-center">
         
@@ -161,28 +174,29 @@ I use the same adorner implementation in EasyPainter."/>
 
     <main class="pb7 ph3 pt2 ph4-ns" role="main">
       
-<div class="flex-l mt2 mw8 center"> 
+<div class="flex-l mt2 mw8 center">
   <div>
-      <a href="javascript:history.go(-1)">← back</a>
-      <article class="center cf pa4 mt3 pb1 mw8 word-wrap">
-        <time class="f7 pb1 dib mid-gray normal" datetime="2010-03-17T01:11:30Z">
-            Mar 17, 2010
-        </time>
-        <h1 class="f2 mb4 mt1 title-font">
+    <a href="javascript:history.go(-1)">← back</a>
+    <article class="center cf word-wrap mt3">
+      <h1 class="f3 title-font pl4 pt4 pb3 mt2">
         EasyPainter Source Pack 3: Adorners, Mouse Cursors and Frames
-        </h1>
+      </h1>
 
+      <div class="pa4 mw8 pt2">
+        <time class="f7 dib mid-gray normal" datetime="2010-03-17T01:11:30Z">
+          Mar 17, 2010
+        </time>
         
         
-      <section class="nested-copy-line-height lh-copy f5 nested-links nested-img dark-gray">
-        <p>Adorners went a long way since their first release few months ago. </p>  <p>They integrate with zoom now, have more options for controlling functionality and can use a shared &quot;cursor plane&quot; for displaying mouse cursors consistently across your application. Extensibility is improved allowing definition of custom adorner frames. There are 7 custom cursors and 4 custom frames to get you started :)</p>  <p><a href="http://nokola.com/sources/AdornersAndCursors.zip">Download source code</a></p>  <p>I use the same adorner implementation in <a href="http://nokola.com/easypainter">EasyPainter</a>.</p>  <p>Here's a live demo with different adorner frame for each image:</p> <iframe style="border-bottom: 0px solid; border-left: 0px solid; border-top: 0px solid; border-right: 0px solid" height="600" src="/sample.aspx?xap=AdornersAndCursors" frameborder="0" width="860"></iframe>  <h2>Features</h2>  <ul>   <li><strong>Custom, Extensible Mouse Cursors</strong> allow you to use the system or your own mouse cursors even if you don't use the adorner functionality. See CursorPlane.cs for more info </li> </ul>  <blockquote>   <p>The custom cursors support:</p> </blockquote>  <ul>   <ul>     <li>Size (for example, bigger cursor for bigger brush size) </li>      <li>Rotation (used to make the resize cursor perpendicular to the adorner frame) </li>   </ul> </ul>  <p>The current list supports all system cursors as well as these:</p>  <p>Size, // Size cursor that supports angle    <br />Rotate, // Rotate cursor supporting angle     <br />Move, // Move cursor     <br />Brush, // Brush cursor, supports size     <br />SelectionBrush, // Selection brush cursor     <br />Crosshair, // Crosshair cursor - like the one used on snipers or in image editing programs to pinpoint that pixel     <br />MarkerSelect, // Cursor used to select a marker on the surface (e.g. used to select point for applying origin for zoom blur effect) </p>  <p>To use the cursors you have to set up a cursor plane in XAML:</p>  <p>&lt;adorners:CursorPlane Name='cursorPlane' /&gt;</p>  <p>And then initialize it in code-behind:</p>  <p>&#160;&#160;&#160; InitializeComponent();    <br />&#160;&#160;&#160; ctlCursorPlane.SetSystemCursorElement(frameRoot); </p>  <p>The frameRoot specifies which control will display the cursors. For example, in EasyPainter the Crop adorner spans only the image (the adorner is parented to a different parent than the cursor plane), but the rotate/resize cursor go outside of the image. The frameRoot is used to calculate the offsets so that the adorners (or someone else using the cursor plane) can account for the different parents and draw the cursors at the correct locations on screen.</p>  <ul>   <li><strong>Customizable Adorners with extensible adorner frames</strong> </li> </ul>  <p>You can now define your custom adorner frames by creating a UserControl and implementing the functionality you need from the IAdornerFrame interface.</p>  <p>There are 4 existing frames currently: AnimatedRectangleFrame, CropFrame, GlassFrame and PointFrame. The last one is just a dot being used to specify locations of effects in EasyPainter – e.g. Zoom motion effect.</p>  <p>The existing frames can be zoom-aware. For example the CropFrame displays the correct image width and height in the top-left corner regardless of zoom.</p>  <p>/// Represents an adorner frame, e.g. glass border    <br />public interface IAdornerFrame {     <br />&#160;&#160;&#160; /// Called when the frame is attached to adorner     <br />&#160;&#160;&#160; void Attached(); </p>  <p>&#160;&#160;&#160; /// Called when the frame is detached from adorner    <br />&#160;&#160;&#160; void Detached(); </p>  <p>&#160;&#160;&#160; /// Sets the zoom level for this adorner frame. The zoom level is used by the frame to display correct coordinates (e.g. Width and Height)    <br />&#160;&#160;&#160; void SetZoom(double newZoomLevel); </p>  <p>&#160;&#160;&#160; void SizeChanged(double newWidth, double newHeight);    <br />}</p>  <ul>   <li><strong>More adorner options: </strong>bool CanRotate, CanResize, CanMove, void SetBounds(x, y, width, height), SetZoom(double zoomLevel) allow you to change adorner capabilities, restrict it to specific area, and make it zoom-aware </li> </ul>  <p>I didn't have time to add the behaviours back since I don't use those yet and I'm mainly using Visual Studio for development. If anyone is interested in porting these over to the current version <strong></strong><a href="http://tozon.info/blog/">Andrej Tozon</a> created the Behaviours for the <u>original</u> version. Here's a link to <a href="http://cid-d34608bce9688fba.skydrive.live.com/self.aspx/Public/Development/Samples/AdornerTest2.zip">his version</a>. Thanks Andrej!</p>  <p>The source code is licensed under <a href="http://opensource.org/licenses/ms-pl.html">MS-PL</a>.</p>  <p>Pictures are licensed under the following Creative Commons License: <a href="http://creativecommons.org/licenses/by/2.0/">http://creativecommons.org/licenses/by/2.0/</a>     <br />Picture locations:     <br /><a href="http://www.flickr.com/photos/proimos/3954987905/">http://www.flickr.com/photos/proimos/3954987905/</a>     <br /><a href="http://www.flickr.com/photos/proimos/4300827122/">http://www.flickr.com/photos/proimos/4300827122/</a>     <br /><a href="http://www.flickr.com/photos/tenioman/2771903123/">http://www.flickr.com/photos/tenioman/2771903123/</a></p>  <p>Hope you like it! Please comment!</p>
+        <section class="nested-copy-line-height lh-copy f5 nested-links nested-img dark-gray">
+          <p>Adorners went a long way since their first release few months ago. </p>  <p>They integrate with zoom now, have more options for controlling functionality and can use a shared &quot;cursor plane&quot; for displaying mouse cursors consistently across your application. Extensibility is improved allowing definition of custom adorner frames. There are 7 custom cursors and 4 custom frames to get you started :)</p>  <p><a href="http://nokola.com/sources/AdornersAndCursors.zip">Download source code</a></p>  <p>I use the same adorner implementation in <a href="http://nokola.com/easypainter">EasyPainter</a>.</p>  <p>Here's a live demo with different adorner frame for each image:</p> <iframe style="border-bottom: 0px solid; border-left: 0px solid; border-top: 0px solid; border-right: 0px solid" height="600" src="/sample.aspx?xap=AdornersAndCursors" frameborder="0" width="860"></iframe>  <h2>Features</h2>  <ul>   <li><strong>Custom, Extensible Mouse Cursors</strong> allow you to use the system or your own mouse cursors even if you don't use the adorner functionality. See CursorPlane.cs for more info </li> </ul>  <blockquote>   <p>The custom cursors support:</p> </blockquote>  <ul>   <ul>     <li>Size (for example, bigger cursor for bigger brush size) </li>      <li>Rotation (used to make the resize cursor perpendicular to the adorner frame) </li>   </ul> </ul>  <p>The current list supports all system cursors as well as these:</p>  <p>Size, // Size cursor that supports angle    <br />Rotate, // Rotate cursor supporting angle     <br />Move, // Move cursor     <br />Brush, // Brush cursor, supports size     <br />SelectionBrush, // Selection brush cursor     <br />Crosshair, // Crosshair cursor - like the one used on snipers or in image editing programs to pinpoint that pixel     <br />MarkerSelect, // Cursor used to select a marker on the surface (e.g. used to select point for applying origin for zoom blur effect) </p>  <p>To use the cursors you have to set up a cursor plane in XAML:</p>  <p>&lt;adorners:CursorPlane Name='cursorPlane' /&gt;</p>  <p>And then initialize it in code-behind:</p>  <p>&#160;&#160;&#160; InitializeComponent();    <br />&#160;&#160;&#160; ctlCursorPlane.SetSystemCursorElement(frameRoot); </p>  <p>The frameRoot specifies which control will display the cursors. For example, in EasyPainter the Crop adorner spans only the image (the adorner is parented to a different parent than the cursor plane), but the rotate/resize cursor go outside of the image. The frameRoot is used to calculate the offsets so that the adorners (or someone else using the cursor plane) can account for the different parents and draw the cursors at the correct locations on screen.</p>  <ul>   <li><strong>Customizable Adorners with extensible adorner frames</strong> </li> </ul>  <p>You can now define your custom adorner frames by creating a UserControl and implementing the functionality you need from the IAdornerFrame interface.</p>  <p>There are 4 existing frames currently: AnimatedRectangleFrame, CropFrame, GlassFrame and PointFrame. The last one is just a dot being used to specify locations of effects in EasyPainter – e.g. Zoom motion effect.</p>  <p>The existing frames can be zoom-aware. For example the CropFrame displays the correct image width and height in the top-left corner regardless of zoom.</p>  <p>/// Represents an adorner frame, e.g. glass border    <br />public interface IAdornerFrame {     <br />&#160;&#160;&#160; /// Called when the frame is attached to adorner     <br />&#160;&#160;&#160; void Attached(); </p>  <p>&#160;&#160;&#160; /// Called when the frame is detached from adorner    <br />&#160;&#160;&#160; void Detached(); </p>  <p>&#160;&#160;&#160; /// Sets the zoom level for this adorner frame. The zoom level is used by the frame to display correct coordinates (e.g. Width and Height)    <br />&#160;&#160;&#160; void SetZoom(double newZoomLevel); </p>  <p>&#160;&#160;&#160; void SizeChanged(double newWidth, double newHeight);    <br />}</p>  <ul>   <li><strong>More adorner options: </strong>bool CanRotate, CanResize, CanMove, void SetBounds(x, y, width, height), SetZoom(double zoomLevel) allow you to change adorner capabilities, restrict it to specific area, and make it zoom-aware </li> </ul>  <p>I didn't have time to add the behaviours back since I don't use those yet and I'm mainly using Visual Studio for development. If anyone is interested in porting these over to the current version <strong></strong><a href="http://tozon.info/blog/">Andrej Tozon</a> created the Behaviours for the <u>original</u> version. Here's a link to <a href="http://cid-d34608bce9688fba.skydrive.live.com/self.aspx/Public/Development/Samples/AdornerTest2.zip">his version</a>. Thanks Andrej!</p>  <p>The source code is licensed under <a href="http://opensource.org/licenses/ms-pl.html">MS-PL</a>.</p>  <p>Pictures are licensed under the following Creative Commons License: <a href="http://creativecommons.org/licenses/by/2.0/">http://creativecommons.org/licenses/by/2.0/</a>     <br />Picture locations:     <br /><a href="http://www.flickr.com/photos/proimos/3954987905/">http://www.flickr.com/photos/proimos/3954987905/</a>     <br /><a href="http://www.flickr.com/photos/proimos/4300827122/">http://www.flickr.com/photos/proimos/4300827122/</a>     <br /><a href="http://www.flickr.com/photos/tenioman/2771903123/">http://www.flickr.com/photos/tenioman/2771903123/</a></p>  <p>Hope you like it! Please comment!</p>
 
-      </section>
-      
+        </section>
+        
 
 
-      <div class="mt5"></div>
-      
+        <div class="mt5"></div>
+        
 <div id="graphcomment"></div>
 <script type="text/javascript">
   window.graphcomment_id = 'nokola-blog';
@@ -193,7 +207,8 @@ I use the same adorner implementation in EasyPainter."/>
   })();
 </script>
 
-      </article>
+      </div>
+    </article>
   </div>
 </div>
 
@@ -201,7 +216,7 @@ I use the same adorner implementation in EasyPainter."/>
     <footer class="bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f7 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://systemfailure.io/" >
-    &copy; 2018 SYSTEM FAILURE
+    &copy; 2019 System Failure
   </a>
   
 

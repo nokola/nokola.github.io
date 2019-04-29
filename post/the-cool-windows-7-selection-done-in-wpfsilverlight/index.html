@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>SYSTEM FAILURE  | The Cool Windows 7 Selection in XAML</title>
+    <title>System Failure  | The Cool Windows 7 Selection in XAML</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -99,7 +99,10 @@
         line-height: 1.42857143;
       }
       .title-font {
-        font-weight: 400;
+        font-weight: 700;
+        color: #333;
+        border-bottom: 1px solid #333;
+         
       }
       .body-font {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -111,11 +114,21 @@
         margin-top: 1.5rem;
       }
       article {
-        box-shadow: 0 1px 3px rgba(0,0,0,.1);
         background: white;
+        border-radius: 3px;
       }
       body {
         background: #ecf0f5;
+      }
+      .main-link {
+        display: block;
+        color: inherit;
+
+         
+      }
+      .main-link:hover {
+        text-decoration: none;
+        box-shadow: 0 0 10px 3px rgba(0,0,0,.12);
       }
     </style>
     
@@ -132,8 +145,8 @@
   <div class="flex-l  items-center center">
     <section class="w-100 mw8 center">
       <a href="https://systemfailure.io/" class="f5 fw4 hover-white no-underline white-90 dib">
-        SYSTEM FAILURE
-        <div class="f7 white-70 pad-2 sub-space">Working with humans. Product care. Coding.</div>
+        System Failure
+        <div class="f7 white-70 pad-2 sub-space">Software for humans</div>
       </a>
       <div class="flex-l items-center">
         
@@ -158,21 +171,22 @@
 
     <main class="pb7 ph3 pt2 ph4-ns" role="main">
       
-<div class="flex-l mt2 mw8 center"> 
+<div class="flex-l mt2 mw8 center">
   <div>
-      <a href="javascript:history.go(-1)">← back</a>
-      <article class="center cf pa4 mt3 pb1 mw8 word-wrap">
-        <time class="f7 pb1 dib mid-gray normal" datetime="2009-08-26T20:37:00Z">
-            Aug 26, 2009
-        </time>
-        <h1 class="f2 mb4 mt1 title-font">
+    <a href="javascript:history.go(-1)">← back</a>
+    <article class="center cf word-wrap mt3">
+      <h1 class="f3 title-font pl4 pt4 pb3 mt2">
         The Cool Windows 7 Selection in XAML
-        </h1>
+      </h1>
 
+      <div class="pa4 mw8 pt2">
+        <time class="f7 dib mid-gray normal" datetime="2009-08-26T20:37:00Z">
+          Aug 26, 2009
+        </time>
         
         
-      <section class="nested-copy-line-height lh-copy f5 nested-links nested-img dark-gray">
-        <p><span style="font-size: small;"><span style="font-family: tahoma,arial,helvetica,sans-serif;">Here's the XAML to make a selection rectangle similar to the one in Win7:</span></span></p>
+        <section class="nested-copy-line-height lh-copy f5 nested-links nested-img dark-gray">
+          <p><span style="font-size: small;"><span style="font-family: tahoma,arial,helvetica,sans-serif;">Here's the XAML to make a selection rectangle similar to the one in Win7:</span></span></p>
 <p><img src="/2009%2f8%2fWin7Selection.jpg" alt="" /></p>
 <pre class="MsoNormal" style="margin: 0in 0in 0pt;"><span style="font-family: Consolas; color: #a31515; font-size: 9.5pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family: Consolas; color: blue; font-size: 9.5pt;">&lt;</span><span style="font-family: Consolas; color: #a31515; font-size: 9.5pt;">Grid</span><span style="font-family: Consolas; color: red; font-size: 9.5pt;"> Height</span><span style="font-family: Consolas; color: blue; font-size: 9.5pt;">="22"</span><span style="font-family: Consolas; color: red; font-size: 9.5pt;"> Width</span><span style="font-family: Consolas; color: blue; font-size: 9.5pt;">="300" &gt;</span><span style="font-family: Consolas; color: #a31515; font-size: 9.5pt;"> </span></pre>
 <pre class="MsoNormal" style="margin: 0in 0in 0pt;"><span style="font-family: Consolas; color: #a31515; font-size: 9.5pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family: Consolas; color: blue; font-size: 9.5pt;">&lt;</span><span style="font-family: Consolas; color: #a31515; font-size: 9.5pt;">Rectangle</span><span style="font-family: Consolas; color: red; font-size: 9.5pt;"> Stroke</span><span style="font-family: Consolas; color: blue; font-size: 9.5pt;">="#FF7DA2CE"</span><span style="font-family: Consolas; color: red; font-size: 9.5pt;"> RadiusX</span><span style="font-family: Consolas; color: blue; font-size: 9.5pt;">="2"</span><span style="font-family: Consolas; color: red; font-size: 9.5pt;"> RadiusY</span><span style="font-family: Consolas; color: blue; font-size: 9.5pt;">="2"&gt;</span></pre>
@@ -188,12 +202,12 @@
 <pre class="MsoNormal" style="margin: 0in 0in 0pt;"><span style="font-family: Consolas; color: #a31515; font-size: 9.5pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family: Consolas; color: blue; font-size: 9.5pt;">&lt;/</span><span style="font-family: Consolas; color: #a31515; font-size: 9.5pt;">Grid</span><span style="font-family: Consolas; color: blue; font-size: 9.5pt;">&gt;</span></pre>
 <p>&nbsp;</p>
 
-      </section>
-      
+        </section>
+        
 
 
-      <div class="mt5"></div>
-      
+        <div class="mt5"></div>
+        
 <div id="graphcomment"></div>
 <script type="text/javascript">
   window.graphcomment_id = 'nokola-blog';
@@ -204,7 +218,8 @@
   })();
 </script>
 
-      </article>
+      </div>
+    </article>
   </div>
 </div>
 
@@ -212,7 +227,7 @@
     <footer class="bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f7 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://systemfailure.io/" >
-    &copy; 2018 SYSTEM FAILURE
+    &copy; 2019 System Failure
   </a>
   
 

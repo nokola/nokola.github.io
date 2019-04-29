@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>SYSTEM FAILURE  | EasyPainter Source Pack 2: Flickr, ComboCheckBox and more!</title>
+    <title>System Failure  | EasyPainter Source Pack 2: Flickr, ComboCheckBox and more!</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -111,7 +111,10 @@ public MainPage() { &#160;&#160;&#160; InitializeComponent(); &#160;&#160;&#160;
         line-height: 1.42857143;
       }
       .title-font {
-        font-weight: 400;
+        font-weight: 700;
+        color: #333;
+        border-bottom: 1px solid #333;
+         
       }
       .body-font {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -123,11 +126,21 @@ public MainPage() { &#160;&#160;&#160; InitializeComponent(); &#160;&#160;&#160;
         margin-top: 1.5rem;
       }
       article {
-        box-shadow: 0 1px 3px rgba(0,0,0,.1);
         background: white;
+        border-radius: 3px;
       }
       body {
         background: #ecf0f5;
+      }
+      .main-link {
+        display: block;
+        color: inherit;
+
+         
+      }
+      .main-link:hover {
+        text-decoration: none;
+        box-shadow: 0 0 10px 3px rgba(0,0,0,.12);
       }
     </style>
     
@@ -144,8 +157,8 @@ public MainPage() { &#160;&#160;&#160; InitializeComponent(); &#160;&#160;&#160;
   <div class="flex-l  items-center center">
     <section class="w-100 mw8 center">
       <a href="https://systemfailure.io/" class="f5 fw4 hover-white no-underline white-90 dib">
-        SYSTEM FAILURE
-        <div class="f7 white-70 pad-2 sub-space">Working with humans. Product care. Coding.</div>
+        System Failure
+        <div class="f7 white-70 pad-2 sub-space">Software for humans</div>
       </a>
       <div class="flex-l items-center">
         
@@ -170,28 +183,29 @@ public MainPage() { &#160;&#160;&#160; InitializeComponent(); &#160;&#160;&#160;
 
     <main class="pb7 ph3 pt2 ph4-ns" role="main">
       
-<div class="flex-l mt2 mw8 center"> 
+<div class="flex-l mt2 mw8 center">
   <div>
-      <a href="javascript:history.go(-1)">← back</a>
-      <article class="center cf pa4 mt3 pb1 mw8 word-wrap">
-        <time class="f7 pb1 dib mid-gray normal" datetime="2010-03-11T20:00:00Z">
-            Mar 11, 2010
-        </time>
-        <h1 class="f2 mb4 mt1 title-font">
+    <a href="javascript:history.go(-1)">← back</a>
+    <article class="center cf word-wrap mt3">
+      <h1 class="f3 title-font pl4 pt4 pb3 mt2">
         EasyPainter Source Pack 2: Flickr, ComboCheckBox and more!
-        </h1>
+      </h1>
 
+      <div class="pa4 mw8 pt2">
+        <time class="f7 dib mid-gray normal" datetime="2010-03-11T20:00:00Z">
+          Mar 11, 2010
+        </time>
         
         
-      <section class="nested-copy-line-height lh-copy f5 nested-links nested-img dark-gray">
-        <p>Yes! <a href="http://nokola.com/easypainter">EasyPainter</a> Source Pack 2 is here!</p>  <p>This source pack contains Flickr integration sample amongst other also important things (read below).</p>  <p><a href="http://nokola.com/sources/EasyPainterControlsPack2_Flickr.zip">Download Source Code</a></p>  <p>The live demo:</p> <iframe style="border-bottom: 0px solid; border-left: 0px solid; border-top: 0px solid; border-right: 0px solid" height="600" src="/sample.aspx?xap=EasyPainterControlsPack2_Flickr" frameborder="0" width="960"></iframe>  <h2>Usage</h2>  <ol>   <li>Go to <a title="http://www.flickr.com/services/api/" href="http://www.flickr.com/services/api/">http://www.flickr.com/services/api/</a>, sign up and get an API key for your app</li>    <li>Put the key in Flickr\FlickrHelper.cs</li>    <li>Use the below code behind and XAML:</li> </ol>  <p>[code:c#]</p>  <p>public MainPage() {   <br />&#160;&#160;&#160; InitializeComponent();    <br />&#160;&#160;&#160; Globals.ToolbarRadioButtonStyle = (Style)Application.Current.Resources[&quot;ToolbarRadioButton&quot;];    <br />&#160;&#160;&#160; IGenericUserInterface ui = (IGenericUserInterface)openDialog1;    <br />&#160;&#160;&#160; ui.Result += new GenericResultHandler(ui_Result);    <br />} </p>  <p>void ui_Result(IGenericUserInterface sender, EasyPainter.Imaging.ResultType result, bool uiDismissed) {   <br />&#160;&#160;&#160; MessageBox.Show(String.Format(&quot;Result type: {0}\nPhoto Url: {1}&quot;, result, openDialog1.PhotoUrl));    <br />}</p>  <p>[/code]</p>  <p>XAML:</p>  <p>&lt;Grid x:Name=&quot;LayoutRoot&quot; Background=&quot;White&quot;&gt;   <br />&#160;&#160;&#160; &lt;my:OpenDialog x:Name='openDialog1' /&gt;    <br />&lt;/Grid&gt; </p>  <h2>License</h2>  <p>The source code of the sample is licensed under <a href="http://opensource.org/licenses/ms-pl.html">MS-PL</a></p>  <p>Flickr usage is governed by their own license: check the terms of use on <a title="http://www.flickr.com/services/api/" href="http://www.flickr.com/services/api/">http://www.flickr.com/services/api/</a> for more details.</p>  <h2>Source Code Information</h2>  <p>Apart from Flickr, there are some other things interesting to developers in this sample:</p>  <ul>   <li><strong>Queuing for WebClient</strong>. The WebClient class does not allow to call DownloadStringAsync() while another download using WebClient is in progress. The WebClientQueue class in the sample allows you to queue work items, cancel them, gracefully display and recover from errors and get updates on progress.</li>    <li><strong>Caching for WebClient REST API and other requests.</strong> The current cache is set in WebClientQeueue to 5 minutes. Huge speed improvement when browsing through the images!</li>    <li><strong>ComboCheckBox control</strong> (far from perfect, but still usable for some cases)</li>    <li><strong>Minimalistic WrapPanel.</strong> The 10KB version of the WrapPanel extracted from the Silverlight toolkit that is typically around 280 KB.</li>    <li><strong>Lightweight XML parsing</strong>. Using XMLReader instead of Linq like other samples do helps shave off about 100KB of size from the sample</li>    <li><strong>Small size!</strong> Combining the 2 above items, and the XAP file is only 27K (I wish it was less but life if life :))</li>    <li><strong>ImageList </strong>control for showing and paging through images</li>    <li><strong>ImageSwitchHelper</strong> – a &quot;fit-and-finish&quot; control that helps avoid &quot;jumping&quot; when the image on the right changes. The control preserves the frame size until the next image is loaded.</li>    <li><strong>An easy way to keep UI alive and preserve the dialog view </strong>(DialogStore.cs). If you open EasyPainter you'll notice that every time you click &quot;Open from Flickr&quot; you will go to your previous view instead of resetting the UI. </li>    <li><strong>IUserInterface – a kind of generic interface for reusable UIs and for connecting UIs with other parts of your program</strong>. This interface is used in all dialogs in EasyPainter, for example to update the view when filter values change. It also allows to click through effects without clicking Cancel on each dialog (for example). All EasyPainter filter UI dialogs are built on-the-fly from metadata info assigned to the filter (this would come in another sample sometime).</li> </ul>  <p>I almost missed something important: once you have the image Url, you can display it in an Image tag. If you want to use it from within WriteableBitmap though, you'll have to round-trip it through the server that serves the .xap file (in EasyPainter's case that's <a href="http://www.nokola.com">www.nokola.com</a>).</p>  <p>Also note that <strong><a href="http://nokola.com/blog/post/2010/03/11/EasyPainter-Source-Pack-1-Refresh-(Bug-Fixes).aspx">Source Pack 1</a> has a refresh today too containing new features and bug fixes!</strong></p>  <p>I hope this sample will help you make more responsive/pleasing UIs in addition to Flickr!</p>  <p>Hope you like it! Please comment :)</p>
+        <section class="nested-copy-line-height lh-copy f5 nested-links nested-img dark-gray">
+          <p>Yes! <a href="http://nokola.com/easypainter">EasyPainter</a> Source Pack 2 is here!</p>  <p>This source pack contains Flickr integration sample amongst other also important things (read below).</p>  <p><a href="http://nokola.com/sources/EasyPainterControlsPack2_Flickr.zip">Download Source Code</a></p>  <p>The live demo:</p> <iframe style="border-bottom: 0px solid; border-left: 0px solid; border-top: 0px solid; border-right: 0px solid" height="600" src="/sample.aspx?xap=EasyPainterControlsPack2_Flickr" frameborder="0" width="960"></iframe>  <h2>Usage</h2>  <ol>   <li>Go to <a title="http://www.flickr.com/services/api/" href="http://www.flickr.com/services/api/">http://www.flickr.com/services/api/</a>, sign up and get an API key for your app</li>    <li>Put the key in Flickr\FlickrHelper.cs</li>    <li>Use the below code behind and XAML:</li> </ol>  <p>[code:c#]</p>  <p>public MainPage() {   <br />&#160;&#160;&#160; InitializeComponent();    <br />&#160;&#160;&#160; Globals.ToolbarRadioButtonStyle = (Style)Application.Current.Resources[&quot;ToolbarRadioButton&quot;];    <br />&#160;&#160;&#160; IGenericUserInterface ui = (IGenericUserInterface)openDialog1;    <br />&#160;&#160;&#160; ui.Result += new GenericResultHandler(ui_Result);    <br />} </p>  <p>void ui_Result(IGenericUserInterface sender, EasyPainter.Imaging.ResultType result, bool uiDismissed) {   <br />&#160;&#160;&#160; MessageBox.Show(String.Format(&quot;Result type: {0}\nPhoto Url: {1}&quot;, result, openDialog1.PhotoUrl));    <br />}</p>  <p>[/code]</p>  <p>XAML:</p>  <p>&lt;Grid x:Name=&quot;LayoutRoot&quot; Background=&quot;White&quot;&gt;   <br />&#160;&#160;&#160; &lt;my:OpenDialog x:Name='openDialog1' /&gt;    <br />&lt;/Grid&gt; </p>  <h2>License</h2>  <p>The source code of the sample is licensed under <a href="http://opensource.org/licenses/ms-pl.html">MS-PL</a></p>  <p>Flickr usage is governed by their own license: check the terms of use on <a title="http://www.flickr.com/services/api/" href="http://www.flickr.com/services/api/">http://www.flickr.com/services/api/</a> for more details.</p>  <h2>Source Code Information</h2>  <p>Apart from Flickr, there are some other things interesting to developers in this sample:</p>  <ul>   <li><strong>Queuing for WebClient</strong>. The WebClient class does not allow to call DownloadStringAsync() while another download using WebClient is in progress. The WebClientQueue class in the sample allows you to queue work items, cancel them, gracefully display and recover from errors and get updates on progress.</li>    <li><strong>Caching for WebClient REST API and other requests.</strong> The current cache is set in WebClientQeueue to 5 minutes. Huge speed improvement when browsing through the images!</li>    <li><strong>ComboCheckBox control</strong> (far from perfect, but still usable for some cases)</li>    <li><strong>Minimalistic WrapPanel.</strong> The 10KB version of the WrapPanel extracted from the Silverlight toolkit that is typically around 280 KB.</li>    <li><strong>Lightweight XML parsing</strong>. Using XMLReader instead of Linq like other samples do helps shave off about 100KB of size from the sample</li>    <li><strong>Small size!</strong> Combining the 2 above items, and the XAP file is only 27K (I wish it was less but life if life :))</li>    <li><strong>ImageList </strong>control for showing and paging through images</li>    <li><strong>ImageSwitchHelper</strong> – a &quot;fit-and-finish&quot; control that helps avoid &quot;jumping&quot; when the image on the right changes. The control preserves the frame size until the next image is loaded.</li>    <li><strong>An easy way to keep UI alive and preserve the dialog view </strong>(DialogStore.cs). If you open EasyPainter you'll notice that every time you click &quot;Open from Flickr&quot; you will go to your previous view instead of resetting the UI. </li>    <li><strong>IUserInterface – a kind of generic interface for reusable UIs and for connecting UIs with other parts of your program</strong>. This interface is used in all dialogs in EasyPainter, for example to update the view when filter values change. It also allows to click through effects without clicking Cancel on each dialog (for example). All EasyPainter filter UI dialogs are built on-the-fly from metadata info assigned to the filter (this would come in another sample sometime).</li> </ul>  <p>I almost missed something important: once you have the image Url, you can display it in an Image tag. If you want to use it from within WriteableBitmap though, you'll have to round-trip it through the server that serves the .xap file (in EasyPainter's case that's <a href="http://www.nokola.com">www.nokola.com</a>).</p>  <p>Also note that <strong><a href="http://nokola.com/blog/post/2010/03/11/EasyPainter-Source-Pack-1-Refresh-(Bug-Fixes).aspx">Source Pack 1</a> has a refresh today too containing new features and bug fixes!</strong></p>  <p>I hope this sample will help you make more responsive/pleasing UIs in addition to Flickr!</p>  <p>Hope you like it! Please comment :)</p>
 
-      </section>
-      
+        </section>
+        
 
 
-      <div class="mt5"></div>
-      
+        <div class="mt5"></div>
+        
 <div id="graphcomment"></div>
 <script type="text/javascript">
   window.graphcomment_id = 'nokola-blog';
@@ -202,7 +216,8 @@ public MainPage() { &#160;&#160;&#160; InitializeComponent(); &#160;&#160;&#160;
   })();
 </script>
 
-      </article>
+      </div>
+    </article>
   </div>
 </div>
 
@@ -210,7 +225,7 @@ public MainPage() { &#160;&#160;&#160; InitializeComponent(); &#160;&#160;&#160;
     <footer class="bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f7 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://systemfailure.io/" >
-    &copy; 2018 SYSTEM FAILURE
+    &copy; 2019 System Failure
   </a>
   
 

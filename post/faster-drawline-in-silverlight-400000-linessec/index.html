@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>SYSTEM FAILURE  | Fast DrawLine() in Silverlight</title>
+    <title>System Failure  | Fast DrawLine() in Silverlight</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -120,7 +120,10 @@ Note: in my perf tests I did a single-threaded version, so if you have multiple 
         line-height: 1.42857143;
       }
       .title-font {
-        font-weight: 400;
+        font-weight: 700;
+        color: #333;
+        border-bottom: 1px solid #333;
+         
       }
       .body-font {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -132,11 +135,21 @@ Note: in my perf tests I did a single-threaded version, so if you have multiple 
         margin-top: 1.5rem;
       }
       article {
-        box-shadow: 0 1px 3px rgba(0,0,0,.1);
         background: white;
+        border-radius: 3px;
       }
       body {
         background: #ecf0f5;
+      }
+      .main-link {
+        display: block;
+        color: inherit;
+
+         
+      }
+      .main-link:hover {
+        text-decoration: none;
+        box-shadow: 0 0 10px 3px rgba(0,0,0,.12);
       }
     </style>
     
@@ -153,8 +166,8 @@ Note: in my perf tests I did a single-threaded version, so if you have multiple 
   <div class="flex-l  items-center center">
     <section class="w-100 mw8 center">
       <a href="https://systemfailure.io/" class="f5 fw4 hover-white no-underline white-90 dib">
-        SYSTEM FAILURE
-        <div class="f7 white-70 pad-2 sub-space">Working with humans. Product care. Coding.</div>
+        System Failure
+        <div class="f7 white-70 pad-2 sub-space">Software for humans</div>
       </a>
       <div class="flex-l items-center">
         
@@ -179,21 +192,22 @@ Note: in my perf tests I did a single-threaded version, so if you have multiple 
 
     <main class="pb7 ph3 pt2 ph4-ns" role="main">
       
-<div class="flex-l mt2 mw8 center"> 
+<div class="flex-l mt2 mw8 center">
   <div>
-      <a href="javascript:history.go(-1)">← back</a>
-      <article class="center cf pa4 mt3 pb1 mw8 word-wrap">
-        <time class="f7 pb1 dib mid-gray normal" datetime="2009-11-06T22:39:00Z">
-            Nov 6, 2009
-        </time>
-        <h1 class="f2 mb4 mt1 title-font">
+    <a href="javascript:history.go(-1)">← back</a>
+    <article class="center cf word-wrap mt3">
+      <h1 class="f3 title-font pl4 pt4 pb3 mt2">
         Fast DrawLine() in Silverlight
-        </h1>
+      </h1>
 
+      <div class="pa4 mw8 pt2">
+        <time class="f7 dib mid-gray normal" datetime="2009-11-06T22:39:00Z">
+          Nov 6, 2009
+        </time>
         
         
-      <section class="nested-copy-line-height lh-copy f5 nested-links nested-img dark-gray">
-        <p>How fast can you make it go?</p>
+        <section class="nested-copy-line-height lh-copy f5 nested-links nested-img dark-gray">
+          <p>How fast can you make it go?</p>
 <p>How about this loop that draws the line:[code:c#]<br />int inc = incy1 * w + incx;<br />for (int i = 0; i &lt; lenY; i++) {<br />&nbsp;&nbsp;&nbsp; pixels[index &gt;&gt; PRECISION_SHIFT] = color;<br />&nbsp;&nbsp;&nbsp;&nbsp;index += inc;<br />}[/code]</p>
 <p>40FPS * 10000 lines = 400,000 lines/sec</p>
 <p>Note: in my perf tests I did a single-threaded version, so if you have multiple cores (2-4), you might be able to get to more than 0.4mln lines/sec :)</p>
@@ -228,12 +242,12 @@ Note: in my perf tests I did a single-threaded version, so if you have multiple 
 <p>Hope you like it! Please comment! Also, if you can make it faster, please do!</p>
 <p>&nbsp;</p>
 
-      </section>
-      
+        </section>
+        
 
 
-      <div class="mt5"></div>
-      
+        <div class="mt5"></div>
+        
 <div id="graphcomment"></div>
 <script type="text/javascript">
   window.graphcomment_id = 'nokola-blog';
@@ -244,7 +258,8 @@ Note: in my perf tests I did a single-threaded version, so if you have multiple 
   })();
 </script>
 
-      </article>
+      </div>
+    </article>
   </div>
 </div>
 
@@ -252,7 +267,7 @@ Note: in my perf tests I did a single-threaded version, so if you have multiple 
     <footer class="bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f7 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://systemfailure.io/" >
-    &copy; 2018 SYSTEM FAILURE
+    &copy; 2019 System Failure
   </a>
   
 
