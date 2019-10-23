@@ -6,9 +6,28 @@
     <description>Recent content in Categories on System Failure</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 28 Nov 2012 02:25:55 +0000</lastBuildDate>
     
 	<atom:link href="https://systemfailure.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Coding</title>
+      <link>https://systemfailure.io/categories/coding/</link>
+      <pubDate>Wed, 28 Nov 2012 02:25:55 +0000</pubDate>
+      
+      <guid>https://systemfailure.io/categories/coding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Performance</title>
+      <link>https://systemfailure.io/categories/performance/</link>
+      <pubDate>Wed, 28 Nov 2012 02:25:55 +0000</pubDate>
+      
+      <guid>https://systemfailure.io/categories/performance/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
