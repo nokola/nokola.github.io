@@ -1,13 +1,244 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><title>System Failure | 2x-4x Faster Living Noise</title><meta name=HandheldFriendly content="True"><meta name=MobileOptimized content="320"><meta name=viewport content="width=device-width,minimum-scale=1"><meta name=generator content="Hugo 0.59.0"><meta name=ROBOTS content="NOINDEX, NOFOLLOW"><link href=https://systemfailure.io/dist/main.css rel=stylesheet type=text/css><meta property="og:title" content="2x-4x Faster Living Noise"><meta property="og:description" content="I wasn't quite satisfied with almost 50% CPU for v1 of the Living Noise here, so made some improvements.
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>System Failure  | 2x-4x Faster Living Noise</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.55.6" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    <link href='https://systemfailure.io/dist/main.css' rel='stylesheet' type="text/css" />
+    
+      
+    
+
+    <meta property="og:title" content="2x-4x Faster Living Noise" />
+<meta property="og:description" content="I wasn&#39;t quite satisfied with almost 50% CPU for v1 of the Living Noise here, so made some improvements.
 The new version runs at 15-20% in low quality and about 30% in high quality..could be better but I tried... :)
 The new version replaces the old one here: http://nokola.com/livingnoise
-If you don't see the &#34;High Quality&#34; checkbox, please refresh/delete your browser cache.
-The source code is updated as well: http://nokola.com/sources/livingnoise.zip"><meta property="og:type" content="article"><meta property="og:url" content="https://systemfailure.io/post/faster-living-noise-2x-4x/"><meta property="article:published_time" content="2009-11-04T10:15:00+00:00"><meta property="article:modified_time" content="2009-11-04T10:15:00+00:00"><meta itemprop=name content="2x-4x Faster Living Noise"><meta itemprop=description content="I wasn't quite satisfied with almost 50% CPU for v1 of the Living Noise here, so made some improvements.
+If you don&#39;t see the &#34;High Quality&#34; checkbox, please refresh/delete your browser cache.
+The source code is updated as well: http://nokola.com/sources/livingnoise.zip" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://systemfailure.io/post/faster-living-noise-2x-4x/" />
+<meta property="article:published_time" content="2009-11-04T10:15:00&#43;00:00"/>
+<meta property="article:modified_time" content="2009-11-04T10:15:00&#43;00:00"/>
+
+<meta itemprop="name" content="2x-4x Faster Living Noise">
+<meta itemprop="description" content="I wasn&#39;t quite satisfied with almost 50% CPU for v1 of the Living Noise here, so made some improvements.
 The new version runs at 15-20% in low quality and about 30% in high quality..could be better but I tried... :)
 The new version replaces the old one here: http://nokola.com/livingnoise
-If you don't see the &#34;High Quality&#34; checkbox, please refresh/delete your browser cache.
-The source code is updated as well: http://nokola.com/sources/livingnoise.zip"><meta itemprop=datePublished content="2009-11-04T10:15:00&#43;00:00"><meta itemprop=dateModified content="2009-11-04T10:15:00&#43;00:00"><meta itemprop=wordCount content="191"><meta itemprop=keywords content><meta name=twitter:card content="summary"><meta name=twitter:title content="2x-4x Faster Living Noise"><meta name=twitter:description content="I wasn't quite satisfied with almost 50% CPU for v1 of the Living Noise here, so made some improvements.
+If you don&#39;t see the &#34;High Quality&#34; checkbox, please refresh/delete your browser cache.
+The source code is updated as well: http://nokola.com/sources/livingnoise.zip">
+
+
+<meta itemprop="datePublished" content="2009-11-04T10:15:00&#43;00:00" />
+<meta itemprop="dateModified" content="2009-11-04T10:15:00&#43;00:00" />
+<meta itemprop="wordCount" content="191">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="2x-4x Faster Living Noise"/>
+<meta name="twitter:description" content="I wasn&#39;t quite satisfied with almost 50% CPU for v1 of the Living Noise here, so made some improvements.
 The new version runs at 15-20% in low quality and about 30% in high quality..could be better but I tried... :)
 The new version replaces the old one here: http://nokola.com/livingnoise
-If you don't see the &#34;High Quality&#34; checkbox, please refresh/delete your browser cache.
-The source code is updated as well: http://nokola.com/sources/livingnoise.zip"></head><body class="ma0 body-font"><style>.shadow-bottom{-webkit-box-shadow:0 0 15px 0 #afafaf;-moz-box-shadow:0 0 15px 0 #afafaf;box-shadow:0 0 15px 0 #afafaf}.pad-2{padding:2px 0}.sub-space{letter-spacing:.4px}.nested-img img{width:initial;height:auto}a{color:#06f}pre{overflow:auto;background-color:#e1e1e1}a{text-decoration:none}a:hover{text-decoration:underline}.word-wrap{word-wrap:break-word}.lh-copy{line-height:1.42857143}.title-font{font-weight:700;color:#333;border-bottom:1px solid #333}.body-font{font-family:segoe ui,Tahoma,Geneva,Verdana,sans-serif}.mw6{max-width:36rem}.mt3and5{margin-top:1.5rem}article{background:#fff;border-radius:3px}body{background:#ecf0f5}.main-link{display:block;color:inherit}.main-link:hover{text-decoration:none;box-shadow:0 0 10px 3px rgba(0,0,0,.12)}</style><header class="cover bg-top bg-left shadow-bottom" style=background-image:url(https://systemfailure.io/header/tree1.jpg)><div><nav class="pv3 ph3 ph4-ns" role=navigation><div class="flex-l items-center center"><section class="w-100 mw8 center"><a href=https://systemfailure.io/ class="f5 fw4 hover-white no-underline white-90 dib">System Failure<div class="f7 white-70 pad-2 sub-space">Software for humans</div></a><div class="flex-l items-center"></div></section></div></nav></div></header><main class="pb7 ph3 pt2 ph4-ns" role=main><div class="flex-l mt2 mw8 center"><div><a href=javascript:history.go(-1)>← back</a><article class="center cf word-wrap mt3"><h1 class="f3 title-font pl4 pt4 pb3 mt2">2x-4x Faster Living Noise</h1><div class="pa4 mw8 pt2"><p class="f7 pt1 pb0 mv0 mid-gray"><span>Nov 4, 2009</span></p><section class="nested-copy-line-height lh-copy f5 nested-links nested-img dark-gray"><p>I wasn't quite satisfied with almost 50% CPU for v1 of the Living Noise here, so made some improvements.</p><p>The new version runs at 15-20% in low quality and about 30% in high quality..could be better but I tried... :)</p><p>The new version replaces the old one here: <a href=http://nokola.com/livingnoise>http://nokola.com/livingnoise</a></p><p>If you don't see the "High Quality" checkbox, please refresh/delete your browser cache.</p><p>The source code is updated as well: <a href=http://nokola.com/sources/livingnoise.zip>http://nokola.com/sources/livingnoise.zip</a></p><h2>Summary of Optimizations</h2><ul><li>Changed to static threads and event signaling instead of creating threads on every frame</li><li>Added table lookup instead of division and shifts for blur (this improved perf about 30%)</li><li>Added "skip step": since most of the screen is black, if the blur finds black pixel, it jumps 8 pixels ahead and if it finds another black pixel, assumes that the line strip was black and does not do anything. To avoid having dots "stick" on the screen, the algorithm uses a sliding window on every Blur() to ensure that all pixels on the screen are verified at some point. (that was significant perf improvement as well)</li><li>Added artificial frame cap to 90 FPS</li></ul><p>Hope you like it!</p><p>&nbsp;</p></section><div class=mt5></div><div id=graphcomment></div><script type=text/javascript>window.graphcomment_id='nokola-blog';(function(){var gc=document.createElement('script');gc.type='text/javascript';gc.async=true;gc.src='https://graphcomment.com/js/integration.js';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(gc);})();</script></div></article></div></div></main><footer class="bottom-0 w-100 pa3" role=contentinfo><div class="flex justify-between"><a class="f7 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href=https://systemfailure.io/>&copy; 2019 System Failure</a></div></footer><script src=https://systemfailure.io/dist/app.bundle.js async></script></body></html>
+If you don&#39;t see the &#34;High Quality&#34; checkbox, please refresh/delete your browser cache.
+The source code is updated as well: http://nokola.com/sources/livingnoise.zip"/>
+
+  </head>
+
+  <body class="ma0 body-font">
+    <style>
+      .shadow-bottom {
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(175, 175, 175, 1);
+        -moz-box-shadow:    0px 0px 15px 0px rgba(175, 175, 175, 1);
+        box-shadow:         0px 0px 15px 0px rgba(175, 175, 175, 1);
+      }
+      .pad-2 {
+        padding: 2px 0;
+      }
+      .sub-space {
+        letter-spacing: 0.4px;
+      }
+      .nested-img img {
+        width: initial;
+        height: auto;
+      }
+      a {
+        color: #0066ff;
+      }
+      pre {
+        overflow: auto;
+        background-color: #e1e1e1;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .word-wrap {
+        word-wrap: break-word;
+      }
+      .lh-copy {
+        line-height: 1.42857143;
+      }
+      .title-font {
+        font-weight: 700;
+        color: #333;
+        border-bottom: 1px solid #333;
+         
+      }
+      .body-font {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .mw6 {
+        max-width: 36rem;
+      }
+      .mt3and5 {
+        margin-top: 1.5rem;
+      }
+      article {
+        background: white;
+        border-radius: 3px;
+      }
+      body {
+        background: #ecf0f5;
+      }
+      .main-link {
+        display: block;
+        color: inherit;
+
+         
+      }
+      .main-link:hover {
+        text-decoration: none;
+        box-shadow: 0 0 10px 3px rgba(0,0,0,.12);
+      }
+    </style>
+    
+
+
+
+  
+  
+    <header class="cover bg-top bg-left shadow-bottom" style="background-image: url('https://systemfailure.io/header/tree1.jpg');">
+  
+    <div>
+      
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l  items-center center">
+    <section class="w-100 mw8 center">
+      <a href="https://systemfailure.io/" class="f5 fw4 hover-white no-underline white-90 dib">
+        System Failure
+        <div class="f7 white-70 pad-2 sub-space">Software for humans</div>
+      </a>
+      <div class="flex-l items-center">
+        
+        
+
+
+
+
+
+
+
+
+      </div>
+    </section>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7 ph3 pt2 ph4-ns" role="main">
+      
+<div class="flex-l mt2 mw8 center">
+  <div>
+    <a href="javascript:history.go(-1)">← back</a>
+    <article class="center cf word-wrap mt3">
+      <h1 class="f3 title-font pl4 pt4 pb3 mt2">
+        2x-4x Faster Living Noise
+      </h1>
+
+      <div class="pa4 mw8 pt2">
+        <p class="f7 pt1 pb0 mv0 mid-gray">
+          
+          <span>Nov 4, 2009</span>
+          
+
+          </p>
+
+        
+        
+        <section class="nested-copy-line-height lh-copy f5 nested-links nested-img dark-gray">
+          <p>I wasn't quite satisfied with almost 50% CPU for v1 of the Living Noise here, so made some improvements.</p>
+<p>The new version runs at 15-20% in low quality and about 30% in high quality..could be better but I tried... :)</p>
+<p>The new version replaces the old one here: <a href="http://nokola.com/livingnoise">http://nokola.com/livingnoise</a></p>
+<p>If you don't see the "High Quality" checkbox, please refresh/delete your browser cache.</p>
+<p>The source code is updated as well: <a href="http://nokola.com/sources/livingnoise.zip">http://nokola.com/sources/livingnoise.zip</a></p>
+<h2>Summary of Optimizations</h2>
+<ul>
+<li>Changed to static threads and event signaling instead of creating threads on every frame</li>
+<li>Added table lookup instead of division and shifts for blur (this improved perf about 30%)</li>
+<li>Added "skip step": since most of the screen is black, if the blur finds black pixel, it jumps 8 pixels ahead and if it finds another black pixel, assumes that the line strip was black and does not do anything. To avoid having dots "stick" on the screen, the algorithm uses a sliding window on every Blur() to ensure that all pixels on the screen are verified at some point. (that was significant perf improvement as well)</li>
+<li>Added artificial frame cap to 90 FPS</li>
+</ul>
+<p>Hope you like it!</p>
+<p>&nbsp;</p>
+
+        </section>
+        
+
+
+        <div class="mt5"></div>
+        
+<div id="graphcomment"></div>
+<script type="text/javascript">
+  window.graphcomment_id = 'nokola-blog';
+  (function() {
+    var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+    gc.src = 'https://graphcomment.com/js/integration.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+  })();
+</script>
+
+      </div>
+    </article>
+  </div>
+</div>
+
+    </main>
+    <footer class="bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f7 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://systemfailure.io/" >
+    &copy; 2019 System Failure
+  </a>
+  
+
+
+
+
+
+
+
+
+  </div>
+</footer>
+
+    <script src="https://systemfailure.io/dist/app.bundle.js" async></script>
+
+  </body>
+</html>

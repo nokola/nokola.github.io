@@ -1,37 +1,491 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><title>System Failure | Posts</title><meta name=HandheldFriendly content="True"><meta name=MobileOptimized content="320"><meta name=viewport content="width=device-width,minimum-scale=1"><meta name=generator content="Hugo 0.59.0"><meta name=ROBOTS content="NOINDEX, NOFOLLOW"><link href=https://systemfailure.io/dist/main.css rel=stylesheet type=text/css><link rel=alternate type=application/rss&#43;xml href=https://systemfailure.io/post/index.xml><meta property="og:title" content="Posts"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="https://systemfailure.io/post/"><meta property="og:updated_time" content="2012-11-28T02:25:55+00:00"><meta itemprop=name content="Posts"><meta itemprop=description content><meta name=twitter:card content="summary"><meta name=twitter:title content="Posts"><meta name=twitter:description content></head><body class="ma0 body-font"><style>.shadow-bottom{-webkit-box-shadow:0 0 15px 0 #afafaf;-moz-box-shadow:0 0 15px 0 #afafaf;box-shadow:0 0 15px 0 #afafaf}.pad-2{padding:2px 0}.sub-space{letter-spacing:.4px}.nested-img img{width:initial;height:auto}a{color:#06f}pre{overflow:auto;background-color:#e1e1e1}a{text-decoration:none}a:hover{text-decoration:underline}.word-wrap{word-wrap:break-word}.lh-copy{line-height:1.42857143}.title-font{font-weight:700;color:#333;border-bottom:1px solid #333}.body-font{font-family:segoe ui,Tahoma,Geneva,Verdana,sans-serif}.mw6{max-width:36rem}.mt3and5{margin-top:1.5rem}article{background:#fff;border-radius:3px}body{background:#ecf0f5}.main-link{display:block;color:inherit}.main-link:hover{text-decoration:none;box-shadow:0 0 10px 3px rgba(0,0,0,.12)}</style><header class="cover bg-top bg-left shadow-bottom" style=background-image:url(https://systemfailure.io/header/tree1.jpg)><div><nav class="pv3 ph3 ph4-ns" role=navigation><div class="flex-l items-center center"><section class="w-100 mw8 center"><a href=https://systemfailure.io/ class="f5 fw4 hover-white no-underline white-90 dib">System Failure<div class="f7 white-70 pad-2 sub-space">Software for humans</div></a><div class="flex-l items-center"></div></section></div></nav></div></header><main class="pb7 ph3 pt2 ph4-ns" role=main><article class="pa3 pa4-ns nested-copy-line-height nested-img"><main class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray"></main><section class="flex-ns flex-wrap justify-around mt5"><div class="relative w-100 w-30-l mb4 bg-white"><div class="mb3 pa4 mid-gray overflow-hidden"><div class=f6>December 22, 2009</div><h1 class="f3 near-black"><a href=/post/fast-tile-brush-in-silverlight-and-easiest-way-to-shader-effects/ class="link black dim">Fast Tile Brush in Silverlight, And Easiest Way to Shader Effects</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">Here is one monster, tiled as 6&nbsp;monsters down here:
-This is actually 1 monster, tiled twice horizontally and 3 times vertically using a Silverlght Tile brush shader effect.
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>System Failure  | Posts</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.55.6" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    <link href='https://systemfailure.io/dist/main.css' rel='stylesheet' type="text/css" />
+    
+      
+    
+
+    <link rel="alternate" type="application/rss&#43;xml" href="https://systemfailure.io/post/index.xml">
+    <meta property="og:title" content="Posts" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://systemfailure.io/post/" />
+
+<meta property="og:updated_time" content="2012-11-28T02:25:55&#43;00:00"/>
+
+<meta itemprop="name" content="Posts">
+<meta itemprop="description" content="">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Posts"/>
+<meta name="twitter:description" content=""/>
+
+  </head>
+
+  <body class="ma0 body-font">
+    <style>
+      .shadow-bottom {
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(175, 175, 175, 1);
+        -moz-box-shadow:    0px 0px 15px 0px rgba(175, 175, 175, 1);
+        box-shadow:         0px 0px 15px 0px rgba(175, 175, 175, 1);
+      }
+      .pad-2 {
+        padding: 2px 0;
+      }
+      .sub-space {
+        letter-spacing: 0.4px;
+      }
+      .nested-img img {
+        width: initial;
+        height: auto;
+      }
+      a {
+        color: #0066ff;
+      }
+      pre {
+        overflow: auto;
+        background-color: #e1e1e1;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .word-wrap {
+        word-wrap: break-word;
+      }
+      .lh-copy {
+        line-height: 1.42857143;
+      }
+      .title-font {
+        font-weight: 700;
+        color: #333;
+        border-bottom: 1px solid #333;
+         
+      }
+      .body-font {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .mw6 {
+        max-width: 36rem;
+      }
+      .mt3and5 {
+        margin-top: 1.5rem;
+      }
+      article {
+        background: white;
+        border-radius: 3px;
+      }
+      body {
+        background: #ecf0f5;
+      }
+      .main-link {
+        display: block;
+        color: inherit;
+
+         
+      }
+      .main-link:hover {
+        text-decoration: none;
+        box-shadow: 0 0 10px 3px rgba(0,0,0,.12);
+      }
+    </style>
+    
+
+  
+  
+  <header class="cover bg-top bg-left shadow-bottom" style="background-image: url('https://systemfailure.io/header/tree1.jpg');">
+    <div>
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l  items-center center">
+    <section class="w-100 mw8 center">
+      <a href="https://systemfailure.io/" class="f5 fw4 hover-white no-underline white-90 dib">
+        System Failure
+        <div class="f7 white-70 pad-2 sub-space">Software for humans</div>
+      </a>
+      <div class="flex-l items-center">
+        
+        
+
+
+
+
+
+
+
+
+      </div>
+    </section>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+    <main class="pb7 ph3 pt2 ph4-ns" role="main">
+      
+  <article class="pa3 pa4-ns nested-copy-line-height nested-img">
+  <main class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
+    
+  </main>
+    
+    <section class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        December 22, 2009
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/fast-tile-brush-in-silverlight-and-easiest-way-to-shader-effects/" class="link black dim">
+        Fast Tile Brush in Silverlight, And Easiest Way to Shader Effects
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Here is one monster, tiled as 6&nbsp;monsters down here:
+ This is actually 1 monster, tiled twice horizontally and 3 times vertically using a Silverlght Tile brush shader effect.
 Download source code
 I'm not 100% sure if this is the fastest way, but it's definitely worth it (fast). There are 2 other possible ways to do fast tiling:
-Do it manually or "hardcoded" - if your tile will never change, just do it in any image editor and then display the tiled result using an Image tag Display several images next to each other - relatively harder, but might end up being faster than the pixel shader (this is just a speculation on my side since I haven't tested it yet, but it is worth a try).</div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="mb3 pa4 mid-gray overflow-hidden"><div class=f6>December 20, 2009</div><h1 class="f3 near-black"><a href=/post/appeal-for-donations-keep-games-going-not-ads/ class="link black dim">Appeal for Donations - Keep Games Going, Not Ads!</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">Please take some time to read this appeal completely and eventually donate.
+ Do it manually or "hardcoded" - if your tile will never change, just do it in any image editor and then display the tiled result using an Image tag Display several images next to each other - relatively harder, but might end up being faster than the pixel shader (this is just a speculation on my side since I haven't tested it yet, but it is worth a try).
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        December 20, 2009
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/appeal-for-donations-keep-games-going-not-ads/" class="link black dim">
+        Appeal for Donations - Keep Games Going, Not Ads!
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Please take some time to read this appeal completely and eventually donate.
 I don't like ads, and there's high possibility that you don't too!
 At the same time having an ad-sponsored web site means that ad programs "share" some of people's time (and time is money) spent on my site.
-Should I force anyone of the thousands people who view this site to pay for ads? No, I shouldn't and that's one reason to make today's appeal.</div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="mb3 pa4 mid-gray overflow-hidden"><div class=f6>December 18, 2009</div><h1 class="f3 near-black"><a href=/post/glass-command-prompt-in-windows-7/ class="link black dim">Glass Command Prompt in Windows 7</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">Everybody needs some glass in their life (or was it love? ) Anyway, here's a small project I did today out of love for glassy things.
+Should I force anyone of the thousands people who view this site to pay for ads? No, I shouldn't and that's one reason to make today's appeal.
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        December 18, 2009
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/glass-command-prompt-in-windows-7/" class="link black dim">
+        Glass Command Prompt in Windows 7
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Everybody needs some glass in their life (or was it love? ) Anyway, here's a small project I did today out of love for glassy things.
 This one is in pure C++, a completely glassy command prompt:
 Source code: Glassy.zip (34.05 kb)
-Usage Download the source Glassy.zip (34.05 kb) and run Glassy\Debug\Glassy.exe, or compile and run. Run it as Administrator (right-click the .exe, Run as Administrator) Open command prompt and enjoy the glass!</div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="mb3 pa4 mid-gray overflow-hidden"><div class=f6>December 13, 2009</div><h1 class="f3 near-black"><a href=/post/adorners-in-silverlight-move-size-rotate-custom-mouse-cursor/ class="link black dim">Adorners in Silverlight - Move, Size, Rotate, Custom Mouse Cursor</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">This adorner took me few days to get right!
+Usage  Download the source Glassy.zip (34.05 kb) and run Glassy\Debug\Glassy.exe, or compile and run. Run it as Administrator (right-click the .exe, Run as Administrator) Open command prompt and enjoy the glass!
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        December 13, 2009
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/adorners-in-silverlight-move-size-rotate-custom-mouse-cursor/" class="link black dim">
+        Adorners in Silverlight - Move, Size, Rotate, Custom Mouse Cursor
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      This adorner took me few days to get right!
 Edit Dec, 15: Andrej Tozon created an updated source supporting Behaviours (and drag-drop without code in Blend). Here's a link to his version. Thanks Andrej!
 This&nbsp;is work in progress,&nbsp;but the base functionality is there and stable!
 Download source code
 View Sample
 &nbsp;
 The adorner currently has the following features:
-Shows custom mouse cursors that get rotated and aligned to the object being rotated/sized in realtime.</div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="mb3 pa4 mid-gray overflow-hidden"><div class=f6>December 10, 2009</div><h1 class="f3 near-black"><a href=/post/super-cool-silverlight-game-not-mine-2b-source/ class="link black dim">Super Cool Silverlight Game (Not Mine) &#43; Source</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">This is mind blowing!!
+ Shows custom mouse cursors that get rotated and aligned to the object being rotated/sized in realtime.
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        December 10, 2009
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/super-cool-silverlight-game-not-mine-2b-source/" class="link black dim">
+        Super Cool Silverlight Game (Not Mine) &#43; Source
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      This is mind blowing!!
 A desktop-like RPG Chinese game in Silverlight: http://silverfuture.cn/&nbsp;
 It's 10.7 MB but worth the wait! It's in Chinese.
 I'm sure in future versions it can be much less (e.g. Shock is 17 MB, but 680KB in order to play with the rest being downloaded as you play)
 And!! The source code is here: http://code.msdn.microsoft.com/QXGameEngine
 Some notable things (other than the graphics, implementation and overall coolness):
-1. The map is made of PNG's&nbsp;sized 400x300, it is pre-drawn.</div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="mb3 pa4 mid-gray overflow-hidden"><div class=f6>December 6, 2009</div><h1 class="f3 near-black"><a href=/post/realtime-bump-mapping-in-silverlight/ class="link black dim">Realtime Bump Mapping in Silverlight</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">Ah yes! Bump mapping is an effect that makes "plain" textures - such as stone wall, appear bumpy under a light.
+1. The map is made of PNG's&nbsp;sized 400x300, it is pre-drawn.
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        December 6, 2009
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/realtime-bump-mapping-in-silverlight/" class="link black dim">
+        Realtime Bump Mapping in Silverlight
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Ah yes! Bump mapping is an effect that makes "plain" textures - such as stone wall, appear bumpy under a light.
 Even for a 2D game, bump mapping has a lot of uses. For example, if you're building a space shooter, it would be 10000 times cooler if lights from explosions illuminate the ship, showing it's ridged surfaces.
-I've seen the effect used in games in the main menu as well, where the light of the cursor illuminated a rough surface.</div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="mb3 pa4 mid-gray overflow-hidden"><div class=f6>December 2, 2009</div><h1 class="f3 near-black"><a href=/post/openid-login-for-aspnet/ class="link black dim">OpenID Login for ASP.NET</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">And, eventually, Silverlight :)
+I've seen the effect used in games in the main menu as well, where the light of the cursor illuminated a rough surface.
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        December 2, 2009
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/openid-login-for-aspnet/" class="link black dim">
+        OpenID Login for ASP.NET
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      And, eventually, Silverlight :)
 Here is the "hello world" OpenID login using DotNetOpenAuth.
 If you don't know what's OpenID, it's a way to use your existing Google, Yahoo, AOL, Blogger and many more credentials (eventually Live too), to login to an OpenID website.
-The source code allows you to login using Google, Yahoo, MyOpenID, or other provider and returns a state containing a friendly name and database unique ID of the user that is authenticated!</div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="mb3 pa4 mid-gray overflow-hidden"><div class=f6>November 30, 2009</div><h1 class="f3 near-black"><a href=/post/the-fastest-way-to-find-valuable-resources-ever/ class="link black dim">Keep Track Of Links Using RSS</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">Imagine having all your links whenever you go available on your browser bar, without having to install any custom software like a toolbar.
+The source code allows you to login using Google, Yahoo, MyOpenID, or other provider and returns a state containing a friendly name and database unique ID of the user that is authenticated!
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        November 30, 2009
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/the-fastest-way-to-find-valuable-resources-ever/" class="link black dim">
+        Keep Track Of Links Using RSS
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Imagine having all your links whenever you go available on your browser bar, without having to install any custom software like a toolbar.
 Imagine having a way for people that share your interests to access your links with the same ease and edit them in-place.
 Imagine going to a new pc and populating your links at your browser with 2 or 3 clicks, without installing software.
-Is it possible? Yes it is!</div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="mb3 pa4 mid-gray overflow-hidden"><div class=f6>November 18, 2009</div><h1 class="f3 near-black"><a href=/post/silverlight-4-improvements-for-gaming/ class="link black dim">Silverlight 4 Improvements for Gaming</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">Yes! Silverlight 4 Beta is here! And it comes with quite a few improvements, mostly LOB, but there are some cool things for game&nbsp;developers as well!
+Is it possible? Yes it is!
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        November 18, 2009
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/silverlight-4-improvements-for-gaming/" class="link black dim">
+        Silverlight 4 Improvements for Gaming
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Yes! Silverlight 4 Beta is here! And it comes with quite a few improvements, mostly LOB, but there are some cool things for game&nbsp;developers as well!
 The full list of Silverlight 4 features is here. Also check http://video.microsoftpdc.com/ - the keynote at 1:47:09, showing a cool Facebook app (1:47:56).
 Here is a quick overview of some of the new features that I think will improve gaming in Silverlght 4:
-Faster Silverlight 4 has better performance than Silverlight 3.</div></div></div><div class="relative w-100 w-30-l mb4 bg-white"><div class="mb3 pa4 mid-gray overflow-hidden"><div class=f6>November 18, 2009</div><h1 class="f3 near-black"><a href=/post/4-sites-with-free-graphics-for-commercial-use-and-other-resources/ class="link black dim">4 Sites With Free Graphics For Commercial Use and Other Resources</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height">Here is the new, categorized links view: http://www.nokola.com/links/. It contains a small but soon-to-be-expanded list of graphics, sound, icons, coding, etc resources.
+Faster Silverlight 4 has better performance than Silverlight 3.
+    </div>
+  </div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        November 18, 2009
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/4-sites-with-free-graphics-for-commercial-use-and-other-resources/" class="link black dim">
+        4 Sites With Free Graphics For Commercial Use and Other Resources
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      Here is the new, categorized links view: http://www.nokola.com/links/. It contains a small but soon-to-be-expanded list of graphics, sound, icons, coding, etc resources.
 I took a first stab at the content, adding few of the sites I use most often.
-Please feel free to submit your own links! And I would love it if you use this for your personal link storage as well! (just add it to your favourites bar)</div></div></div></section><ul class=pagination><li class=page-item><a href=/post/ class=page-link aria-label=First><span aria-hidden=true>&laquo;&laquo;</span></a></li><li class=page-item><a href=/post/page/4/ class=page-link aria-label=Previous><span aria-hidden=true>&laquo;</span></a></li><li class=page-item><a class=page-link href=/post/>1</a></li><li class=page-item><a class=page-link href=/post/page/2/>2</a></li><li class=page-item><a class=page-link href=/post/page/3/>3</a></li><li class=page-item><a class=page-link href=/post/page/4/>4</a></li><li class="page-item active"><a class=page-link href=/post/page/5/>5</a></li><li class=page-item><a class=page-link href=/post/page/6/>6</a></li><li class=page-item><a href=/post/page/6/ class=page-link aria-label=Next><span aria-hidden=true>&raquo;</span></a></li><li class=page-item><a href=/post/page/6/ class=page-link aria-label=Last><span aria-hidden=true>&raquo;&raquo;</span></a></li></ul></article></main><footer class="bottom-0 w-100 pa3" role=contentinfo><div class="flex justify-between"><a class="f7 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href=https://systemfailure.io/>&copy; 2019 System Failure</a></div></footer><script src=https://systemfailure.io/dist/app.bundle.js async></script></body></html>
+Please feel free to submit your own links! And I would love it if you use this for your personal link storage as well! (just add it to your favourites bar)
+    </div>
+  </div>
+
+        </div>
+      
+    </section>
+    
+
+<ul class="pagination">
+    
+    <li class="page-item">
+        <a href="/post/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+    <a href="/post/page/4/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/post/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/post/page/2/">2</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/post/page/3/">3</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/post/page/4/">4</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item active"><a class="page-link" href="/post/page/5/">5</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/post/page/6/">6</a></li>
+    
+    
+    <li class="page-item">
+    <a href="/post/page/6/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+        <a href="/post/page/6/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
+
+  </article>
+
+    </main>
+    <footer class="bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f7 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://systemfailure.io/" >
+    &copy; 2019 System Failure
+  </a>
+  
+
+
+
+
+
+
+
+
+  </div>
+</footer>
+
+    <script src="https://systemfailure.io/dist/app.bundle.js" async></script>
+
+  </body>
+</html>
