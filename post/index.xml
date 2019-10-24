@@ -1,448 +1,102 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on System Failure</title>
-    <link>https://systemfailure.io/post/</link>
-    <description>Recent content in Posts on System Failure</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 28 Nov 2012 02:25:55 +0000</lastBuildDate>
-    
-	<atom:link href="https://systemfailure.io/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Windows 8 apps performance helper: Speed at a glance</title>
-      <link>https://systemfailure.io/post/windows-8-apps-performance-helper-speed-at-a-glance/</link>
-      <pubDate>Wed, 28 Nov 2012 02:25:55 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/windows-8-apps-performance-helper-speed-at-a-glance/</guid>
-      <description>&lt;p&gt;Windows 8 Apps have this nice awesome property that you can set in order to show framerate counters:&lt;/p&gt;  &lt;p&gt;&lt;strong&gt;Application.Current.DebugSettings.EnableFrameRateCounter = true; &lt;/strong&gt;&lt;/p&gt;  &lt;p&gt;Just call it in your MainPage() constructor after the InitializeComponent() call.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>AppRating Updated For Mango</title>
-      <link>https://systemfailure.io/post/apprating-updated-for-mango/</link>
-      <pubDate>Wed, 01 Feb 2012 08:56:03 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/apprating-updated-for-mango/</guid>
-      <description>&lt;p&gt;Download source code:&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>The Fastest Way to Switch Free/Paid and NoDo/Mango App Build in Visual Studio</title>
-      <link>https://systemfailure.io/post/the-fastest-way-to-switch-between-freepaid-app-build-in-visual-studio/</link>
-      <pubDate>Sat, 01 Oct 2011 19:31:43 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/the-fastest-way-to-switch-between-freepaid-app-build-in-visual-studio/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Edit: &lt;/strong&gt;Added NoDo/Mango switching as well. Simplified changes to .csproj files&lt;/p&gt;  &lt;p&gt;How would you like to be able to switch from Free/Paid and NoDo/Mango&amp;#160; for your Windows Phone 7 projects in VS?&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Moving to BlogEngine.Net 2.5&#43;Disqus to Stop Spam</title>
-      <link>https://systemfailure.io/post/moving-to-blogenginenet-25-and-disqus-to-stop-comments-spam/</link>
-      <pubDate>Sat, 01 Oct 2011 09:45:25 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/moving-to-blogenginenet-25-and-disqus-to-stop-comments-spam/</guid>
-      <description>Deleted 100K+ comments (again!)
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on System Failure</title><link>https://systemfailure.io/post/</link><description>Recent content in Posts on System Failure</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 28 Nov 2012 02:25:55 +0000</lastBuildDate><atom:link href="https://systemfailure.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Windows 8 apps performance helper: Speed at a glance</title><link>https://systemfailure.io/post/windows-8-apps-performance-helper-speed-at-a-glance/</link><pubDate>Wed, 28 Nov 2012 02:25:55 +0000</pubDate><guid>https://systemfailure.io/post/windows-8-apps-performance-helper-speed-at-a-glance/</guid><description>&lt;p&gt;Windows 8 Apps have this nice awesome property that you can set in order to show framerate counters:&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Application.Current.DebugSettings.EnableFrameRateCounter = true; &lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Just call it in your MainPage() constructor after the InitializeComponent() call.&lt;/p&gt;</description></item><item><title>AppRating Updated For Mango</title><link>https://systemfailure.io/post/apprating-updated-for-mango/</link><pubDate>Wed, 01 Feb 2012 08:56:03 +0000</pubDate><guid>https://systemfailure.io/post/apprating-updated-for-mango/</guid><description>&lt;p&gt;Download source code:&lt;/p&gt;</description></item><item><title>The Fastest Way to Switch Free/Paid and NoDo/Mango App Build in Visual Studio</title><link>https://systemfailure.io/post/the-fastest-way-to-switch-between-freepaid-app-build-in-visual-studio/</link><pubDate>Sat, 01 Oct 2011 19:31:43 +0000</pubDate><guid>https://systemfailure.io/post/the-fastest-way-to-switch-between-freepaid-app-build-in-visual-studio/</guid><description>&lt;p&gt;&lt;strong&gt;Edit: &lt;/strong&gt;Added NoDo/Mango switching as well. Simplified changes to .csproj files&lt;/p&gt; &lt;p&gt;How would you like to be able to switch from Free/Paid and NoDo/Mango&amp;#160; for your Windows Phone 7 projects in VS?&lt;/p&gt;</description></item><item><title>Moving to BlogEngine.Net 2.5&#43;Disqus to Stop Spam</title><link>https://systemfailure.io/post/moving-to-blogenginenet-25-and-disqus-to-stop-comments-spam/</link><pubDate>Sat, 01 Oct 2011 09:45:25 +0000</pubDate><guid>https://systemfailure.io/post/moving-to-blogenginenet-25-and-disqus-to-stop-comments-spam/</guid><description>Deleted 100K+ comments (again!)
 Noticed that BlogEngine.NET 2.5 supports Disqus. After upgrading I used this tool (http://ithoughthecamewithyou.com/post/Convert-BlogML-comments-to-XWR-for-Disqus.aspx) to move my comments over!
 And also had to apply this BlogEngine Disqus Comment Count Fix
 The last part I had to do was update scripts/blog.js to put the div.appendChild(p) below the (ul) in order for the rating text to appear as expected
-showRating: function (container, id, raters, rating) { &amp;#160;&amp;#160;&amp;#160; var div = document.</description>
-    </item>
-    
-    <item>
-      <title>Detecting if Zune is Connected From Your NoDo/Mango App</title>
-      <link>https://systemfailure.io/post/detecting-if-zune-is-connected-from-your-nodomango-app/</link>
-      <pubDate>Sat, 01 Oct 2011 08:08:39 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/detecting-if-zune-is-connected-from-your-nodomango-app/</guid>
-      <description>Edit 2001/10/10: I noticed that I actually get InvalidOperationException on Mango (seems like all the time now, but I’m not 100% sure). Updated code in CaptureTask_Completed to check for this.
+showRating: function (container, id, raters, rating) { &amp;#160;&amp;#160;&amp;#160; var div = document.</description></item><item><title>Detecting if Zune is Connected From Your NoDo/Mango App</title><link>https://systemfailure.io/post/detecting-if-zune-is-connected-from-your-nodomango-app/</link><pubDate>Sat, 01 Oct 2011 08:08:39 +0000</pubDate><guid>https://systemfailure.io/post/detecting-if-zune-is-connected-from-your-nodomango-app/</guid><description>Edit 2001/10/10: I noticed that I actually get InvalidOperationException on Mango (seems like all the time now, but I’m not 100% sure). Updated code in CaptureTask_Completed to check for this.
 Rene had a great blog post about How to detect the Zune software about an year ago. Unfortunately, the method he describes no longer works in Mango.
-Moreover, when you get the Cancel event from the PhotoChooserTask in Mango, neither OnNavigatingFrom nor OnNavigatedTo is called for your page.</description>
-    </item>
-    
-    <item>
-      <title>How I Deleted 100000 Comments!</title>
-      <link>https://systemfailure.io/post/how-i-deleted-100000-comments/</link>
-      <pubDate>Mon, 23 May 2011 17:44:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/how-i-deleted-100000-comments/</guid>
-      <description>Finally, no spam! My blog was slowly becoming dysfunctional, after getting more than 2000 spam comments per day!
-I moved to the new version 2.0 of http://dotnetblogengine.net last night, and it has super easy built in reCAPTCHA which stops spam and helps read books. Pretty cool! The reCAPTCHA settings are accessed by hovering over Tools and selecting Edit in .NET Blog Engine 2.0 – it was very hard and non-intuitive to find the setting, but once I did it worked like a charm!</description>
-    </item>
-    
-    <item>
-      <title>App Rating for Windows Phone 7 Source Code Released</title>
-      <link>https://systemfailure.io/post/app-rating-for-windows-phone-7-source-code-released/</link>
-      <pubDate>Thu, 31 Mar 2011 17:18:40 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/app-rating-for-windows-phone-7-source-code-released/</guid>
-      <description>I’m releasing the App Rating app source code today, under MS-RL license (http://www.opensource.org/licenses/ms-rl). In summary, you can use the App Rating&#39;s source for commercial (even directly competitive) projects and are required to provide updates to the source code back to me and the community.
-The nice part that you can get from AppRating’s code is the WebApi.cs class, which is optimized for network REST requests, dynamically changing priority of requests, cancelling, etc, and is very lightweight.</description>
-    </item>
-    
-    <item>
-      <title>New Fantasia Painter, Windows Phone 7 Source Code Pack 1, New License</title>
-      <link>https://systemfailure.io/post/new-fantasia-painter-windows-phone-7-source-code-pack-1-new-license/</link>
-      <pubDate>Fri, 25 Mar 2011 09:46:53 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/new-fantasia-painter-windows-phone-7-source-code-pack-1-new-license/</guid>
-      <description>I’m back from the fields of Fantasia&#39;s [software development]!
+Moreover, when you get the Cancel event from the PhotoChooserTask in Mango, neither OnNavigatingFrom nor OnNavigatedTo is called for your page.</description></item><item><title>How I Deleted 100000 Comments!</title><link>https://systemfailure.io/post/how-i-deleted-100000-comments/</link><pubDate>Mon, 23 May 2011 17:44:00 +0000</pubDate><guid>https://systemfailure.io/post/how-i-deleted-100000-comments/</guid><description>Finally, no spam! My blog was slowly becoming dysfunctional, after getting more than 2000 spam comments per day!
+I moved to the new version 2.0 of http://dotnetblogengine.net last night, and it has super easy built in reCAPTCHA which stops spam and helps read books. Pretty cool! The reCAPTCHA settings are accessed by hovering over Tools and selecting Edit in .NET Blog Engine 2.0 – it was very hard and non-intuitive to find the setting, but once I did it worked like a charm!</description></item><item><title>App Rating for Windows Phone 7 Source Code Released</title><link>https://systemfailure.io/post/app-rating-for-windows-phone-7-source-code-released/</link><pubDate>Thu, 31 Mar 2011 17:18:40 +0000</pubDate><guid>https://systemfailure.io/post/app-rating-for-windows-phone-7-source-code-released/</guid><description>I’m releasing the App Rating app source code today, under MS-RL license (http://www.opensource.org/licenses/ms-rl). In summary, you can use the App Rating&#39;s source for commercial (even directly competitive) projects and are required to provide updates to the source code back to me and the community.
+The nice part that you can get from AppRating’s code is the WebApi.cs class, which is optimized for network REST requests, dynamically changing priority of requests, cancelling, etc, and is very lightweight.</description></item><item><title>New Fantasia Painter, Windows Phone 7 Source Code Pack 1, New License</title><link>https://systemfailure.io/post/new-fantasia-painter-windows-phone-7-source-code-pack-1-new-license/</link><pubDate>Fri, 25 Mar 2011 09:46:53 +0000</pubDate><guid>https://systemfailure.io/post/new-fantasia-painter-windows-phone-7-source-code-pack-1-new-license/</guid><description>I’m back from the fields of Fantasia&#39;s [software development]!
 This post contains:
- New Fantasia Painter available, with 20 effects, an &amp;quot;alive&amp;quot; Fairy Lights brush, Text, symbols and photo functionality  Source code for Fantasia’s high-usability controls tuned for WP7: color pickers, improved slider and easing progress bar.  My new license (NNCL), which promotes fair commercial and personal use while protecting IP and ensures giving back to the community   New Fantasia Painter The new app has just been released to the marketplace.</description>
-    </item>
-    
-    <item>
-      <title>App Ratings Updated with search and 6-10x times faster</title>
-      <link>https://systemfailure.io/post/app-ratings-updated-with-search-and-6-10x-times-faster/</link>
-      <pubDate>Wed, 22 Dec 2010 02:58:02 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/app-ratings-updated-with-search-and-6-10x-times-faster/</guid>
-      <description>I updated App Rating to have search for apps, show rating since last update, and be much faster. Unlike other similar rating apps on the marketplace, App Rating shows a single-screen per-market score so you can compare your app in different markets easily. To use, search the marketplace for “App Rating” or click here to get the app
-
+New Fantasia Painter available, with 20 effects, an &amp;quot;alive&amp;quot; Fairy Lights brush, Text, symbols and photo functionality Source code for Fantasia’s high-usability controls tuned for WP7: color pickers, improved slider and easing progress bar. My new license (NNCL), which promotes fair commercial and personal use while protecting IP and ensures giving back to the community New Fantasia Painter The new app has just been released to the marketplace.</description></item><item><title>App Ratings Updated with search and 6-10x times faster</title><link>https://systemfailure.io/post/app-ratings-updated-with-search-and-6-10x-times-faster/</link><pubDate>Wed, 22 Dec 2010 02:58:02 +0000</pubDate><guid>https://systemfailure.io/post/app-ratings-updated-with-search-and-6-10x-times-faster/</guid><description>I updated App Rating to have search for apps, show rating since last update, and be much faster. Unlike other similar rating apps on the marketplace, App Rating shows a single-screen per-market score so you can compare your app in different markets easily. To use, search the marketplace for “App Rating” or click here to get the app
 Video of the new functionality:
-
-Unless I get strong feedback for new features, I’m not planning to invest more in App Ratings.</description>
-    </item>
-    
-    <item>
-      <title>Games for Windows Phone 7 Resources: Reducing Load Times, RPG Kit; Other</title>
-      <link>https://systemfailure.io/post/games-for-windows-phone-7-resources-reducing-load-times-rpg-kit3b-other/</link>
-      <pubDate>Sat, 11 Dec 2010 17:18:59 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/games-for-windows-phone-7-resources-reducing-load-times-rpg-kit3b-other/</guid>
-      <description>Microsoft released the new games education pack including a multi-platform tutorial, RPG starter kit ported to Windows Phone 7.
+Unless I get strong feedback for new features, I’m not planning to invest more in App Ratings.</description></item><item><title>Games for Windows Phone 7 Resources: Reducing Load Times, RPG Kit; Other</title><link>https://systemfailure.io/post/games-for-windows-phone-7-resources-reducing-load-times-rpg-kit3b-other/</link><pubDate>Sat, 11 Dec 2010 17:18:59 +0000</pubDate><guid>https://systemfailure.io/post/games-for-windows-phone-7-resources-reducing-load-times-rpg-kit3b-other/</guid><description>Microsoft released the new games education pack including a multi-platform tutorial, RPG starter kit ported to Windows Phone 7.
 I really like the comparisons of the isostore reads in MB/sec in the “reducing load times paper”, and the game samples that’s why blogging it.
 Here’s the pack:
 http://create.msdn.com/en-US/home/news/new_education_dec_2010
 &amp;#160;
 Kind of off topic: I got few asks “how do you make the mouse cursor in your videos?”
-I created my own mouse cursor (just a circle .</description>
-    </item>
-    
-    <item>
-      <title>2 New Apps - See Ratings Across Marketplaces and Prevent Phone Locking when Debugging In Visual Studio</title>
-      <link>https://systemfailure.io/post/new-appe28093see-ratings-across-marketplaces-for-your-windows-phone-7-apps/</link>
-      <pubDate>Fri, 10 Dec 2010 18:32:44 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/new-appe28093see-ratings-across-marketplaces-for-your-windows-phone-7-apps/</guid>
-      <description>Did you know that by default you see only ratings for your marketplace? I didn’t, and was very amazed to find out my apps have more reviews and ratings than what shows up in my phone marketplace or Zune window.
-Using App Ratings, you can now view the ratings by market on a single screen and access reviews in all markets. Search the marketplace for “App Ratings” or click here to get the app</description>
-    </item>
-    
-    <item>
-      <title>Fantasia Painter Released for Windows Phone 7 &#43; Tips</title>
-      <link>https://systemfailure.io/post/fantasia-painter-released-for-windows-phone-7-2b-tips/</link>
-      <pubDate>Sun, 05 Dec 2010 04:06:02 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/fantasia-painter-released-for-windows-phone-7-2b-tips/</guid>
-      <description>Edit Dec 8, 2010: Updated tips (I was too excited the first release and missed some important info in the “how to speed load/save state tip #3)
-Yes! See the 1-minute intro HD video of the drawing app below. In this version, you can add makeup to someone’s face, change eye color (or other colors). It also comes with all-new fur smudge, and color reveal/hide brushes as well as rainbow mode for all existing Fantasia brushes.</description>
-    </item>
-    
-    <item>
-      <title>Worm Hole and White Hole Space Effects in Silverlight</title>
-      <link>https://systemfailure.io/post/worm-hole-and-white-hole-space-effects-in-silverlight/</link>
-      <pubDate>Sun, 07 Nov 2010 09:07:42 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/worm-hole-and-white-hole-space-effects-in-silverlight/</guid>
-      <description>A good starry background is so much better with a nice wormhole in it. Do you agree?:
- Download source code (note: I added the free purple “star spiral thingie”.png – see steps 5-6 below - used for the above effect to the source code download)
-I tried to make a “clean” source code (read: slow, not optimized at all) for the sake of the tutorial and because I didn’t have time to speed it up yet.</description>
-    </item>
-    
-    <item>
-      <title>Creating Nebulas and Starscapes in Fantasia &#43; Source Code!</title>
-      <link>https://systemfailure.io/post/creating-nebulas-and-starscapes-in-fantasia-2b-source-code/</link>
-      <pubDate>Wed, 27 Oct 2010 12:17:03 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/creating-nebulas-and-starscapes-in-fantasia-2b-source-code/</guid>
-      <description>Yes! I just released support for new type of filters in Fantasia that I called Creations. The first, Nebula Creation, allows me do to starry background images like this (source code below):
+I created my own mouse cursor (just a circle .</description></item><item><title>2 New Apps - See Ratings Across Marketplaces and Prevent Phone Locking when Debugging In Visual Studio</title><link>https://systemfailure.io/post/new-appe28093see-ratings-across-marketplaces-for-your-windows-phone-7-apps/</link><pubDate>Fri, 10 Dec 2010 18:32:44 +0000</pubDate><guid>https://systemfailure.io/post/new-appe28093see-ratings-across-marketplaces-for-your-windows-phone-7-apps/</guid><description>Did you know that by default you see only ratings for your marketplace? I didn’t, and was very amazed to find out my apps have more reviews and ratings than what shows up in my phone marketplace or Zune window.
+Using App Ratings, you can now view the ratings by market on a single screen and access reviews in all markets. Search the marketplace for “App Ratings” or click here to get the app</description></item><item><title>Fantasia Painter Released for Windows Phone 7 &#43; Tips</title><link>https://systemfailure.io/post/fantasia-painter-released-for-windows-phone-7-2b-tips/</link><pubDate>Sun, 05 Dec 2010 04:06:02 +0000</pubDate><guid>https://systemfailure.io/post/fantasia-painter-released-for-windows-phone-7-2b-tips/</guid><description>Edit Dec 8, 2010: Updated tips (I was too excited the first release and missed some important info in the “how to speed load/save state tip #3)
+Yes! See the 1-minute intro HD video of the drawing app below. In this version, you can add makeup to someone’s face, change eye color (or other colors). It also comes with all-new fur smudge, and color reveal/hide brushes as well as rainbow mode for all existing Fantasia brushes.</description></item><item><title>Worm Hole and White Hole Space Effects in Silverlight</title><link>https://systemfailure.io/post/worm-hole-and-white-hole-space-effects-in-silverlight/</link><pubDate>Sun, 07 Nov 2010 09:07:42 +0000</pubDate><guid>https://systemfailure.io/post/worm-hole-and-white-hole-space-effects-in-silverlight/</guid><description>A good starry background is so much better with a nice wormhole in it. Do you agree?:
+Download source code (note: I added the free purple “star spiral thingie”.png – see steps 5-6 below - used for the above effect to the source code download)
+I tried to make a “clean” source code (read: slow, not optimized at all) for the sake of the tutorial and because I didn’t have time to speed it up yet.</description></item><item><title>Creating Nebulas and Starscapes in Fantasia &#43; Source Code!</title><link>https://systemfailure.io/post/creating-nebulas-and-starscapes-in-fantasia-2b-source-code/</link><pubDate>Wed, 27 Oct 2010 12:17:03 +0000</pubDate><guid>https://systemfailure.io/post/creating-nebulas-and-starscapes-in-fantasia-2b-source-code/</guid><description>Yes! I just released support for new type of filters in Fantasia that I called Creations. The first, Nebula Creation, allows me do to starry background images like this (source code below):
 Update: shortly after releasing the source code I noticed the nebula image was fixed (only the opacity mask was varying), fixed it and uploaded again.
-
 Or this:
-
-If you’d like to try for yourself, open Fantasia now (http://fantasia.</description>
-    </item>
-    
-    <item>
-      <title>Anti-aliased Lines And Optimizing Code for Windows Phone 7–First Look</title>
-      <link>https://systemfailure.io/post/anti-aliased-lines-and-optimizing-code-for-windows-phone-7e28093first-look/</link>
-      <pubDate>Thu, 14 Oct 2010 02:39:15 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/anti-aliased-lines-and-optimizing-code-for-windows-phone-7e28093first-look/</guid>
-      <description>Update Oct 27, 2010: Thanks to Shai Rubinshtein (see comments) for pointing out an issue with AALine(), source code updated below and in link.
-Some (long) time ago I decided to port Fantasia Painter to Windows Phone 7. When I ran it on an actual device (my friend’s, no I don’t have it yet unfortunately) last week, updating the screen while painting had about 0.5 second lag. This lag is quite unacceptable for a painting app.</description>
-    </item>
-    
-    <item>
-      <title>We’re Hiring! 19 jobs in WPF/Silverlight Designer in Expression/Visual Studio</title>
-      <link>https://systemfailure.io/post/wee28099re-hiring-19-jobs-in-wpfsilverlight-designer-in-expressionvisual-studio/</link>
-      <pubDate>Wed, 15 Sep 2010 17:51:36 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/wee28099re-hiring-19-jobs-in-wpfsilverlight-designer-in-expressionvisual-studio/</guid>
-      <description>The reason I didn’t post for so long: I was waiting for the public announcement of 19 new job openings in the Expression team!
-The jobs include QA (Software Design Engineer in Test), PM (Program Manager) and Dev (Software Design Engineer), Writer and few more. You can apply even if you’re not in the US. I moved to this team about 2 months ago. I’m currently part of the core/shared graphics team, which is a nice place to be (knock on wood:)) for a person who likes developing samples and working with technologies and devices such as WPF, Silverlight, Windows Phone 7 and web site stuff :)</description>
-    </item>
-    
-    <item>
-      <title>New Directional Rainbow Brush; Smear Effect; EasyPainter Out of Beta and Becomes Fantasia!</title>
-      <link>https://systemfailure.io/post/new-directional-rainbow-brush3b-smear-effect3b-easypainter-out-of-beta-and-becomes-fantasia/</link>
-      <pubDate>Sun, 25 Jul 2010 11:44:15 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/new-directional-rainbow-brush3b-smear-effect3b-easypainter-out-of-beta-and-becomes-fantasia/</guid>
-      <description>Yes! A lot of announcements today:
+If you’d like to try for yourself, open Fantasia now (http://fantasia.</description></item><item><title>Anti-aliased Lines And Optimizing Code for Windows Phone 7–First Look</title><link>https://systemfailure.io/post/anti-aliased-lines-and-optimizing-code-for-windows-phone-7e28093first-look/</link><pubDate>Thu, 14 Oct 2010 02:39:15 +0000</pubDate><guid>https://systemfailure.io/post/anti-aliased-lines-and-optimizing-code-for-windows-phone-7e28093first-look/</guid><description>Update Oct 27, 2010: Thanks to Shai Rubinshtein (see comments) for pointing out an issue with AALine(), source code updated below and in link.
+Some (long) time ago I decided to port Fantasia Painter to Windows Phone 7. When I ran it on an actual device (my friend’s, no I don’t have it yet unfortunately) last week, updating the screen while painting had about 0.5 second lag. This lag is quite unacceptable for a painting app.</description></item><item><title>We’re Hiring! 19 jobs in WPF/Silverlight Designer in Expression/Visual Studio</title><link>https://systemfailure.io/post/wee28099re-hiring-19-jobs-in-wpfsilverlight-designer-in-expressionvisual-studio/</link><pubDate>Wed, 15 Sep 2010 17:51:36 +0000</pubDate><guid>https://systemfailure.io/post/wee28099re-hiring-19-jobs-in-wpfsilverlight-designer-in-expressionvisual-studio/</guid><description>The reason I didn’t post for so long: I was waiting for the public announcement of 19 new job openings in the Expression team!
+The jobs include QA (Software Design Engineer in Test), PM (Program Manager) and Dev (Software Design Engineer), Writer and few more. You can apply even if you’re not in the US. I moved to this team about 2 months ago. I’m currently part of the core/shared graphics team, which is a nice place to be (knock on wood:)) for a person who likes developing samples and working with technologies and devices such as WPF, Silverlight, Windows Phone 7 and web site stuff :)</description></item><item><title>New Directional Rainbow Brush; Smear Effect; EasyPainter Out of Beta and Becomes Fantasia!</title><link>https://systemfailure.io/post/new-directional-rainbow-brush3b-smear-effect3b-easypainter-out-of-beta-and-becomes-fantasia/</link><pubDate>Sun, 25 Jul 2010 11:44:15 +0000</pubDate><guid>https://systemfailure.io/post/new-directional-rainbow-brush3b-smear-effect3b-easypainter-out-of-beta-and-becomes-fantasia/</guid><description>Yes! A lot of announcements today:
 The new Fantasia Painter is here: http://fantasia.nokola.com
- New Rainbow brush makes ultra cool smooth color transitions, based on stroke direction  EasyPainter includes all Fantasia brushes and is now named Fantasia!  Fantasia is out of Beta! There is new, enhanced Undo functionality, improved interface.  Smear procedural brush effect makes for reallistic paint “feel” when drawing   Details below:
-Rainbow Brush The rainbow brush changes color based on stroke direction.</description>
-    </item>
-    
-    <item>
-      <title>Fantasia Lite: New Silverlight Painting Tool</title>
-      <link>https://systemfailure.io/post/fantasia-lite-new-silverlight-painting-tool/</link>
-      <pubDate>Thu, 22 Jul 2010 13:41:06 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/fantasia-lite-new-silverlight-painting-tool/</guid>
-      <description>Edit: Fantasia Painter (full version), is now available here: http://fantasia.nokola.com
+New Rainbow brush makes ultra cool smooth color transitions, based on stroke direction EasyPainter includes all Fantasia brushes and is now named Fantasia! Fantasia is out of Beta! There is new, enhanced Undo functionality, improved interface. Smear procedural brush effect makes for reallistic paint “feel” when drawing Details below:
+Rainbow Brush The rainbow brush changes color based on stroke direction.</description></item><item><title>Fantasia Lite: New Silverlight Painting Tool</title><link>https://systemfailure.io/post/fantasia-lite-new-silverlight-painting-tool/</link><pubDate>Thu, 22 Jul 2010 13:41:06 +0000</pubDate><guid>https://systemfailure.io/post/fantasia-lite-new-silverlight-painting-tool/</guid><description>Edit: Fantasia Painter (full version), is now available here: http://fantasia.nokola.com
 Edit 2: The Fantasia Lite version below, has been updated to include the new Rainbow brush (source code included too).
 Here’s what I built tonight – a drawing tool that utilizes procedural brushes to enable almost everyone to create fluffy rabbits like this:
- 
-
-Note that it took me about 2 minutes to “build the rabbit”. I’m sure someone else can do better.</description>
-    </item>
-    
-    <item>
-      <title>Coolest Silverlight Sound Library for Games I’ve Seen Yet</title>
-      <link>https://systemfailure.io/post/coolest-silverlight-sound-library-for-games-ie28099ve-seen-yet/</link>
-      <pubDate>Thu, 10 Jun 2010 19:42:19 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/coolest-silverlight-sound-library-for-games-ie28099ve-seen-yet/</guid>
-      <description>Quite amazing demo: http://prefix.teddywino.com/post/SilverlightMediaKitLiveDemo.aspx&amp;#160;
+Note that it took me about 2 minutes to “build the rabbit”. I’m sure someone else can do better.</description></item><item><title>Coolest Silverlight Sound Library for Games I’ve Seen Yet</title><link>https://systemfailure.io/post/coolest-silverlight-sound-library-for-games-ie28099ve-seen-yet/</link><pubDate>Thu, 10 Jun 2010 19:42:19 +0000</pubDate><guid>https://systemfailure.io/post/coolest-silverlight-sound-library-for-games-ie28099ve-seen-yet/</guid><description>Quite amazing demo: http://prefix.teddywino.com/post/SilverlightMediaKitLiveDemo.aspx&amp;#160;
 The library has a lot of potential for Silverlight games. It does MP3 decoding in managed code and exposes some cool controls like Pitch, Echo. Duet is my favorite. I’m also a Transformers fan and like how Duet makes explosion and swoosh sounds sound “Transformerish”.
-I believe it should solve the “short sound” and “looping music” issues with Silverlight without any problem :). The biggest coolness though is that you can now simulate doppler effects and have more “rich” sound in smaller package (for example, by keeping only one explosion.</description>
-    </item>
-    
-    <item>
-      <title>Playing The Piano From Scratch</title>
-      <link>https://systemfailure.io/post/playing-the-piano-from-scratch/</link>
-      <pubDate>Tue, 25 May 2010 21:28:15 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/playing-the-piano-from-scratch/</guid>
-      <description>Yes! For the last month or so I have been studying the piano. Here are my first 2 pieces:
+I believe it should solve the “short sound” and “looping music” issues with Silverlight without any problem :). The biggest coolness though is that you can now simulate doppler effects and have more “rich” sound in smaller package (for example, by keeping only one explosion.</description></item><item><title>Playing The Piano From Scratch</title><link>https://systemfailure.io/post/playing-the-piano-from-scratch/</link><pubDate>Tue, 25 May 2010 21:28:15 +0000</pubDate><guid>https://systemfailure.io/post/playing-the-piano-from-scratch/</guid><description>Yes! For the last month or so I have been studying the piano. Here are my first 2 pieces:
 http://www.jamendo.com/en/album/67446
 This is the reason why I haven’t done anything public in Silverlight recently. I’ve been also experimenting with the new Expression Blend and Phone 7 stuff.
-Note that I started from 0 (zero) :) about 2 months ago, all by myself so coming from “Marry Had a Little Lamb” to the above music was definitely a trip and fun!</description>
-    </item>
-    
-    <item>
-      <title>Simple Functions for HTML Interop</title>
-      <link>https://systemfailure.io/post/simple-functions-for-html-interop/</link>
-      <pubDate>Sat, 03 Apr 2010 02:45:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/simple-functions-for-html-interop/</guid>
-      <description>I used the below functions on several occasions to transfer data between a server and Silverilght application.
+Note that I started from 0 (zero) :) about 2 months ago, all by myself so coming from “Marry Had a Little Lamb” to the above music was definitely a trip and fun!</description></item><item><title>Simple Functions for HTML Interop</title><link>https://systemfailure.io/post/simple-functions-for-html-interop/</link><pubDate>Sat, 03 Apr 2010 02:45:00 +0000</pubDate><guid>https://systemfailure.io/post/simple-functions-for-html-interop/</guid><description>I used the below functions on several occasions to transfer data between a server and Silverilght application.
 The blog integration between .NET Blog Engine and my Silverlight navigation on top of this site is done using this method.
 You can see the blog title &amp;ldquo;You Had Me At Hello World&amp;rdquo; in the Silverlighg navigation window on top.
-The interop is easy and I tried it in IE, Firefox, Chrome, Opera. Define an HTML like this:</description>
-    </item>
-    
-    <item>
-      <title>EasyPainter: Cloud Turbulence and Particle Buzz</title>
-      <link>https://systemfailure.io/post/easypainter-cloud-turbulence-and-particle-buzz/</link>
-      <pubDate>Fri, 02 Apr 2010 02:52:04 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/easypainter-cloud-turbulence-and-particle-buzz/</guid>
-      <description>Two new effects for EasyPainter with source code!
+The interop is easy and I tried it in IE, Firefox, Chrome, Opera. Define an HTML like this:</description></item><item><title>EasyPainter: Cloud Turbulence and Particle Buzz</title><link>https://systemfailure.io/post/easypainter-cloud-turbulence-and-particle-buzz/</link><pubDate>Fri, 02 Apr 2010 02:52:04 +0000</pubDate><guid>https://systemfailure.io/post/easypainter-cloud-turbulence-and-particle-buzz/</guid><description>Two new effects for EasyPainter with source code!
 Cloud Turbulence: works great on clouds, but not much anything else I tried (OK on metal – makes it look like liquid).
 Before:
- After:
- 
+After:
 Particle Buzz
-This effect has a lot of potential, since it’s the first displacement effect in EasyPainter based on image. Currently, it just uses random noise (Random.Next(256) for the R,G,B and 255 for the A channels).</description>
-    </item>
-    
-    <item>
-      <title>EasyPainter Source Pack 3: Adorners, Mouse Cursors and Frames</title>
-      <link>https://systemfailure.io/post/easypainter-source-pack-3-adorners-mouse-cursors-and-frames/</link>
-      <pubDate>Wed, 17 Mar 2010 01:11:30 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/easypainter-source-pack-3-adorners-mouse-cursors-and-frames/</guid>
-      <description>Adorners went a long way since their first release few months ago. They integrate with zoom now, have more options for controlling functionality and can use a shared &amp;quot;cursor plane&amp;quot; for displaying mouse cursors consistently across your application. Extensibility is improved allowing definition of custom adorner frames. There are 7 custom cursors and 4 custom frames to get you started :)
+This effect has a lot of potential, since it’s the first displacement effect in EasyPainter based on image. Currently, it just uses random noise (Random.Next(256) for the R,G,B and 255 for the A channels).</description></item><item><title>EasyPainter Source Pack 3: Adorners, Mouse Cursors and Frames</title><link>https://systemfailure.io/post/easypainter-source-pack-3-adorners-mouse-cursors-and-frames/</link><pubDate>Wed, 17 Mar 2010 01:11:30 +0000</pubDate><guid>https://systemfailure.io/post/easypainter-source-pack-3-adorners-mouse-cursors-and-frames/</guid><description>Adorners went a long way since their first release few months ago. They integrate with zoom now, have more options for controlling functionality and can use a shared &amp;quot;cursor plane&amp;quot; for displaying mouse cursors consistently across your application. Extensibility is improved allowing definition of custom adorner frames. There are 7 custom cursors and 4 custom frames to get you started :)
 Download source code
-I use the same adorner implementation in EasyPainter.</description>
-    </item>
-    
-    <item>
-      <title>EasyPainter Source Pack 2: Flickr, ComboCheckBox and more!</title>
-      <link>https://systemfailure.io/post/easypainter-source-pack-2-flickr-combocheckbox-and-more/</link>
-      <pubDate>Thu, 11 Mar 2010 20:00:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/easypainter-source-pack-2-flickr-combocheckbox-and-more/</guid>
-      <description>Yes! EasyPainter Source Pack 2 is here!
+I use the same adorner implementation in EasyPainter.</description></item><item><title>EasyPainter Source Pack 2: Flickr, ComboCheckBox and more!</title><link>https://systemfailure.io/post/easypainter-source-pack-2-flickr-combocheckbox-and-more/</link><pubDate>Thu, 11 Mar 2010 20:00:00 +0000</pubDate><guid>https://systemfailure.io/post/easypainter-source-pack-2-flickr-combocheckbox-and-more/</guid><description>Yes! EasyPainter Source Pack 2 is here!
 This source pack contains Flickr integration sample amongst other also important things (read below).
 Download Source Code
 The live demo:
- Usage  Go to http://www.flickr.com/services/api/, sign up and get an API key for your app Put the key in Flickr\FlickrHelper.cs Use the below code behind and XAML:  [code:c#]
-public MainPage() { &amp;#160;&amp;#160;&amp;#160; InitializeComponent(); &amp;#160;&amp;#160;&amp;#160; Globals.ToolbarRadioButtonStyle = (Style)Application.Current.Resources[&amp;quot;ToolbarRadioButton&amp;quot;]; &amp;#160;&amp;#160;&amp;#160; IGenericUserInterface ui = (IGenericUserInterface)openDialog1; &amp;#160;&amp;#160;&amp;#160; ui.</description>
-    </item>
-    
-    <item>
-      <title>EasyPainter Source Pack 1 Refresh</title>
-      <link>https://systemfailure.io/post/easypainter-source-pack-1-refresh-bug-fixes/</link>
-      <pubDate>Thu, 11 Mar 2010 19:00:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/easypainter-source-pack-1-refresh-bug-fixes/</guid>
-      <description>There were several major bugfixes in EasyPainter controls and few updates. Here are the main two:
- Changing the color the first time when using the API in the color picker now works (heh :)). Editable slider has a new DisplayFormat property allowing you to override the format (e.g. DisplayFormat=&amp;quot;X: 0.0&amp;quot; – see below)  The sample is also moved to Visual Studio 2010 RC.
-Here is a refresh of source pack 1 with the changes:</description>
-    </item>
-    
-    <item>
-      <title>EasyPainter: Lion Hair styling</title>
-      <link>https://systemfailure.io/post/easypainter-lion-hair-styling/</link>
-      <pubDate>Fri, 05 Mar 2010 22:42:32 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/easypainter-lion-hair-styling/</guid>
-      <description>I am playing with EasyPainter recently :) There are no new additions to the software (yet).
+Usage Go to http://www.flickr.com/services/api/, sign up and get an API key for your app Put the key in Flickr\FlickrHelper.cs Use the below code behind and XAML: [code:c#]
+public MainPage() { &amp;#160;&amp;#160;&amp;#160; InitializeComponent(); &amp;#160;&amp;#160;&amp;#160; Globals.ToolbarRadioButtonStyle = (Style)Application.Current.Resources[&amp;quot;ToolbarRadioButton&amp;quot;]; &amp;#160;&amp;#160;&amp;#160; IGenericUserInterface ui = (IGenericUserInterface)openDialog1; &amp;#160;&amp;#160;&amp;#160; ui.</description></item><item><title>EasyPainter Source Pack 1 Refresh</title><link>https://systemfailure.io/post/easypainter-source-pack-1-refresh-bug-fixes/</link><pubDate>Thu, 11 Mar 2010 19:00:00 +0000</pubDate><guid>https://systemfailure.io/post/easypainter-source-pack-1-refresh-bug-fixes/</guid><description>There were several major bugfixes in EasyPainter controls and few updates. Here are the main two:
+Changing the color the first time when using the API in the color picker now works (heh :)). Editable slider has a new DisplayFormat property allowing you to override the format (e.g. DisplayFormat=&amp;quot;X: 0.0&amp;quot; – see below) The sample is also moved to Visual Studio 2010 RC.
+Here is a refresh of source pack 1 with the changes:</description></item><item><title>EasyPainter: Lion Hair styling</title><link>https://systemfailure.io/post/easypainter-lion-hair-styling/</link><pubDate>Fri, 05 Mar 2010 22:42:32 +0000</pubDate><guid>https://systemfailure.io/post/easypainter-lion-hair-styling/</guid><description>I am playing with EasyPainter recently :) There are no new additions to the software (yet).
 Here&#39;s how to apply a hair style to a lion.
 Original:
- Hair styled:
- The original image is from: http://www.flickr.com/photos/wwarby/2404544591/ (search for &amp;quot;lion&amp;quot; in EasyPainter)
+Hair styled:
+The original image is from: http://www.flickr.com/photos/wwarby/2404544591/ (search for &amp;quot;lion&amp;quot; in EasyPainter)
 I&#39;d say the second one looks way cooler, especially with the blue Raiden-like eyes. Raiden is the god of thunder from Mortal Kombat!
-Effects used: Color shift for the eyes, followed by Brigthness.</description>
-    </item>
-    
-    <item>
-      <title>10 New Effects in EasyPainter</title>
-      <link>https://systemfailure.io/post/10-new-effects-in-easypainter/</link>
-      <pubDate>Fri, 26 Feb 2010 18:18:05 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/10-new-effects-in-easypainter/</guid>
-      <description>Yes! :) After spending about 1 hour last night, here are 10 more shaders in EasyPainter. Since I don&#39;t have time to write about each one now, here is a sample image leveraging a few:
+Effects used: Color shift for the eyes, followed by Brigthness.</description></item><item><title>10 New Effects in EasyPainter</title><link>https://systemfailure.io/post/10-new-effects-in-easypainter/</link><pubDate>Fri, 26 Feb 2010 18:18:05 +0000</pubDate><guid>https://systemfailure.io/post/10-new-effects-in-easypainter/</guid><description>Yes! :) After spending about 1 hour last night, here are 10 more shaders in EasyPainter. Since I don&#39;t have time to write about each one now, here is a sample image leveraging a few:
 Original:
- Manipulated:
-  Zoom Motion in the lower left corner making the trees appear moving fast towards the viewer Ripples in the sea  Magnify to enlarge the cloud on the right of the image Pinch to change the shape of the lower coconuts Tint and Color Shift to change the color of the coconuts Sharpen on the houses in the backgroundto make the contrast with Zoom Motion stand out more Magnifier Lens to make the trunk of the palm thinner Life-Like Colors to reveal the missing colors   Shaders now have color pickers (such as Tint), and positions (such as Zoom Motion).</description>
-    </item>
-    
-    <item>
-      <title>EasyPainter: Watercolor, Blood and Gloom Pixel Shaders</title>
-      <link>https://systemfailure.io/post/easypainter-watercolor-blood-and-gloom-pixel-shaders/</link>
-      <pubDate>Sat, 20 Feb 2010 04:37:03 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/easypainter-watercolor-blood-and-gloom-pixel-shaders/</guid>
-      <description>Click here to try the new effects in EasyPainter. Download source code.
+Manipulated:
+Zoom Motion in the lower left corner making the trees appear moving fast towards the viewer Ripples in the sea Magnify to enlarge the cloud on the right of the image Pinch to change the shape of the lower coconuts Tint and Color Shift to change the color of the coconuts Sharpen on the houses in the backgroundto make the contrast with Zoom Motion stand out more Magnifier Lens to make the trunk of the palm thinner Life-Like Colors to reveal the missing colors Shaders now have color pickers (such as Tint), and positions (such as Zoom Motion).</description></item><item><title>EasyPainter: Watercolor, Blood and Gloom Pixel Shaders</title><link>https://systemfailure.io/post/easypainter-watercolor-blood-and-gloom-pixel-shaders/</link><pubDate>Sat, 20 Feb 2010 04:37:03 +0000</pubDate><guid>https://systemfailure.io/post/easypainter-watercolor-blood-and-gloom-pixel-shaders/</guid><description>Click here to try the new effects in EasyPainter. Download source code.
 Original vs Zombie – can you figure out which one is which? :)
-&amp;#160; 
-The new Blood shader works only on skin colors. To use it, you have to use the selection brush to select skin tones from the image. Here is the Watercolor shader. It&#39;s very subtle, but I think it looks nice nevertheless. If anyone has suggestions for improvements, including a proper name for this shader, since it is really subtle - please let me know!</description>
-    </item>
-    
-    <item>
-      <title>Old Photo, Pastel, and Pencil Sketch Pixel Shaders For Silverlight</title>
-      <link>https://systemfailure.io/post/old-photo-pastel-and-pencil-sketch-pixel-shaders-for-silverlight/</link>
-      <pubDate>Thu, 18 Feb 2010 21:10:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/old-photo-pastel-and-pencil-sketch-pixel-shaders-for-silverlight/</guid>
-      <description>EasyPainter has new filters! Source code below! Try them out here
+&amp;#160;
+The new Blood shader works only on skin colors. To use it, you have to use the selection brush to select skin tones from the image. Here is the Watercolor shader. It&#39;s very subtle, but I think it looks nice nevertheless. If anyone has suggestions for improvements, including a proper name for this shader, since it is really subtle - please let me know!</description></item><item><title>Old Photo, Pastel, and Pencil Sketch Pixel Shaders For Silverlight</title><link>https://systemfailure.io/post/old-photo-pastel-and-pencil-sketch-pixel-shaders-for-silverlight/</link><pubDate>Thu, 18 Feb 2010 21:10:00 +0000</pubDate><guid>https://systemfailure.io/post/old-photo-pastel-and-pencil-sketch-pixel-shaders-for-silverlight/</guid><description>EasyPainter has new filters! Source code below! Try them out here
 Edit: I&#39;d actually like to improve the pastel shader further - real-life pastel is usually on white background, and the shaders are on black...
 Samples Original (http://www.flickr.com/photos/-arpi/4280428638/):
-
 Pastel Drawing:
-
-Old Photo: 
-
+Old Photo:
 Old Photo (&#34;younger&#34;): [more]
-
-Pencil Sketch: 
-
+Pencil Sketch:
 Source Code Download shader source code and required images
-The .zip file contains the old photo shader, and 2 variations of the sketch shader.</description>
-    </item>
-    
-    <item>
-      <title>Simplex Noise (like Perlin Noise) in Pixel Shader 2.0 for Silverlight and WPF</title>
-      <link>https://systemfailure.io/post/simplex-like-perlin-noise-in-pixel-shader-20-for-silverlight/</link>
-      <pubDate>Thu, 11 Feb 2010 00:49:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/simplex-like-perlin-noise-in-pixel-shader-20-for-silverlight/</guid>
-      <description>Yay! 2D and 3D noise in pixel shaders!
+The .zip file contains the old photo shader, and 2 variations of the sketch shader.</description></item><item><title>Simplex Noise (like Perlin Noise) in Pixel Shader 2.0 for Silverlight and WPF</title><link>https://systemfailure.io/post/simplex-like-perlin-noise-in-pixel-shader-20-for-silverlight/</link><pubDate>Thu, 11 Feb 2010 00:49:00 +0000</pubDate><guid>https://systemfailure.io/post/simplex-like-perlin-noise-in-pixel-shader-20-for-silverlight/</guid><description>Yay! 2D and 3D noise in pixel shaders!
 After tackling the Hue shader I decided to move to something even more interesting, Simplex noise.
 You&#39;ve probably heard of Perlin Noise, if not see Rene&#39;s post with realtime 3D noise here&amp;nbsp;and also check out my Living Noise sample and Living Noise blog post .
-The &#34;Noise&#34; can be used to make effects such as fire, water, marbles, smooth motion, hand-drawn UI, space travel effects, nebulas and a lot more!</description>
-    </item>
-    
-    <item>
-      <title>Someone Said it Was Impossible: Hue Shift in Pixel Shader 2.0 (EasyPainter, Silverlight)</title>
-      <link>https://systemfailure.io/post/someone-said-it-was-impossible-hue-shift-in-pixel-shader-20-silverlight/</link>
-      <pubDate>Tue, 09 Feb 2010 20:30:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/someone-said-it-was-impossible-hue-shift-in-pixel-shader-20-silverlight/</guid>
-      <description>I read somewhere online that Hue changes can&#39;t be done in pixel shader 2.0, due to limitation of 64 instructions per slot.
+The &#34;Noise&#34; can be used to make effects such as fire, water, marbles, smooth motion, hand-drawn UI, space travel effects, nebulas and a lot more!</description></item><item><title>Someone Said it Was Impossible: Hue Shift in Pixel Shader 2.0 (EasyPainter, Silverlight)</title><link>https://systemfailure.io/post/someone-said-it-was-impossible-hue-shift-in-pixel-shader-20-silverlight/</link><pubDate>Tue, 09 Feb 2010 20:30:00 +0000</pubDate><guid>https://systemfailure.io/post/someone-said-it-was-impossible-hue-shift-in-pixel-shader-20-silverlight/</guid><description>I read somewhere online that Hue changes can&#39;t be done in pixel shader 2.0, due to limitation of 64 instructions per slot.
 Here&#39;s the sample that proves otherwise:
 Download source code
- Indeed the RGB-to-HSL-to-RGB conversion takes about 100 instructions in its typical implementation. PS 2.0 which is the shader model supported by Silverlight 3 only allows for 64 arithmetic instructions, as outlined in this comparison between pixel shaders on Wikipedia</description>
-    </item>
-    
-    <item>
-      <title>EasyPainter Source Pack1: Color Picker, RangeSlider, Small Expander, Fast Drop Shadow and more!</title>
-      <link>https://systemfailure.io/post/easypainter-source-pack1-color-picker-rangeslider-small-expander-fast-drop-shadow-and-more/</link>
-      <pubDate>Mon, 08 Feb 2010 23:18:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/easypainter-source-pack1-color-picker-rangeslider-small-expander-fast-drop-shadow-and-more/</guid>
-      <description>I&#39;m very happy to publish the EasyPainter source code pack. The controls in the pack are optimized for usability, speed and size.
+Indeed the RGB-to-HSL-to-RGB conversion takes about 100 instructions in its typical implementation. PS 2.0 which is the shader model supported by Silverlight 3 only allows for 64 arithmetic instructions, as outlined in this comparison between pixel shaders on Wikipedia</description></item><item><title>EasyPainter Source Pack1: Color Picker, RangeSlider, Small Expander, Fast Drop Shadow and more!</title><link>https://systemfailure.io/post/easypainter-source-pack1-color-picker-rangeslider-small-expander-fast-drop-shadow-and-more/</link><pubDate>Mon, 08 Feb 2010 23:18:00 +0000</pubDate><guid>https://systemfailure.io/post/easypainter-source-pack1-color-picker-rangeslider-small-expander-fast-drop-shadow-and-more/</guid><description>I&#39;m very happy to publish the EasyPainter source code pack. The controls in the pack are optimized for usability, speed and size.
 All of them have been succesfully used in real-life apps which is the best way to test if something works.
 Download Source Code
 Here&#39;s a live demo:
- This pack contains the following controls:
- Color Picker - feature complete control that allows to pick any color, transparency or&amp;nbsp;type in&amp;nbsp;hex color Editable, auto-formatting slider - if you want to give the user the ability to quickly choose values with previews, this control is for you.</description>
-    </item>
-    
-    <item>
-      <title>EasyPainter Beta: Top Secret Online Image Editor Announced</title>
-      <link>https://systemfailure.io/post/easypainter-beta-top-secret-online-image-editor-announced/</link>
-      <pubDate>Thu, 04 Feb 2010 01:39:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/easypainter-beta-top-secret-online-image-editor-announced/</guid>
-      <description>Today I am announcing EasyPainter Beta: The Artist Within. An online image editor that is: Fast. Easy. Made for non-designers. And FREE! :)
+This pack contains the following controls:
+Color Picker - feature complete control that allows to pick any color, transparency or&amp;nbsp;type in&amp;nbsp;hex color Editable, auto-formatting slider - if you want to give the user the ability to quickly choose values with previews, this control is for you.</description></item><item><title>EasyPainter Beta: Top Secret Online Image Editor Announced</title><link>https://systemfailure.io/post/easypainter-beta-top-secret-online-image-editor-announced/</link><pubDate>Thu, 04 Feb 2010 01:39:00 +0000</pubDate><guid>https://systemfailure.io/post/easypainter-beta-top-secret-online-image-editor-announced/</guid><description>Today I am announcing EasyPainter Beta: The Artist Within. An online image editor that is: Fast. Easy. Made for non-designers. And FREE! :)
 Click here to open EasyPainter
 Note: send feedback in the comments section of this post.
-Unlike other online (or many offline) image editors, EasyPainter offers online effects comparable to powerful desktop apps, integrated search for millions of free-for-commercial or -personal use photos, and instant previews of any changes you make.</description>
-    </item>
-    
-    <item>
-      <title>The Most Important Silverlight WriteableBitmap Gotcha - Does It Lose/Change Colors?</title>
-      <link>https://systemfailure.io/post/the-most-important-silverlight-writeablebitmap-gotcha-does-it-losechange-colors/</link>
-      <pubDate>Wed, 27 Jan 2010 06:29:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/the-most-important-silverlight-writeablebitmap-gotcha-does-it-losechange-colors/</guid>
-      <description>Edit Nov 21, 2011: changed 256/a to 255/a due to Gert’s comment – thanks Gert!
+Unlike other online (or many offline) image editors, EasyPainter offers online effects comparable to powerful desktop apps, integrated search for millions of free-for-commercial or -personal use photos, and instant previews of any changes you make.</description></item><item><title>The Most Important Silverlight WriteableBitmap Gotcha - Does It Lose/Change Colors?</title><link>https://systemfailure.io/post/the-most-important-silverlight-writeablebitmap-gotcha-does-it-losechange-colors/</link><pubDate>Wed, 27 Jan 2010 06:29:00 +0000</pubDate><guid>https://systemfailure.io/post/the-most-important-silverlight-writeablebitmap-gotcha-does-it-losechange-colors/</guid><description>Edit Nov 21, 2011: changed 256/a to 255/a due to Gert’s comment – thanks Gert!
 The first time I tried saving WriteableBitmap to png, the transparencies didn&#39;t look right. The color was &amp;quot;washed out&amp;quot; and replaced with gray:
 &amp;#160;Moreover: Let&#39;s say you wanted to set a half-opaque red pixel color inside a WriteableBitmap.
 To my biggest surprise this didn&#39;t work:
 bitmap.Pixels[i] = (255 &amp;lt;&amp;lt; 24) + (255 &amp;lt;&amp;lt; 16)
-I got a redder pixel than expected!</description>
-    </item>
-    
-    <item>
-      <title>Quick and Dirty Output of WriteableBitmap as TGA Image</title>
-      <link>https://systemfailure.io/post/quick-and-dirty-output-of-writeablebitmap-as-tga-image/</link>
-      <pubDate>Thu, 21 Jan 2010 20:17:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/quick-and-dirty-output-of-writeablebitmap-as-tga-image/</guid>
-      <description>If you ever needed to save a WriteableBitmap to an image&amp;nbsp;file without too much hassle (e.g. for debugging purposes), you could use this simple source code to save it as TGA and then open with Paint.NET:
+I got a redder pixel than expected!</description></item><item><title>Quick and Dirty Output of WriteableBitmap as TGA Image</title><link>https://systemfailure.io/post/quick-and-dirty-output-of-writeablebitmap-as-tga-image/</link><pubDate>Thu, 21 Jan 2010 20:17:00 +0000</pubDate><guid>https://systemfailure.io/post/quick-and-dirty-output-of-writeablebitmap-as-tga-image/</guid><description>If you ever needed to save a WriteableBitmap to an image&amp;nbsp;file without too much hassle (e.g. for debugging purposes), you could use this simple source code to save it as TGA and then open with Paint.NET:
 From Wikipedia: &#34;TGA files are in widespread use due to their simplicity and ease of implementation and lack of encumbering patents.&#34;
 [code:c#]
 public static class TgaWriter {
-&amp;nbsp;&amp;nbsp;&amp;nbsp; public static void Write(WriteableBitmap bitmap, Stream output) {</description>
-    </item>
-    
-    <item>
-      <title>Calculating Shader Effects in WriteableBitmap (Fast Float Computations And More)</title>
-      <link>https://systemfailure.io/post/calculating-shader-effects-in-writeablebitmap-fast-float-computations-and-more/</link>
-      <pubDate>Mon, 11 Jan 2010 09:27:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/calculating-shader-effects-in-writeablebitmap-fast-float-computations-and-more/</guid>
-      <description>Here&#39;s a small code snippet that allows you to calculate any pixel shader and get the output into a WriteableBitmap!
+&amp;nbsp;&amp;nbsp;&amp;nbsp; public static void Write(WriteableBitmap bitmap, Stream output) {</description></item><item><title>Calculating Shader Effects in WriteableBitmap (Fast Float Computations And More)</title><link>https://systemfailure.io/post/calculating-shader-effects-in-writeablebitmap-fast-float-computations-and-more/</link><pubDate>Mon, 11 Jan 2010 09:27:00 +0000</pubDate><guid>https://systemfailure.io/post/calculating-shader-effects-in-writeablebitmap-fast-float-computations-and-more/</guid><description>Here&#39;s a small code snippet that allows you to calculate any pixel shader and get the output into a WriteableBitmap!
 [code:c#]
 Stream stream = Application.GetResourceStream(new Uri(&#34;SilverlightApplication1;component/Images/test.jpg&#34;, UriKind.Relative)).Stream;
 WriteableBitmap result = new WriteableBitmap(1, 1); // avoid creating intermediate BitmapImage
@@ -451,211 +105,58 @@ Image image = new Image();
 image.Effect = new BlurEffect(); // any pixel shader effect
 image.Source = result; // set the image to the original
 result.Render(image, null);
-result.Invalidate(); // render the pixel shader</description>
-    </item>
-    
-    <item>
-      <title>Game Cutscenes Part 1 - The Sequencer (No Code Yet, Just Concept)</title>
-      <link>https://systemfailure.io/post/game-cutscenes-part-1-the-sequencer-no-code-yet-just-concept/</link>
-      <pubDate>Mon, 04 Jan 2010 11:13:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/game-cutscenes-part-1-the-sequencer-no-code-yet-just-concept/</guid>
-      <description>This post is a call for initial feedback, before&amp;nbsp;I go deeper into coding and stuff, just to make sure I&#39;m not missing anything and capture cool ideas...
+result.Invalidate(); // render the pixel shader</description></item><item><title>Game Cutscenes Part 1 - The Sequencer (No Code Yet, Just Concept)</title><link>https://systemfailure.io/post/game-cutscenes-part-1-the-sequencer-no-code-yet-just-concept/</link><pubDate>Mon, 04 Jan 2010 11:13:00 +0000</pubDate><guid>https://systemfailure.io/post/game-cutscenes-part-1-the-sequencer-no-code-yet-just-concept/</guid><description>This post is a call for initial feedback, before&amp;nbsp;I go deeper into coding and stuff, just to make sure I&#39;m not missing anything and capture cool ideas...
 I&#39;ve been working on a new game recently, and thought it would be really nice to have some cutscenes in the game.
 Here&#39;s a sample frame such a scene:&amp;nbsp;
-Obviously, the above frame is not too advanced, but it looks pretty exciting and fun to create, especially when combined with the right soundtrack</description>
-    </item>
-    
-    <item>
-      <title>Improving Download Time (2-3x) for Full Screen Background Images</title>
-      <link>https://systemfailure.io/post/improving-download-time-2-3x-for-full-screen-background-images/</link>
-      <pubDate>Mon, 04 Jan 2010 10:57:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/improving-download-time-2-3x-for-full-screen-background-images/</guid>
-      <description>Getting your backgrounds quickly is very important for games, especially at startup time when you&#39;re downloading a lot of stuff anyway (like menu buttons, simple effects, such as explosions and other things that didn&#39;t make it into the &#34;core&#34; xap to reduce initial load time).
-Since you are full screen, it is a good idea to detect the resolution (that would be the ActualWidth and ActualHeight properties of your root control) and programatically return a suitable sized background.</description>
-    </item>
-    
-    <item>
-      <title>Tips/Tricks: Short Sounds, Fireworks and BitmapCache Speed</title>
-      <link>https://systemfailure.io/post/tipstricks-short-sounds-music-fireworks-and-speed/</link>
-      <pubDate>Mon, 04 Jan 2010 10:17:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/tipstricks-short-sounds-music-fireworks-and-speed/</guid>
-      <description>This blog post is a follow-up of the previous one dedicated to the Shock improvements.
+Obviously, the above frame is not too advanced, but it looks pretty exciting and fun to create, especially when combined with the right soundtrack</description></item><item><title>Improving Download Time (2-3x) for Full Screen Background Images</title><link>https://systemfailure.io/post/improving-download-time-2-3x-for-full-screen-background-images/</link><pubDate>Mon, 04 Jan 2010 10:57:00 +0000</pubDate><guid>https://systemfailure.io/post/improving-download-time-2-3x-for-full-screen-background-images/</guid><description>Getting your backgrounds quickly is very important for games, especially at startup time when you&#39;re downloading a lot of stuff anyway (like menu buttons, simple effects, such as explosions and other things that didn&#39;t make it into the &#34;core&#34; xap to reduce initial load time).
+Since you are full screen, it is a good idea to detect the resolution (that would be the ActualWidth and ActualHeight properties of your root control) and programatically return a suitable sized background.</description></item><item><title>Tips/Tricks: Short Sounds, Fireworks and BitmapCache Speed</title><link>https://systemfailure.io/post/tipstricks-short-sounds-music-fireworks-and-speed/</link><pubDate>Mon, 04 Jan 2010 10:17:00 +0000</pubDate><guid>https://systemfailure.io/post/tipstricks-short-sounds-music-fireworks-and-speed/</guid><description>This blog post is a follow-up of the previous one dedicated to the Shock improvements.
 I&#39;ll just list all tips or other interesting findings/updates in no particular order:
 Playing Short Sounds in Silverlight (Improved) You probably know by now that Silverlight (2,3) has an annoying issue with short sounds - sometimes the sound is not played correctly. The simple workaround is here.&amp;nbsp;
-If you happen to play too many sounds/sec, the above workaround can cause your memory usage to&amp;nbsp;grow more than you want to&amp;nbsp;for short time.</description>
-    </item>
-    
-    <item>
-      <title>Shock Game got new character - Old Man (the one with the raindeer)</title>
-      <link>https://systemfailure.io/post/shock-game-got-new-character-old-man-the-one-with-the-raindeer/</link>
-      <pubDate>Fri, 25 Dec 2009 08:20:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/shock-game-got-new-character-old-man-the-one-with-the-raindeer/</guid>
-      <description>Now with music (again), special effects. Read more about the effects and other improvements here:
+If you happen to play too many sounds/sec, the above workaround can cause your memory usage to&amp;nbsp;grow more than you want to&amp;nbsp;for short time.</description></item><item><title>Shock Game got new character - Old Man (the one with the raindeer)</title><link>https://systemfailure.io/post/shock-game-got-new-character-old-man-the-one-with-the-raindeer/</link><pubDate>Fri, 25 Dec 2009 08:20:00 +0000</pubDate><guid>https://systemfailure.io/post/shock-game-got-new-character-old-man-the-one-with-the-raindeer/</guid><description>Now with music (again), special effects. Read more about the effects and other improvements here:
 Yes! Thanks to few donations and some out-of-pocket money, I was able to buy back some of Shock&#39;s music.
- Each character has a theme song now. The new character - Old Man, is named after that guy that flies raindeers and distributes gifts through his Christmas distribution chain. The music has new engine now, with &#34;</description>
-    </item>
-    
-    <item>
-      <title>Fast Tile Brush in Silverlight, And Easiest Way to Shader Effects</title>
-      <link>https://systemfailure.io/post/fast-tile-brush-in-silverlight-and-easiest-way-to-shader-effects/</link>
-      <pubDate>Tue, 22 Dec 2009 00:36:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/fast-tile-brush-in-silverlight-and-easiest-way-to-shader-effects/</guid>
-      <description>Here is one monster, tiled as 6&amp;nbsp;monsters down here:
- This is actually 1 monster, tiled twice horizontally and 3 times vertically using a Silverlght Tile brush shader effect.
+Each character has a theme song now. The new character - Old Man, is named after that guy that flies raindeers and distributes gifts through his Christmas distribution chain. The music has new engine now, with &#34;</description></item><item><title>Fast Tile Brush in Silverlight, And Easiest Way to Shader Effects</title><link>https://systemfailure.io/post/fast-tile-brush-in-silverlight-and-easiest-way-to-shader-effects/</link><pubDate>Tue, 22 Dec 2009 00:36:00 +0000</pubDate><guid>https://systemfailure.io/post/fast-tile-brush-in-silverlight-and-easiest-way-to-shader-effects/</guid><description>Here is one monster, tiled as 6&amp;nbsp;monsters down here:
+This is actually 1 monster, tiled twice horizontally and 3 times vertically using a Silverlght Tile brush shader effect.
 Download source code
 I&#39;m not 100% sure if this is the fastest way, but it&#39;s definitely worth it (fast). There are 2 other possible ways to do fast tiling:
- Do it manually or &#34;hardcoded&#34; - if your tile will never change, just do it in any image editor and then display the tiled result using an Image tag Display several images next to each other - relatively harder, but might end up being faster than the pixel shader (this is just a speculation on my side since I haven&#39;t tested it yet, but it is worth a try).</description>
-    </item>
-    
-    <item>
-      <title>Appeal for Donations - Keep Games Going, Not Ads!</title>
-      <link>https://systemfailure.io/post/appeal-for-donations-keep-games-going-not-ads/</link>
-      <pubDate>Sun, 20 Dec 2009 20:32:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/appeal-for-donations-keep-games-going-not-ads/</guid>
-      <description>Please take some time to read this appeal completely and eventually donate.
+Do it manually or &#34;hardcoded&#34; - if your tile will never change, just do it in any image editor and then display the tiled result using an Image tag Display several images next to each other - relatively harder, but might end up being faster than the pixel shader (this is just a speculation on my side since I haven&#39;t tested it yet, but it is worth a try).</description></item><item><title>Appeal for Donations - Keep Games Going, Not Ads!</title><link>https://systemfailure.io/post/appeal-for-donations-keep-games-going-not-ads/</link><pubDate>Sun, 20 Dec 2009 20:32:00 +0000</pubDate><guid>https://systemfailure.io/post/appeal-for-donations-keep-games-going-not-ads/</guid><description>Please take some time to read this appeal completely and eventually donate.
 I don&#39;t like ads, and there&#39;s high possibility that you don&#39;t too!
 At the same time having an ad-sponsored web site means that ad programs &#34;share&#34; some of people&#39;s time (and time is money) spent on my site.
-Should I force anyone of the thousands people who view this site to pay for ads? No, I shouldn&#39;t and that&#39;s one reason to make today&#39;s appeal.</description>
-    </item>
-    
-    <item>
-      <title>Glass Command Prompt in Windows 7</title>
-      <link>https://systemfailure.io/post/glass-command-prompt-in-windows-7/</link>
-      <pubDate>Fri, 18 Dec 2009 04:32:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/glass-command-prompt-in-windows-7/</guid>
-      <description>Everybody needs some glass in their life (or was it love? ) Anyway, here&#39;s a small project I did today out of love for glassy things.
+Should I force anyone of the thousands people who view this site to pay for ads? No, I shouldn&#39;t and that&#39;s one reason to make today&#39;s appeal.</description></item><item><title>Glass Command Prompt in Windows 7</title><link>https://systemfailure.io/post/glass-command-prompt-in-windows-7/</link><pubDate>Fri, 18 Dec 2009 04:32:00 +0000</pubDate><guid>https://systemfailure.io/post/glass-command-prompt-in-windows-7/</guid><description>Everybody needs some glass in their life (or was it love? ) Anyway, here&#39;s a small project I did today out of love for glassy things.
 This one is in pure C++, a completely glassy command prompt:
 Source code: Glassy.zip (34.05 kb)
-Usage  Download the source Glassy.zip (34.05 kb) and run Glassy\Debug\Glassy.exe, or compile and run. Run it as Administrator (right-click the .exe, Run as Administrator) Open command prompt and enjoy the glass!</description>
-    </item>
-    
-    <item>
-      <title>Adorners in Silverlight - Move, Size, Rotate, Custom Mouse Cursor</title>
-      <link>https://systemfailure.io/post/adorners-in-silverlight-move-size-rotate-custom-mouse-cursor/</link>
-      <pubDate>Sun, 13 Dec 2009 10:58:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/adorners-in-silverlight-move-size-rotate-custom-mouse-cursor/</guid>
-      <description>This adorner took me few days to get right!
+Usage Download the source Glassy.zip (34.05 kb) and run Glassy\Debug\Glassy.exe, or compile and run. Run it as Administrator (right-click the .exe, Run as Administrator) Open command prompt and enjoy the glass!</description></item><item><title>Adorners in Silverlight - Move, Size, Rotate, Custom Mouse Cursor</title><link>https://systemfailure.io/post/adorners-in-silverlight-move-size-rotate-custom-mouse-cursor/</link><pubDate>Sun, 13 Dec 2009 10:58:00 +0000</pubDate><guid>https://systemfailure.io/post/adorners-in-silverlight-move-size-rotate-custom-mouse-cursor/</guid><description>This adorner took me few days to get right!
 Edit Dec, 15: Andrej Tozon created an updated source supporting Behaviours (and drag-drop without code in Blend). Here&#39;s a link to his version. Thanks Andrej!
 This&amp;nbsp;is work in progress,&amp;nbsp;but the base functionality is there and stable!
 Download source code
 View Sample
 &amp;nbsp;
 The adorner currently has the following features:
- Shows custom mouse cursors that get rotated and aligned to the object being rotated/sized in realtime.</description>
-    </item>
-    
-    <item>
-      <title>Super Cool Silverlight Game (Not Mine) &#43; Source</title>
-      <link>https://systemfailure.io/post/super-cool-silverlight-game-not-mine-2b-source/</link>
-      <pubDate>Thu, 10 Dec 2009 03:37:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/super-cool-silverlight-game-not-mine-2b-source/</guid>
-      <description>This is mind blowing!!
+Shows custom mouse cursors that get rotated and aligned to the object being rotated/sized in realtime.</description></item><item><title>Super Cool Silverlight Game (Not Mine) &#43; Source</title><link>https://systemfailure.io/post/super-cool-silverlight-game-not-mine-2b-source/</link><pubDate>Thu, 10 Dec 2009 03:37:00 +0000</pubDate><guid>https://systemfailure.io/post/super-cool-silverlight-game-not-mine-2b-source/</guid><description>This is mind blowing!!
 A desktop-like RPG Chinese game in Silverlight: http://silverfuture.cn/&amp;nbsp;
 It&#39;s 10.7 MB but worth the wait! It&#39;s in Chinese.
 I&#39;m sure in future versions it can be much less (e.g. Shock is 17 MB, but 680KB in order to play with the rest being downloaded as you play)
 And!! The source code is here: http://code.msdn.microsoft.com/QXGameEngine
 Some notable things (other than the graphics, implementation and overall coolness):
-1. The map is made of PNG&#39;s&amp;nbsp;sized 400x300, it is pre-drawn.</description>
-    </item>
-    
-    <item>
-      <title>Realtime Bump Mapping in Silverlight</title>
-      <link>https://systemfailure.io/post/realtime-bump-mapping-in-silverlight/</link>
-      <pubDate>Sun, 06 Dec 2009 04:07:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/realtime-bump-mapping-in-silverlight/</guid>
-      <description>Ah yes! Bump mapping is an effect that makes &#34;plain&#34; textures - such as stone wall, appear bumpy under a light.
+1. The map is made of PNG&#39;s&amp;nbsp;sized 400x300, it is pre-drawn.</description></item><item><title>Realtime Bump Mapping in Silverlight</title><link>https://systemfailure.io/post/realtime-bump-mapping-in-silverlight/</link><pubDate>Sun, 06 Dec 2009 04:07:00 +0000</pubDate><guid>https://systemfailure.io/post/realtime-bump-mapping-in-silverlight/</guid><description>Ah yes! Bump mapping is an effect that makes &#34;plain&#34; textures - such as stone wall, appear bumpy under a light.
 Even for a 2D game, bump mapping has a lot of uses. For example, if you&#39;re building a space shooter, it would be 10000 times cooler if lights from explosions illuminate the ship, showing it&#39;s ridged surfaces.
-I&#39;ve seen the effect used in games in the main menu as well, where the light of the cursor illuminated a rough surface.</description>
-    </item>
-    
-    <item>
-      <title>OpenID Login for ASP.NET</title>
-      <link>https://systemfailure.io/post/openid-login-for-aspnet/</link>
-      <pubDate>Wed, 02 Dec 2009 01:58:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/openid-login-for-aspnet/</guid>
-      <description>And, eventually, Silverlight :)
+I&#39;ve seen the effect used in games in the main menu as well, where the light of the cursor illuminated a rough surface.</description></item><item><title>OpenID Login for ASP.NET</title><link>https://systemfailure.io/post/openid-login-for-aspnet/</link><pubDate>Wed, 02 Dec 2009 01:58:00 +0000</pubDate><guid>https://systemfailure.io/post/openid-login-for-aspnet/</guid><description>And, eventually, Silverlight :)
 Here is the &#34;hello world&#34; OpenID login using DotNetOpenAuth.
 If you don&#39;t know what&#39;s OpenID, it&#39;s a way to use your existing Google, Yahoo, AOL, Blogger and many more credentials (eventually Live too), to login to an OpenID website.
-The source code allows you to login using Google, Yahoo, MyOpenID, or other provider and returns a state containing a friendly name and database unique ID of the user that is authenticated!</description>
-    </item>
-    
-    <item>
-      <title>Keep Track Of Links Using RSS</title>
-      <link>https://systemfailure.io/post/the-fastest-way-to-find-valuable-resources-ever/</link>
-      <pubDate>Mon, 30 Nov 2009 10:14:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/the-fastest-way-to-find-valuable-resources-ever/</guid>
-      <description>Imagine having all your links whenever you go available on your browser bar, without having to install any custom software like a toolbar.
+The source code allows you to login using Google, Yahoo, MyOpenID, or other provider and returns a state containing a friendly name and database unique ID of the user that is authenticated!</description></item><item><title>Keep Track Of Links Using RSS</title><link>https://systemfailure.io/post/the-fastest-way-to-find-valuable-resources-ever/</link><pubDate>Mon, 30 Nov 2009 10:14:00 +0000</pubDate><guid>https://systemfailure.io/post/the-fastest-way-to-find-valuable-resources-ever/</guid><description>Imagine having all your links whenever you go available on your browser bar, without having to install any custom software like a toolbar.
 Imagine having a way for people that share your interests to access your links with the same ease and edit them in-place.
 Imagine going to a new pc and populating your links at your browser with 2 or 3 clicks, without installing software.
-Is it possible? Yes it is!</description>
-    </item>
-    
-    <item>
-      <title>Silverlight 4 Improvements for Gaming</title>
-      <link>https://systemfailure.io/post/silverlight-4-improvements-for-gaming/</link>
-      <pubDate>Wed, 18 Nov 2009 19:50:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/silverlight-4-improvements-for-gaming/</guid>
-      <description>Yes! Silverlight 4 Beta is here! And it comes with quite a few improvements, mostly LOB, but there are some cool things for game&amp;nbsp;developers as well!
+Is it possible? Yes it is!</description></item><item><title>Silverlight 4 Improvements for Gaming</title><link>https://systemfailure.io/post/silverlight-4-improvements-for-gaming/</link><pubDate>Wed, 18 Nov 2009 19:50:00 +0000</pubDate><guid>https://systemfailure.io/post/silverlight-4-improvements-for-gaming/</guid><description>Yes! Silverlight 4 Beta is here! And it comes with quite a few improvements, mostly LOB, but there are some cool things for game&amp;nbsp;developers as well!
 The full list of Silverlight 4 features is here. Also check http://video.microsoftpdc.com/ - the keynote at 1:47:09, showing a cool Facebook app (1:47:56).
 Here is a quick overview of some of the new features that I think will improve gaming in Silverlght 4:
-Faster Silverlight 4 has better performance than Silverlight 3.</description>
-    </item>
-    
-    <item>
-      <title>4 Sites With Free Graphics For Commercial Use and Other Resources</title>
-      <link>https://systemfailure.io/post/4-sites-with-free-graphics-for-commercial-use-and-other-resources/</link>
-      <pubDate>Wed, 18 Nov 2009 08:46:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/4-sites-with-free-graphics-for-commercial-use-and-other-resources/</guid>
-      <description>Here is the new, categorized links view: http://www.nokola.com/links/. It contains a small but soon-to-be-expanded list of graphics, sound, icons, coding, etc resources.
+Faster Silverlight 4 has better performance than Silverlight 3.</description></item><item><title>4 Sites With Free Graphics For Commercial Use and Other Resources</title><link>https://systemfailure.io/post/4-sites-with-free-graphics-for-commercial-use-and-other-resources/</link><pubDate>Wed, 18 Nov 2009 08:46:00 +0000</pubDate><guid>https://systemfailure.io/post/4-sites-with-free-graphics-for-commercial-use-and-other-resources/</guid><description>Here is the new, categorized links view: http://www.nokola.com/links/. It contains a small but soon-to-be-expanded list of graphics, sound, icons, coding, etc resources.
 I took a first stab at the content, adding few of the sites I use most often.
-Please feel free to submit your own links! And I would love it if you use this for your personal link storage as well! (just add it to your favourites bar)</description>
-    </item>
-    
-    <item>
-      <title>Detect the CPU Core Count From Silverlight</title>
-      <link>https://systemfailure.io/post/detect-the-cpu-core-count-from-silverlight/</link>
-      <pubDate>Thu, 12 Nov 2009 02:06:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/detect-the-cpu-core-count-from-silverlight/</guid>
-      <description>If you&#39;re are writing an application that is heavy on multi-threaded computations (e.g. full screen blur, game, or scientific data processing), you will want to know how many threads to run optimally.
+Please feel free to submit your own links! And I would love it if you use this for your personal link storage as well! (just add it to your favourites bar)</description></item><item><title>Detect the CPU Core Count From Silverlight</title><link>https://systemfailure.io/post/detect-the-cpu-core-count-from-silverlight/</link><pubDate>Thu, 12 Nov 2009 02:06:00 +0000</pubDate><guid>https://systemfailure.io/post/detect-the-cpu-core-count-from-silverlight/</guid><description>If you&#39;re are writing an application that is heavy on multi-threaded computations (e.g. full screen blur, game, or scientific data processing), you will want to know how many threads to run optimally.
 Edit: just fixed a bug reported where the initial assesment woult be 0 msec, thanks Morten for reporting it!
-The answer is easy: run as many threads as the CPU cores. For example, on Dual Core, you should run 2 threads and on Quad Core 4 threads.</description>
-    </item>
-    
-    <item>
-      <title>Best Way To Clear WriteableBitmap?</title>
-      <link>https://systemfailure.io/post/best-way-to-clear-writeablebitmap/</link>
-      <pubDate>Wed, 11 Nov 2009 02:28:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/best-way-to-clear-writeablebitmap/</guid>
-      <description>If you&#39;re doing a lot of custom drawing using WriteableBitmap (e.g. full screen game), it will be extremely important to be able to clear the WriteableBitmap or &#34;screen&#34; quickly.
+The answer is easy: run as many threads as the CPU cores. For example, on Dual Core, you should run 2 threads and on Quad Core 4 threads.</description></item><item><title>Best Way To Clear WriteableBitmap?</title><link>https://systemfailure.io/post/best-way-to-clear-writeablebitmap/</link><pubDate>Wed, 11 Nov 2009 02:28:00 +0000</pubDate><guid>https://systemfailure.io/post/best-way-to-clear-writeablebitmap/</guid><description>If you&#39;re doing a lot of custom drawing using WriteableBitmap (e.g. full screen game), it will be extremely important to be able to clear the WriteableBitmap or &#34;screen&#34; quickly.
 Lets assume you want to clear the screen to specific color.
 What is the best way to do it?
 Here is a short comparison of&amp;nbsp;few methods to clear a 512x512 bitmap:
- Clear with for loop:&amp;nbsp;1000 FPS Clear with Array.Copy: 4100 FPS Clear with Array.</description>
-    </item>
-    
-    <item>
-      <title>Fast DrawLine() in Silverlight</title>
-      <link>https://systemfailure.io/post/faster-drawline-in-silverlight-400000-linessec/</link>
-      <pubDate>Fri, 06 Nov 2009 22:39:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/faster-drawline-in-silverlight-400000-linessec/</guid>
-      <description>How fast can you make it go?
+Clear with for loop:&amp;nbsp;1000 FPS Clear with Array.Copy: 4100 FPS Clear with Array.</description></item><item><title>Fast DrawLine() in Silverlight</title><link>https://systemfailure.io/post/faster-drawline-in-silverlight-400000-linessec/</link><pubDate>Fri, 06 Nov 2009 22:39:00 +0000</pubDate><guid>https://systemfailure.io/post/faster-drawline-in-silverlight-400000-linessec/</guid><description>How fast can you make it go?
 How about this loop that draws the line:[code:c#]
 int inc = incy1 * w + incx;
 for (int i = 0; i &amp;lt; lenY; i++) {
@@ -663,67 +164,21 @@ for (int i = 0; i &amp;lt; lenY; i++) {
 &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;index += inc;
 }[/code]
 40FPS * 10000 lines = 400,000 lines/sec
-Note: in my perf tests I did a single-threaded version, so if you have multiple cores (2-4), you might be able to get to more than 0.</description>
-    </item>
-    
-    <item>
-      <title>2x-4x Faster Living Noise</title>
-      <link>https://systemfailure.io/post/faster-living-noise-2x-4x/</link>
-      <pubDate>Wed, 04 Nov 2009 10:15:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/faster-living-noise-2x-4x/</guid>
-      <description>I wasn&#39;t quite satisfied with almost 50% CPU for v1 of the Living Noise here, so made some improvements.
+Note: in my perf tests I did a single-threaded version, so if you have multiple cores (2-4), you might be able to get to more than 0.</description></item><item><title>2x-4x Faster Living Noise</title><link>https://systemfailure.io/post/faster-living-noise-2x-4x/</link><pubDate>Wed, 04 Nov 2009 10:15:00 +0000</pubDate><guid>https://systemfailure.io/post/faster-living-noise-2x-4x/</guid><description>I wasn&#39;t quite satisfied with almost 50% CPU for v1 of the Living Noise here, so made some improvements.
 The new version runs at 15-20% in low quality and about 30% in high quality..could be better but I tried... :)
 The new version replaces the old one here: http://nokola.com/livingnoise
 If you don&#39;t see the &#34;High Quality&#34; checkbox, please refresh/delete your browser cache.
-The source code is updated as well: http://nokola.com/sources/livingnoise.zip</description>
-    </item>
-    
-    <item>
-      <title>Special Effects: Living Noise</title>
-      <link>https://systemfailure.io/post/large-scale-special-effects-in-silverlight-living-noise/</link>
-      <pubDate>Sun, 01 Nov 2009 21:53:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/large-scale-special-effects-in-silverlight-living-noise/</guid>
-      <description>The Living Noise is an animated &amp;ldquo;flow&amp;rdquo; of particles. The particle trajectory is changed by using Perlin Noise (long live Ken Perlin!) I&amp;rsquo;m so excited. Perlin noise is used pretty much in all special effects &amp;ndash; explosions, texture generation, water, clouds, mountains, terrain generation, twinkling stars, halo/weapon effects, etc..
+The source code is updated as well: http://nokola.com/sources/livingnoise.zip</description></item><item><title>Special Effects: Living Noise</title><link>https://systemfailure.io/post/large-scale-special-effects-in-silverlight-living-noise/</link><pubDate>Sun, 01 Nov 2009 21:53:00 +0000</pubDate><guid>https://systemfailure.io/post/large-scale-special-effects-in-silverlight-living-noise/</guid><description>The Living Noise is an animated &amp;ldquo;flow&amp;rdquo; of particles. The particle trajectory is changed by using Perlin Noise (long live Ken Perlin!) I&amp;rsquo;m so excited. Perlin noise is used pretty much in all special effects &amp;ndash; explosions, texture generation, water, clouds, mountains, terrain generation, twinkling stars, halo/weapon effects, etc..
 Click below to see the Living Noise sample, which is just one way to use Noise:
 Living Noise
-
-Download the source code for Living Noise</description>
-    </item>
-    
-    <item>
-      <title>Top 3 Silverlight Features? Add Your Own</title>
-      <link>https://systemfailure.io/post/top-3-feature-requests-in-silverlight-add-your-own/</link>
-      <pubDate>Thu, 29 Oct 2009 00:05:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/top-3-feature-requests-in-silverlight-add-your-own/</guid>
-      <description>Click here to add your own and see what other people added:
+Download the source code for Living Noise</description></item><item><title>Top 3 Silverlight Features? Add Your Own</title><link>https://systemfailure.io/post/top-3-feature-requests-in-silverlight-add-your-own/</link><pubDate>Thu, 29 Oct 2009 00:05:00 +0000</pubDate><guid>https://systemfailure.io/post/top-3-feature-requests-in-silverlight-add-your-own/</guid><description>Click here to add your own and see what other people added:
 http://silverlight.uservoice.com/pages/4325-feature-suggestions
 are:
 1. Printing
 2. Right-click
 3. Full Databinding
 What are yours? If you have anything in mind, the above link for customer feedback can help get your feature more visibility.&amp;nbsp;
-&amp;nbsp;</description>
-    </item>
-    
-    <item>
-      <title>Two Ways to Create High-Quality Glassy Controls in XAML</title>
-      <link>https://systemfailure.io/post/two-ways-to-create-high-quality-glassy-controls-in-xaml/</link>
-      <pubDate>Sat, 12 Sep 2009 01:26:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/two-ways-to-create-high-quality-glassy-controls-in-xaml/</guid>
-      <description>&amp;nbsp;&amp;ldquo;However, there is one design trick that I&#39;d&amp;nbsp;love to master to give my applications that killer look -- the ability to give a control, be that a logo, a menu bar, or whatever, the ultra-glossy appearance, and especially the appearance that I&#39;ve seen in these water ripples applications of the control having a shiny layer of water on them..&amp;nbsp; I don&#39;t necessarily need to achieve the ripple effect, but I&#39;d love to know how to achieve the water layer appearance.</description>
-    </item>
-    
-    <item>
-      <title>WPF/Silverlight Tutorials From My Previous Blog</title>
-      <link>https://systemfailure.io/post/wpfsilverlight-tutorials-from-my-previous-blog/</link>
-      <pubDate>Sat, 12 Sep 2009 00:59:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/wpfsilverlight-tutorials-from-my-previous-blog/</guid>
-      <description>This is the list of all posts I consider interesting from my old blog at http://blogs.msdn.com/nikola
+&amp;nbsp;</description></item><item><title>Two Ways to Create High-Quality Glassy Controls in XAML</title><link>https://systemfailure.io/post/two-ways-to-create-high-quality-glassy-controls-in-xaml/</link><pubDate>Sat, 12 Sep 2009 01:26:00 +0000</pubDate><guid>https://systemfailure.io/post/two-ways-to-create-high-quality-glassy-controls-in-xaml/</guid><description>&amp;nbsp;&amp;ldquo;However, there is one design trick that I&#39;d&amp;nbsp;love to master to give my applications that killer look -- the ability to give a control, be that a logo, a menu bar, or whatever, the ultra-glossy appearance, and especially the appearance that I&#39;ve seen in these water ripples applications of the control having a shiny layer of water on them..&amp;nbsp; I don&#39;t necessarily need to achieve the ripple effect, but I&#39;d love to know how to achieve the water layer appearance.</description></item><item><title>WPF/Silverlight Tutorials From My Previous Blog</title><link>https://systemfailure.io/post/wpfsilverlight-tutorials-from-my-previous-blog/</link><pubDate>Sat, 12 Sep 2009 00:59:00 +0000</pubDate><guid>https://systemfailure.io/post/wpfsilverlight-tutorials-from-my-previous-blog/</guid><description>This is the list of all posts I consider interesting from my old blog at http://blogs.msdn.com/nikola
 This blog now replaces the old one :)
 Here&#39;s the list...hope you like it:
 Gaming:
@@ -732,30 +187,8 @@ Anatomy of a Silverlight Game: Avoid Common Mistakes When Building Online Games
 Play this Silverlight Game Online: Shock v2
 Design and Effects:
 Nice background image
-Large Star Field - Take 2, how to make it look &#34;</description>
-    </item>
-    
-    <item>
-      <title>The Cool Windows 7 Selection in XAML</title>
-      <link>https://systemfailure.io/post/the-cool-windows-7-selection-done-in-wpfsilverlight/</link>
-      <pubDate>Wed, 26 Aug 2009 20:37:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/the-cool-windows-7-selection-done-in-wpfsilverlight/</guid>
-      <description>Here&#39;s the XAML to make a selection rectangle similar to the one in Win7:
-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;GridHeight=&#34;22&#34;Width=&#34;300&#34; &amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;RectangleStroke=&#34;#FF7DA2CE&#34;RadiusX=&#34;2&#34;RadiusY=&#34;2&#34;&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;Rectangle.Fill&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;LinearGradientBrushEndPoint=&#34;0.5,1&#34;StartPoint=&#34;0.5,0&#34;&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;GradientStopColor=&#34;#FFDCEBFC&#34;Offset=&#34;0&#34; /&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;GradientStopColor=&#34;#FFC1DBFC&#34;Offset=&#34;1&#34; /&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;/LinearGradientBrush&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;/Rectangle.Fill&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;/Rectangle&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;RectangleMargin=&#34;1&#34;Stroke=&#34;#FFEBF4FD&#34;RadiusX=&#34;2&#34;RadiusY=&#34;2&#34;Fill=&#34;{x:Null}&#34;&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;/Rectangle&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;/Grid&amp;gt; &amp;nbsp;</description>
-    </item>
-    
-    <item>
-      <title>Welcome</title>
-      <link>https://systemfailure.io/post/welcome/</link>
-      <pubDate>Mon, 24 Aug 2009 23:31:00 +0000</pubDate>
-      
-      <guid>https://systemfailure.io/post/welcome/</guid>
-      <description>Please send me constructive or destructive&amp;nbsp;feedback about anything (blog, nokola.com, etc)&amp;nbsp;in the comments section for this post!
+Large Star Field - Take 2, how to make it look &#34;</description></item><item><title>The Cool Windows 7 Selection in XAML</title><link>https://systemfailure.io/post/the-cool-windows-7-selection-done-in-wpfsilverlight/</link><pubDate>Wed, 26 Aug 2009 20:37:00 +0000</pubDate><guid>https://systemfailure.io/post/the-cool-windows-7-selection-done-in-wpfsilverlight/</guid><description>Here&#39;s the XAML to make a selection rectangle similar to the one in Win7:
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;GridHeight=&#34;22&#34;Width=&#34;300&#34; &amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;RectangleStroke=&#34;#FF7DA2CE&#34;RadiusX=&#34;2&#34;RadiusY=&#34;2&#34;&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;Rectangle.Fill&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;LinearGradientBrushEndPoint=&#34;0.5,1&#34;StartPoint=&#34;0.5,0&#34;&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;GradientStopColor=&#34;#FFDCEBFC&#34;Offset=&#34;0&#34; /&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;GradientStopColor=&#34;#FFC1DBFC&#34;Offset=&#34;1&#34; /&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;/LinearGradientBrush&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;/Rectangle.Fill&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;/Rectangle&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;RectangleMargin=&#34;1&#34;Stroke=&#34;#FFEBF4FD&#34;RadiusX=&#34;2&#34;RadiusY=&#34;2&#34;Fill=&#34;{x:Null}&#34;&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;/Rectangle&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;/Grid&amp;gt; &amp;nbsp;</description></item><item><title>Welcome</title><link>https://systemfailure.io/post/welcome/</link><pubDate>Mon, 24 Aug 2009 23:31:00 +0000</pubDate><guid>https://systemfailure.io/post/welcome/</guid><description>Please send me constructive or destructive&amp;nbsp;feedback about anything (blog, nokola.com, etc)&amp;nbsp;in the comments section for this post!
 This is my first blog post...how nice! :)
 I&#39;m finally using BlogEngine.NET - http://blogengine.codeplex.com/
-Thank you</description>
-    </item>
-    
-  </channel>
-</rss>
+Thank you</description></item></channel></rss>
